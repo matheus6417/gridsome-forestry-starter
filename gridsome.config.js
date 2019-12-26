@@ -2,10 +2,10 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
-  siteUrl: `https://www.itsnwa.com`,
+  siteName: "Home",
+  siteUrl: `https://regulus-development.netlify.com/`,
   host: "0.0.0.0",
-  titleTemplate: "%s - NWA",
+  titleTemplate: "%s - Regulus DT",
   siteDescription: "Creative technologist",
   plugins: [
     {
