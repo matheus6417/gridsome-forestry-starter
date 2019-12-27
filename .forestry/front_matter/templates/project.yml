@@ -1,6 +1,6 @@
 ---
-label: Project
-hide_body: false
+label: Home
+hide_body: true
 fields:
 - type: file
   name: featured_image
