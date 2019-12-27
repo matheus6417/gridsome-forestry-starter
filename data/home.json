@@ -1,5 +1,23 @@
 {
     "tagline": "leading your digital transformation journey",
     "bottomline": "We are your digital innovation partner to turn disruption into process improvement",
-    "page1title": "Our services turn the vision of the future into reality"
+    "homeStyle": "modernStriped",
+    "page1text1": "Artificial Intelligence is rapidly shaping the aof how organizations would operate     to remain vcompetitive and agile.",
+    "page1text2": "Manual, monotonous and repetitive tasks, and heuristic analytics based on data patterns recognition may be replaced by intelligent bots that do better, faster and more consistent than humans.",
+    "page1style": "darkballs",
+    "page2text1": "Cognitive technologies are a necessity, not an option. ",
+    "page2text2": "Companies using AI to improve their internal business processes have achieved prominent benefits and robust returns on the investment.",
+    "page2text3": "Many early adopters are investing in cognitive technologies to improve their competitiveness, said Deloitte.",
+    "page2style": "lightSquareQuote",
+    "page3text1": "Transform your workforce",
+    "page3text2": "One of the notable concerns regarding the adoption of A.I. is the potential impact on employment and the workforce.",
+    "page3text3": "It is envisaged that employees will be reassigned to more responsible roles that empowering them to handle complex and critical situations which require judgment and creative thinking.",
+    "page3text4": "Artificial Intelligence will eventually play a supportive role to humans — providing the necessary statistics or models to facilitate decision making.",
+    "page3style": "lightBlueImage",
+    "page4text1": "Our services turn the vision of the future into reality",
+    "page4text2": "We offers two models:",
+    "page4leftText1": "AI-as-a-service (AIaaS) a subscription-based hosted solution",
+    "page4rightText1": "on-prem one-time-off-purchase (OTOP).",
+    "page4leftText2": "(in your private cloud or on a public cloud)s",
+    "page4style": "darkPlans"
 }
