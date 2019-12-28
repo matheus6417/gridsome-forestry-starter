@@ -9,8 +9,6 @@ fields:
   name: site_description
   label: Site description
 - type: textarea
-  name: hero_title
-  label: Hero title
   config:
     wysiwyg: true
     schema:

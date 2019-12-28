@@ -1,7 +1,8 @@
 <template>
   <div class="projects">
-    <div class="project" v-for="item in projects" :key="item.node.id">
-      <g-link :to="item.node.path" class="project-link">
+    <div class="project" v-for="item in home" :key="item.node.id">
+      <span></span>
+      <!-- <g-link :to="item.node.path" class="project-link">
         <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail" />
         <h3 class="project-title">{{ item.node.title }}</h3>
         <div class="categories">
@@ -11,7 +12,7 @@
             :key="index"
           >{{ item }}</span>
         </div>
-      </g-link>
+      </g-link>-->
     </div>
   </div>
 </template>
@@ -19,7 +20,7 @@
 <script>
 export default {
   props: {
-    projects: {
+    home: {
       type: Array,
       required: true
     }

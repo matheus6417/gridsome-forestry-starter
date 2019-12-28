@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div class="container">
-      <Hero />
-      <ProjectsGrid :projects="$page.projects.edges" />
+      <span v-html="$page.projects.edges"></span>
+      <!-- <ProjectsGrid :projects="$page.projects.edges" /> -->
     </div>
-    <LatestJournals :journals="$page.journals.edges" />
+    <!-- <LatestJournals :journals="$page.journals.edges" /> -->
   </Layout>
 </template>
 
@@ -14,15 +14,14 @@ query Posts {
     edges {
       node {
         id
-        date (format: "YYYY")
-        title
-        categories
-        thumbnail (quality: 90)
-        path
       }
     }
-  },
-  journals: allJournalPost (perPage: 4) {
+  }
+
+}
+
+</page-query>
+  <!-- journals: allJournalPost (perPage: 4) {
     edges {
       node {
         id
@@ -30,20 +29,15 @@ query Posts {
         title
       }
     }
-  }
-}
-</page-query>
-
+  } -->
 <script>
-import Hero from "@/components/Hero";
-import ProjectsGrid from "@/components/ProjectsGrid";
-import LatestJournals from "@/components/LatestJournals";
+// import ProjectsGrid from "@/components/ProjectsGrid";
+// import LatestJournals from "@/components/LatestJournals";
 
 export default {
   components: {
-    Hero,
-    ProjectsGrid,
-    LatestJournals
+    // ProjectsGrid
+    // LatestJournals
   }
 };
 </script>
