@@ -4,14 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: data/solutions.json
-  label: Solutions
-  match: "**/*"
 - type: heading
   label: Pages
 - type: directory
-  path: projects
+  path: data/projects
   label: Home
   create: documents
   match: "**/*.md"
@@ -19,6 +15,9 @@ sections:
   - project
   - project
 - type: heading
+  label: Solutions
+- type: document
+  path: data/solutions.json
   label: Solutions
 - type: heading
   label: Services
