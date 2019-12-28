@@ -4,8 +4,6 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: heading
-  label: Solutions
 - type: directory
   path: projects
   label: Home
@@ -14,6 +12,8 @@ sections:
   templates:
   - project
   - project
+- type: heading
+  label: Solutions
 - type: directory
   path: journal
   label: Journal
