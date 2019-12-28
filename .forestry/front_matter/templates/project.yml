@@ -92,3 +92,5 @@ fields:
     - light-softblue-image
     - dark-dual-services
   label: Theme
+pages:
+- projects/home-page1.md
