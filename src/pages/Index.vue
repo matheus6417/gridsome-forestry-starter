@@ -1,7 +1,10 @@
 <template>
   <Layout>
     <div class="container">
-      <carousel :data="['Slide 1', 'Slide 2', 'Slide 3']"></carousel>
+      <ClientOnly>
+        <!-- <carousel :data="data"></carousel> -->
+      </ClientOnly>
+
       <span v-html="$page.projects.edges"></span>
       <!-- <ProjectsGrid :projects="$page.projects.edges" /> -->
     </div>
@@ -34,23 +37,17 @@ query Posts {
 }
 
 </page-query>
-  <!-- journals: allJournalPost (perPage: 4) {
-    edges {
-      node {
-        id
-        path
-        title
-      }
-    }
-  } -->
-<script>
-// import ProjectsGrid from "@/components/ProjectsGrid";
-// import LatestJournals from "@/components/LatestJournals";
 
+<script>
 export default {
-  components: {
-    // ProjectsGrid
-    // LatestJournals
+  data() {
+    return {
+      data: [
+        '<div class="example-slide">Slide 1</div>',
+        '<div class="example-slide">Slide 2</div>',
+        '<div class="example-slide">Slide 3</div>'
+      ]
+    };
   }
 };
 </script>
