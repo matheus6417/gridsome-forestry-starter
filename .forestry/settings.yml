@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Pages
 - type: directory
-  path: data/projects
+  path: data/home
   label: Home
   create: documents
   match: "**/*.md"
