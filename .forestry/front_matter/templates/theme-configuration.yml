@@ -8,23 +8,6 @@ fields:
 - type: textarea
   name: site_description
   label: Site description
-- type: textarea
-  config:
-    wysiwyg: true
-    schema:
-      format: html
-- type: textarea
-  name: hero_subtitle
-  label: Hero subtitle
-  config:
-    wysiwyg: true
-    schema:
-      format: html
-- name: footer
-  label: Footer text
-  type: text
-  hidden: false
-  default: ''
 - type: boolean
   name: dark_mode
   label: Dark mode
