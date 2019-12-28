@@ -77,3 +77,5 @@ fields:
   config:
     required: false
     color_format: Hex
+pages:
+- projects/home-page1.md
