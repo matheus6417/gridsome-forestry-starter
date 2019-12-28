@@ -1,7 +1,8 @@
 <template>
   <Layout>
     <div class="container">
-      <span v-html="$page.projects.edges"></span>
+      <span v-html="$page.projects
+      "></span>
       <!-- <ProjectsGrid :projects="$page.projects.edges" /> -->
     </div>
     <!-- <LatestJournals :journals="$page.journals.edges" /> -->
@@ -14,6 +15,7 @@ query Posts {
     edges {
       node {
         id
+        
       }
     }
   }
