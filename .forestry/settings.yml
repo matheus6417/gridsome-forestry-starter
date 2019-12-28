@@ -11,10 +11,11 @@ sections:
   label: Solutions
 - type: directory
   path: projects
-  label: Projects
+  label: Home
   create: documents
   match: "**/*.md"
   templates:
+  - project
   - project
 - type: directory
   path: journal
