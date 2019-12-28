@@ -35,3 +35,45 @@ fields:
     schema:
       format: html-blocks
   label: Text 2
+- name: text_3
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Text 3
+- name: text_4
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Text 4
+- name: text_1_color
+  type: color
+  label: Text 1 Color
+  config:
+    required: false
+    color_format: Hex
+- name: text_2_color
+  type: color
+  label: Text 2 Color
+  config:
+    required: false
+    color_format: Hex
+- name: text_3_color
+  type: color
+  label: Text 3 Color
+  config:
+    required: false
+    color_format: Hex
+- name: text_4_color
+  type: color
+  label: Text 4 Color
+  config:
+    required: false
+    color_format: Hex
