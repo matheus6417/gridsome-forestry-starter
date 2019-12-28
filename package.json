@@ -1,5 +1,5 @@
 {
-  "name": "itsnwa.com",
+  "name": "regulus",
   "private": true,
   "scripts": {
     "build": "gridsome build",
