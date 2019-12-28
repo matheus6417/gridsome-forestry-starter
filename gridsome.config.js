@@ -2,7 +2,7 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Home",
+  siteName: "Regulus DT",
   siteUrl: `https://regulus-development.netlify.com/`,
   host: "0.0.0.0",
   titleTemplate: "%s - Regulus DT",
