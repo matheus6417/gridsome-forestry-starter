@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <div class="container">
+      <carousel :data="['Slide 1', 'Slide 2', 'Slide 3']"></carousel>
       <span v-html="$page.projects.edges"></span>
       <!-- <ProjectsGrid :projects="$page.projects.edges" /> -->
     </div>
