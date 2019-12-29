@@ -1,25 +1,20 @@
 <template>
   <Layout>
-    <div class="container">
-      <ClientOnly>
-        <swiper :options="swiperOption">
-          <swiper-slide>Slide 1</swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-          <swiper-slide>Slide 5</swiper-slide>
-          <swiper-slide>Slide 6</swiper-slide>
-          <swiper-slide>Slide 7</swiper-slide>
-          <swiper-slide>Slide 8</swiper-slide>
-          <swiper-slide>Slide 9</swiper-slide>
-          <swiper-slide>Slide 10</swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
-      </ClientOnly>
+    <ClientOnly>
+      <swiper :options="swiperOption">
+        <swiper-slide>
+          <span v-html="$page.projects.edges"></span>
+        </swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
 
-      <span v-html="$page.projects.edges"></span>
-      <!-- <ProjectsGrid :projects="$page.projects.edges" /> -->
-    </div>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
+    </ClientOnly>
+
+    <!-- <ProjectsGrid :projects="$page.projects.edges" /> -->
     <!-- <LatestJournals :journals="$page.journals.edges" /> -->
   </Layout>
 </template>
@@ -77,7 +72,7 @@ export default {
 </script>
 <style>
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  width: 100vw;
+  height: 100vh;
 }
 </style>

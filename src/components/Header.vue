@@ -173,6 +173,7 @@ a:hover {
 header {
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 @media screen and (max-width: 640px) {
   .navbar[regulusApp] {
