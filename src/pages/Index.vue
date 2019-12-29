@@ -2,7 +2,19 @@
   <Layout>
     <div class="container">
       <ClientOnly>
-        <!-- <carousel :data="data"></carousel> -->
+        <swiper :options="swiperOption">
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide>
+          <swiper-slide>Slide 5</swiper-slide>
+          <swiper-slide>Slide 6</swiper-slide>
+          <swiper-slide>Slide 7</swiper-slide>
+          <swiper-slide>Slide 8</swiper-slide>
+          <swiper-slide>Slide 9</swiper-slide>
+          <swiper-slide>Slide 10</swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
       </ClientOnly>
 
       <span v-html="$page.projects.edges"></span>
@@ -40,14 +52,32 @@ query Posts {
 
 <script>
 export default {
+  components: {
+    // Carousel: () =>
+    //   import("@chenfengyuan/vue-carousel")
+    //     .then(m => m.Carousel)
+    //     .catch()
+    // Slide: () =>
+    //   import("@chenfengyuan/vue-carousel")
+    //     .then(m => m.Slide)
+    //     .catch()
+  },
   data() {
     return {
-      data: [
-        '<div class="example-slide">Slide 1</div>',
-        '<div class="example-slide">Slide 2</div>',
-        '<div class="example-slide">Slide 3</div>'
-      ]
+      swiperOption: {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      }
     };
   }
 };
 </script>
+<style>
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+</style>

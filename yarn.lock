@@ -674,20 +674,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@chenfengyuan/create-vue-component@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@chenfengyuan/create-vue-component/-/create-vue-component-1.1.0.tgz#fde9b8af8d9d2812c8ea64cb50a138f43bb3709d"
-  integrity sha512-TW/HVptQa/3Hms1FZPln2UbWuQudUKbbKnEGhApjA/GMIfQ41Lt3SRaLwSEkOJozVIbXllAA5RAFF9zTqeIsqg==
-  dependencies:
-    is-vue-component "^1.0.0"
-
-"@chenfengyuan/vue-carousel@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@chenfengyuan/vue-carousel/-/vue-carousel-1.0.2.tgz#57c845347d8a310263b29765f45d67d2ff482059"
-  integrity sha512-WiXLSj7iVZCkO8tP2H/1qHTeisvae4lYET4XxWzhSLENjVN7hH/NDrket8A9mh20rj72xAI/UV8imGbrpQIWMA==
-  dependencies:
-    "@chenfengyuan/create-vue-component" "^1.1.0"
-
 "@gridsome/cli@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.3.1.tgz#8bdf97facddb3ab5338eb57521bc0bf5808561d2"
@@ -2861,6 +2847,13 @@ dom-serializer@0:
     domelementtype "^2.0.1"
     entities "^2.0.0"
 
+dom7@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.1.3.tgz#a736f9c3bfbc4ca039a81cd095f97d1d7f3de19c"
+  integrity sha512-QTxHHDox+M6ZFz1zHPAHZKI3JOHY5iY4i9BK2uctlggxKQwRhO3q3HHFq1BKsT25Bm/ySSj70K6Wk/G4bs9rMQ==
+  dependencies:
+    ssr-window "^1.0.1"
+
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
@@ -4718,11 +4711,6 @@ is-natural-number@^4.0.1:
   resolved "https://registry.yarnpkg.com/is-natural-number/-/is-natural-number-4.0.1.tgz#ab9d76e1db4ced51e35de0c72ebecf09f734cde8"
   integrity sha1-q5124dtM7VHjXeDHLr7PCfc0zeg=
 
-is-non-null-object@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-non-null-object/-/is-non-null-object-1.0.0.tgz#80dae23beb02f995e435a2ff8d491d4b17413e95"
-  integrity sha512-MYBGKRSoNifYx3aoV+TNrUieiAFkdZLXCz5OoiPpArtQv9WWiDwgMXZMeC8bPN7I0CsYpgZxg3C4wjljqggn8w==
-
 is-npm@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-npm/-/is-npm-3.0.0.tgz#ec9147bfb629c43f494cf67936a961edec7e8053"
@@ -4833,13 +4821,6 @@ is-utf8@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
   integrity sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=
-
-is-vue-component@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-vue-component/-/is-vue-component-1.0.0.tgz#eeecef5d02edf5c8ac48c79157b13489feecf3c5"
-  integrity sha512-frTAznlMCFMghK3mn262vQwPacdac/RqIdI7yzvQ9kiaktUIzocQ7xNt0xOj6C5Q61uHJgzQsScwmY8MwG4/sA==
-  dependencies:
-    is-non-null-object "^1.0.0"
 
 is-whitespace-character@^1.0.0:
   version "1.0.3"
@@ -7738,6 +7719,11 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
+  integrity sha512-dgFqB+f00LJTEgb6UXhx0h+SrG50LJvti2yMKMqAgzfUmUXZrLSv2fjULF7AWGwK25EXu8+smLR3jYsJQChPsg==
+
 ssri@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
@@ -8014,6 +8000,14 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+swiper@^4.0.7:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.5.1.tgz#ed43998e780ceb478610079c8d23fd425eca636f"
+  integrity sha512-se6I7PWWu950NAMXXT+ENtF/6SVb8mPyO+bTfNxbQBILSeLqsYp3Ndap+YOA0EczOIUlea274PKejT6gKZDseA==
+  dependencies:
+    dom7 "^2.1.3"
+    ssr-window "^1.0.1"
 
 tapable@2.0.0-beta.5:
   version "2.0.0-beta.5"
@@ -8686,6 +8680,14 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
+vue-awesome-swiper@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/vue-awesome-swiper/-/vue-awesome-swiper-3.1.3.tgz#05500b501ffb3fec9bf7eb9985bcf4ae8360ed9e"
+  integrity sha512-E7suzkyApO8vNZbgdEnjSmnpsmQZyRvSVXJ7sey3XYwKPOkLhH3+GnHroBw+5PZIQXvWBwdCeQsPG1xQ1r1Rhg==
+  dependencies:
+    object-assign "^4.1.1"
+    swiper "^4.0.7"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -8736,7 +8738,7 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.6.10, vue-template-compiler@^2.6.11:
+vue-template-compiler@^2.6.10:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.11.tgz#c04704ef8f498b153130018993e56309d4698080"
   integrity sha512-KIq15bvQDrcCjpGjrAhx4mUlyyHfdmTaoNfeoATHLAiWB+MU3cx4lOzMwrnUh9cCxy0Lt1T11hAFY6TQgroUAA==

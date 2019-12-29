@@ -7,11 +7,10 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@chenfengyuan/vue-carousel": "^1.0.2",
     "@gridsome/remark-prismjs": "0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "gridsome": "^0.7.11",
-    "vue-template-compiler": "^2.6.11"
+    "vue-awesome-swiper": "^3.1.3"
   }
 }
