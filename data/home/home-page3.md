@@ -14,5 +14,6 @@ text_3_color: "#FFFFFF"
 text_4_color: ''
 theme:
 - light-squares-quote
+order: '3'
 
 ---
