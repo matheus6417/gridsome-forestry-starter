@@ -1,54 +1,58 @@
 <template>
   <Layout>
     <ClientOnly>
-      <swiper :options="swiperOptions">
+      <swiper :options="swiperOption">
         <swiper-slide>
-          <section class="landing-header">
+          <section class="slide1-header">
+            <div class="stripes">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="slide1-patternlayer"></div>
             <div class="container">
               <div class="inner">
-                <div class="landing-header__flex">
+                <div class="slide1-header__flex">
                   <div
-                    class="landing-header__mobile-text"
+                    class="slide1-header__mobile-text"
                     style="opacity: 1; transform: translateY(0px);"
                   >
-                    <div class="landing-header__mobile-typing">
+                    <div class="slide1-header__mobile-typing">
                       <span class="typing-fast">
                         <span v-html="slides.s1.text_1"></span>
                       </span>
                     </div>
-                    <p class="landing-header__paragraph">
+                    <p class="slide1-header__paragraph">
                       <span v-html="slides.s1.text_2"></span>
                     </p>
                   </div>
                   <div
-                    class="landing-header__left-text"
+                    class="slide1-header__left-text"
                     style="opacity: 1; transform: translateY(0px);"
                   >
                     <span class="typing-fast">
                       <span v-html="slides.s1.text_1"></span>
                     </span>
                   </div>
-                  <div
-                    class="landing-header__right"
-                    style="opacity: 1; transform: translateY(0px);"
-                  >
-                    <div class="landing-header__right-typing">
-                      <div class="landing-header__right-text-1">
-                        <span class="typing-fast">imagem aqui</span>
+                  <div class="slide1-header__right" style="opacity: 1; transform: translateY(0px);">
+                    <div class="slide1-header__right-typing">
+                      <div class="slide1-header__right-text-1">
+                        <!-- <span class="typing-fast">imagem aqui</span> -->
                       </div>
-                      <div class="landing-header__right-text-2"></div>
-                      <div class="landing-header__right-text-3"></div>
+                      <div class="slide1-header__right-text-2"></div>
+                      <div class="slide1-header__right-text-3"></div>
                     </div>
-                    <p class="landing-header__paragraph">
+                    <p class="slide1-header__paragraph">
                       <span v-html="slides.s1.text_2"></span>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <!---->
             <img
-              class="landing-header__arrow"
+              class="slide1-header__arrow"
               src="../assets/icon-header-arrow.svg"
               style="opacity: 1; transform: translateY(0px);"
             />
@@ -96,12 +100,11 @@ import { log } from "util";
 export default {
   data() {
     return {
-      swiperOptions: {
+      swiperOption: {
         direction: "vertical",
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
-          effect: "fade"
+          clickable: true
         }
       },
       slides: {
@@ -267,8 +270,8 @@ img {
   animation-delay: 93ms;
 }
 
-.landing-header {
-  background-color: #ffcab3;
+.slide1-header {
+  background-color: tra;
   height: 100vh;
   font-weight: 600;
   font-size: 10.8rem;
@@ -277,14 +280,17 @@ img {
   align-items: center;
   position: relative;
 }
-.landing-header .landing-header__flex {
+.slide1-header .slide1-header__flex {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   height: 54.6rem;
-  margin-top: 11.6rem;
+  align-items: center;
+  /* margin-top: 11.6rem; */
   position: relative;
 }
-.landing-header .landing-header__right {
+.slide1-header .slide1-header__right {
   align-self: flex-end;
   width: 49.1rem;
   display: flex;
@@ -292,127 +298,127 @@ img {
   align-items: flex-end;
 }
 
-.landing-header .landing-header__right-typing {
+.slide1-header .slide1-header__right-typing {
   width: 25.7rem;
   height: 26.7rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.landing-header .landing-header__right-text-1 {
+.slide1-header .slide1-header__right-text-1 {
   width: 16.8rem;
 }
-.landing-header .landing-header__right-text-2 {
+.slide1-header .slide1-header__right-text-2 {
   width: 19.2rem;
 }
-.landing-header .landing-header__right-text-3 {
+.slide1-header .slide1-header__right-text-3 {
   width: 22.61rem;
 }
-.landing-header .landing-header__mobile-text {
+.slide1-header .slide1-header__mobile-text {
   display: none;
   height: 400px;
 }
-.landing-header .landing-header__arrow {
+.slide1-header .slide1-header__arrow {
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
   bottom: 5rem;
 }
-.landing-header .landing-header__arrow:hover {
+.slide1-header .slide1-header__arrow:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 1100px) {
-  .landing-header .landing-header__arrow {
+  .slide1-header .slide1-header__arrow {
     left: 1.7rem;
   }
 }
 @media screen and (max-height: 750px) and (min-width: 1500px) {
-  .landing-header .landing-header__flex {
+  .slide1-header .slide1-header__flex {
     margin-top: 2.6rem;
   }
 }
 @media screen and (max-height: 700px) and (min-width: 1100px) {
-  .landing-header {
+  .slide1-header {
     font-size: 8.1rem;
   }
-  .landing-header .landing-header__flex {
+  .slide1-header .slide1-header__flex {
     height: 44.6rem;
     margin-top: 3.6rem;
   }
-  .landing-header .landing-header__right {
+  .slide1-header .slide1-header__right {
     width: 38.1rem;
   }
-  .landing-header .landing-header__right-typing {
+  .slide1-header .slide1-header__right-typing {
     height: 201px;
   }
 
-  .landing-header .landing-header__right-text-1 {
+  .slide1-header .slide1-header__right-text-1 {
     width: 12.6rem;
   }
-  .landing-header .landing-header__right-text-2 {
+  .slide1-header .slide1-header__right-text-2 {
     width: 14.2rem;
   }
-  .landing-header .landing-header__right-text-3 {
+  .slide1-header .slide1-header__right-text-3 {
     width: 16.1rem;
   }
 }
 @media screen and (max-height: 600px) {
-  .landing-header .landing-header__flex {
+  .slide1-header .slide1-header__flex {
     margin-top: 5.6rem;
   }
 }
 @media screen and (max-width: 640px) {
-  .landing-header {
+  .slide1-header {
     font-size: 6.4rem;
     line-height: 0.88;
     display: flex;
     align-items: center;
     padding-bottom: 6.8rem;
   }
-  .landing-header .landing-header__flex {
+  .slide1-header .slide1-header__flex {
     flex-direction: column;
     justify-content: flex-start;
     height: auto;
     margin: 0;
   }
-  .landing-header .landing-header__left-text,
-  .landing-header .landing-header__right {
+  .slide1-header .slide1-header__left-text,
+  .slide1-header .slide1-header__right {
     display: none;
   }
-  .landing-header .landing-header__right {
+  .slide1-header .slide1-header__right {
     transform: none !important;
   }
 
-  .landing-header .landing-header__mobile-text {
+  .slide1-header .slide1-header__mobile-text {
     display: block;
   }
-  .landing-header .landing-header__mobile-typing {
+  .slide1-header .slide1-header__mobile-typing {
     width: 8rem;
   }
-  .landing-header .landing-header__arrow {
+  .slide1-header .slide1-header__arrow {
     left: auto;
     right: 8%;
     bottom: 37%;
   }
 }
 @media screen and (max-width: 640px) and (max-height: 500px) {
-  .landing-header .landing-header__flex {
+  .slide1-header .slide1-header__flex {
     margin-top: 70px;
   }
-  .landing-header .landing-header__arrow {
+  .slide1-header .slide1-header__arrow {
     bottom: 20.5rem;
   }
 }
-.landing-header .inner p {
+.slide1-header .inner p {
   margin: inherit !important;
 }
-.landing-header .landing-header__left-text {
+.slide1-header .slide1-header__left-text {
   width: 9ch;
-  font-size: 6.5rem;
-  line-height: 6.5rem;
+  font-size: 7.5rem;
+  line-height: 7.5rem;
 }
-.landing-header .landing-header__paragraph {
+.slide1-header .slide1-header__paragraph {
   font-size: 2.6rem;
   margin: 6rem 0 0;
   font-weight: 600;
@@ -420,5 +426,130 @@ img {
   font-stretch: normal;
   line-height: 1.32;
   letter-spacing: normal;
+}
+
+.stripes {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  display: grid;
+  -webkit-transform: skewY(-12deg);
+  transform: skewY(-12deg);
+}
+.stripes {
+  top: 0;
+  grid: repeat(5, 200px) / repeat(10, 1fr);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#507eb1),
+    color-stop(10%, #709dc7),
+    color-stop(38%, #dde9f5),
+    color-stop(48%, #eaf2f9),
+    color-stop(62%, #f6f9fc)
+  );
+  background: linear-gradient(
+    #507eb1,
+    #709dc7 10%,
+    #dde9f5 38%,
+    #eaf2f9 48%,
+    #f6f9fc 62%
+  );
+}
+.stripes :first-child {
+  grid-column: span 3;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(243, 251, 255, 0.4)),
+    color-stop(20%, rgba(243, 251, 255, 0.15)),
+    to(rgba(243, 251, 255, 0))
+  );
+  background: linear-gradient(
+    100grad,
+    rgba(243, 251, 255, 0.4),
+    rgba(243, 251, 255, 0.15) 20%,
+    rgba(243, 251, 255, 0)
+  );
+}
+.stripes :nth-child(2) {
+  grid-area: 3 / span 3 / auto/-1;
+}
+.stripes :nth-child(3) {
+  grid-row: 4;
+  grid-column: span 5;
+}
+.stripes :nth-child(4) {
+  grid-area: 4 / span 5 / auto/-1;
+}
+.stripes :nth-child(5) {
+  grid-area: auto/1/-1/-1;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(80%, #fff),
+    to(#f5fafd)
+  );
+  background: linear-gradient(100grad, #fff 80%, #f5fafd);
+}
+@media (min-width: 670px) {
+  .stripes :nth-child(2) {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 119, 204, 0)),
+      color-stop(40%, rgba(0, 119, 204, 0.05)),
+      to(rgba(0, 119, 204, 0.35))
+    );
+    background: linear-gradient(
+      100grad,
+      rgba(0, 119, 204, 0),
+      rgba(0, 119, 204, 0.05) 40%,
+      rgba(0, 119, 204, 0.35)
+    );
+  }
+  .stripes :nth-child(3) {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(50%, #fff),
+      to(hsla(0, 0%, 100%, 0))
+    );
+    background: linear-gradient(100grad, #fff 50%, hsla(0, 0%, 100%, 0));
+  }
+  .stripes :nth-child(4) {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(10%, rgba(0, 119, 204, 0)),
+      to(rgba(0, 119, 204, 0.05))
+    );
+    background: linear-gradient(
+      100grad,
+      rgba(0, 119, 204, 0) 10%,
+      rgba(0, 119, 204, 0.05)
+    );
+  }
+}
+.slide1-patternlayer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  background-image: radial-gradient(white 0%, transparent 0%),
+    radial-gradient(white 6%, transparent 0%);
+  background-size: 70px 68px;
+  background-position: 0 0, 0 0;
+  opacity: 0.18;
 }
 </style>
