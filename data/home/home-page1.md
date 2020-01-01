@@ -13,5 +13,6 @@ text_3_color: ''
 text_4_color: ''
 theme:
 - light-striped-modern
+order: '1'
 
 ---
