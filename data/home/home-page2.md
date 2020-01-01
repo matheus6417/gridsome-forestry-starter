@@ -15,5 +15,6 @@ text_3_color: ''
 text_4_color: ''
 theme:
 - " dark-bold-text"
+order: '2'
 
 ---
