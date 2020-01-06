@@ -1,0 +1,86 @@
+.slide3 {
+    height: 100%;
+}
+.slide3-bg {
+    background: #fff;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+}
+.slide3 .container {
+    height: inherit;
+}
+
+.slide3 .inner {
+    height: inherit;
+    position: relative;
+}
+.slide3 .slide3__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5rem 0;
+}
+.slide3__left-square {
+    height: 100%;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem 9rem 3rem 3rem;
+    width: 80vw;
+}
+
+.slide3__text1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    max-width: 18ch;
+    margin-bottom: 1rem;
+}
+.slide3__text2 {
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+    max-width: 24ch;
+    opacity: 0.7;
+}
+.slide3__text3 {
+    font-size: 2.7rem;
+    line-height: 3.2rem;
+    text-align: right;
+    opacity: 0.9;
+}.slide3__right-square {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: -3rem;
+    max-width: 50ch;
+    max-height: 65vh;
+    height: 100%;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+    box-shadow: -1rem 1rem #00000021;
+}
+.slide3__right-square:after {
+    content: "";
+    background-image: url(../assets/quote.png);
+    width: 90px;
+    height:  82px;
+    position: absolute;
+    left: -3rem;
+    top: 2rem;
+    background-repeat: no-repeat;
+    background-size:contain
+}

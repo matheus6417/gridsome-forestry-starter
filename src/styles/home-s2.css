@@ -1,0 +1,99 @@
+.slide2 {
+    height: 100%;
+}
+.slide2-bg {
+    background: #000000bf;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+}
+.slide2 .container {
+    height: inherit;
+}
+
+.slide2 .inner {
+    height: inherit;
+}
+
+.slide2__flex {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slide2__left-text {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.4rem;
+    color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 3rem 0;
+    font-weight: 800;
+}
+.slide2__right-text {
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 5rem 0 0 0;
+    text-align: right;
+    font-size: 2.3rem;
+    line-height: 3.0rem;
+    max-width: 80%;
+    margin-left: auto;
+}
+.slide2__patterns {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide2-pattern1:before {
+    content: "";
+    background-color: transparent;
+    background-image: radial-gradient(white 0%, transparent 0%), radial-gradient(yellow 5px, transparent 0%);
+    background-size: 42px 42px;
+    background-position: 0 0, 0 0;
+    opacity: 0.18;
+    left: 5ch;
+    top: -3ch;
+    position: absolute;
+    right: auto;
+    bottom: 0;
+    width: 260px;
+    height: 300px;
+}
+.slide2-pattern2:before {
+    content: "";
+    background-color: transparent;
+    background-image: radial-gradient(white 0%, transparent 0%), radial-gradient(yellow 5px, transparent 0%);
+    background-size: 42px 42px;
+    background-position: 0 0, 0 0;
+    opacity: 0.18;
+    left: auto;
+    top: -3ch;
+    position: absolute;
+    right: 5ch;
+    bottom: 0;
+    width: 260px;
+    height: 300px;
+}
+
+.slide2-pattern1,.slide2-pattern2{
+    position: relative;
+}

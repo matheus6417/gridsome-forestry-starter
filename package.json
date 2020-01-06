@@ -11,6 +11,8 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "gridsome": "^0.7.11",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "vue-awesome-swiper": "^3.1.3"
   }
 }
