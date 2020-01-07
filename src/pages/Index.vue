@@ -90,7 +90,7 @@
                       <span v-html="slides.s4.text_1"></span>
                     </span>
                     <div class="slide4__left-img">
-                      <img src="../assets/s1.png" />
+                      <img src="../assets/s4.png" />
                     </div>
                   </div>
                   <div class="slide4__right">
