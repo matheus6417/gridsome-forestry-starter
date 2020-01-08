@@ -21,15 +21,17 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: inherit;
 }
 
-/* make sure to set some focus styles for accessibility */
+
 :focus {
     outline: 0;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;

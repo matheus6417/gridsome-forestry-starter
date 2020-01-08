@@ -1,118 +1,148 @@
 <template>
   <Layout>
     <ClientOnly>
-      <swiper :options="swiperOption">
-        <swiper-slide>
-          <section class="slide1">
-            <div class="stripes">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="slide1-patternlayer"></div>
-            <div class="container">
-              <div class="inner">
-                <div class="slide1__flex">
-                  <div class="slide1__mobile-text" style>
-                    <p class="slide1__paragraph">
-                      <span v-html="slides.s1.text_2"></span>
-                    </p>
-                  </div>
-                  <div class="slide1__left-text" style>
-                    <span class>
-                      <span v-html="slides.s1.text_1"></span>
-                    </span>
-                  </div>
-                  <div class="slide1__right" style>
-                    <div class="slide1__right-img">
-                      <!-- <span class="">imagem aqui</span> -->
-                      <img src="../assets/s1.png" />
+      <span v-bind:class="{'isDarkBg': isDarkBg}">
+        <swiper ref="swiper" :options="swiperOption" @slideChange="slideChange">
+          <swiper-slide>
+            <section class="slide1">
+              <div class="stripes">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="slide1-patternlayer"></div>
+              <div class="container">
+                <div class="inner">
+                  <div class="slide1__flex">
+                    <div class="slide1__mobile-text" style>
+                      <p class="slide1__paragraph">
+                        <span v-html="slides.s1.text_2"></span>
+                      </p>
                     </div>
-                    <p class="slide1__paragraph">
-                      <span v-html="slides.s1.text_2"></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span>
-              <img class="slide1__arrow" src="../assets/icon-header-arrow.svg" />
-            </span>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-          <section class="slide2">
-            <div class="slide2-bg"></div>
-            <div class="slide2-patterns"></div>
-            <div class="container">
-              <div class="inner">
-                <div class="slide2__flex">
-                  <div class="slide2__left-text" style>
-                    <span class="slide2-pattern1" v-html="slides.s2.text_1"></span>
-                  </div>
-                  <div class="slide2__right-text" style>
-                    <span class="slide2-pattern2" v-html="slides.s2.text_2"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-          <section class="slide3">
-            <div class="slide3-bg"></div>
-            <div class="slide3-patterns"></div>
-            <div class="container">
-              <div class="inner">
-                <div class="slide3__flex">
-                  <div class="slide3__left-square">
-                    <span class="slide3__text1" v-html="slides.s3.text_1"></span>
-                    <span class="slide3__text2" v-html="slides.s3.text_2"></span>
-                  </div>
-                  <div class="slide3__right-square">
-                    <span class="slide3__text3" v-html="slides.s3.text_3"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-          <section class="slide4">
-            <div class="slide4-bg"></div>
-            <div class="container">
-              <div class="inner">
-                <div class="slide4__flex">
-                  <div class="slide4__left">
-                    <span class="slide4__left-text">
-                      <span v-html="slides.s4.text_1"></span>
-                    </span>
-                    <div class="slide4__left-img">
-                      <img src="../assets/s4.png" />
+                    <div class="slide1__left-text" style>
+                      <span class>
+                        <span v-html="slides.s1.text_1"></span>
+                      </span>
+                    </div>
+                    <div class="slide1__right" style>
+                      <div class="slide1__right-img">
+                        <!-- <span class="">imagem aqui</span> -->
+                        <img src="../assets/s1.png" />
+                      </div>
+                      <p class="slide1__paragraph">
+                        <span v-html="slides.s1.text_2"></span>
+                      </p>
                     </div>
                   </div>
-                  <div class="slide4__right">
-                    <p class="slide4__paragraph">
-                      <span v-html="slides.s4.text_2"></span>
-                    </p>
-                    <p class="slide4__paragraph">
-                      <span v-html="slides.s4.text_3"></span>
-                    </p>
-                    <p class="slide4__paragraph">
-                      <span v-html="slides.s4.text_4"></span>
-                    </p>
+                </div>
+              </div>
+              <span>
+                <img class="slide1__arrow" src="../assets/icon-header-arrow.svg" />
+              </span>
+            </section>
+          </swiper-slide>
+          <swiper-slide>
+            <section class="slide2">
+              <div class="slide2-bg"></div>
+              <div class="slide2-patterns"></div>
+              <div class="container">
+                <div class="inner">
+                  <div class="slide2__flex">
+                    <div class="slide2__left-text" style>
+                      <span class="slide2-pattern1" v-html="slides.s2.text_1"></span>
+                    </div>
+                    <div class="slide2__right-text" style>
+                      <span class="slide2-pattern2" v-html="slides.s2.text_2"></span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
+            </section>
+          </swiper-slide>
+          <swiper-slide>
+            <section class="slide3">
+              <div class="slide3-bg"></div>
+              <div class="slide3-patterns"></div>
+              <div class="container">
+                <div class="inner">
+                  <div class="slide3__flex">
+                    <div class="slide3__left-square">
+                      <span class="slide3__text1" v-html="slides.s3.text_1"></span>
+                      <span class="slide3__text2" v-html="slides.s3.text_2"></span>
+                    </div>
+                    <div class="slide3__right-square">
+                      <span class="slide3__text3" v-html="slides.s3.text_3"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </swiper-slide>
+          <swiper-slide>
+            <section class="slide4">
+              <div class="slide4-bg"></div>
+              <div class="container">
+                <div class="inner">
+                  <div class="slide4__flex">
+                    <div class="slide4__left">
+                      <span class="slide4__left-text">
+                        <span v-html="slides.s4.text_1"></span>
+                      </span>
+                      <div class="slide4__left-img">
+                        <img src="../assets/s4.png" />
+                      </div>
+                    </div>
+                    <div class="slide4__right">
+                      <p class="slide4__paragraph">
+                        <span v-html="slides.s4.text_2"></span>
+                      </p>
+                      <p class="slide4__paragraph">
+                        <span v-html="slides.s4.text_3"></span>
+                      </p>
+                      <p class="slide4__paragraph">
+                        <span v-html="slides.s4.text_4"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </swiper-slide>
+          <swiper-slide>
+            <section class="slide5">
+              <div class="slide5-bg"></div>
+              <div class="container">
+                <div class="inner">
+                  <div class="slide5__flex">
+                    <div class="slide5__title">
+                      <span v-html="slides.s5.text_1"></span>
+                    </div>
+                    <div class="slide5__subtitle">
+                      <span v-html="slides.s5.text_2"></span>
+                    </div>
+                    <div class="slide5__plans-wrapper">
+                      <div class="slide5__left">
+                        <span class="slide5__left-text">
+                          <span v-html="slides.s5.text_3"></span>
+                        </span>
+                      </div>
+                      <div class="slide5__right">
+                        <span class="slide5__right-text">
+                          <span v-html="slides.s5.text_4"></span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </swiper-slide>
 
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </span>
     </ClientOnly>
   </Layout>
 </template>
@@ -129,8 +159,13 @@ export default {
           clickable: true
         },
         loop: true,
-        mousewheel: true
+        mousewheel: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: true
+        }
       },
+      isDarkBg: false,
       slides: {
         s1: {},
         s2: {},
@@ -139,6 +174,15 @@ export default {
         s5: {}
       }
     };
+  },
+  methods: {
+    slideChange() {
+      let slideIndexNumber = this.$refs.swiper.swiper.activeIndex;
+      this.$root.$emit("sliderIndex", slideIndexNumber);
+      this.isDarkBg =
+        slideIndexNumber === 2 || slideIndexNumber === 5 ? true : false;
+      console.log(this.isDarkBg);
+    }
   },
   mounted() {
     let vm = this;

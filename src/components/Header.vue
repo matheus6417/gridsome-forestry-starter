@@ -1,17 +1,13 @@
 <template>
   <header class="header sticky">
-    <nav class="navbar ng-star-inserted">
+    <nav class="navbar">
       <div class="container navbar__container">
-        <a
-          class="navbar__brand ng-trigger ng-trigger-imagePulse"
-          routerlink="/"
-          href="/"
-          style="color: rgb(0, 0, 0); opacity: 1;"
-        >
+        <a class="navbar__brand" routerlink="/" href="/" style="color: rgb(0, 0, 0); opacity: 1;">
           <g-link :to="{ name: 'home' }" class="home-link">
             <svg
               class="navbar__logo-icon"
               xmlns="http://www.w3.org/2000/svg"
+              v-bind:style="{'fill': color}"
               viewBox="0 0 90.47 48.35"
             >
               <defs />
@@ -23,15 +19,15 @@
         </a>
         <div class></div>
         <div class="navbar__list">
-          <g-link class="navbar__link ng-trigger ng-trigger-colorChange" to="/solutions">solutions</g-link>
-          <g-link class="navbar__link ng-trigger ng-trigger-colorChange" to="/services">services</g-link>
-          <g-link class="navbar__link ng-trigger ng-trigger-colorChange" to="/industries">industries</g-link>
-          <g-link class="navbar__link ng-trigger ng-trigger-colorChange" to="/use-cases">use cases</g-link>
-          <g-link class="navbar__link ng-trigger ng-trigger-colorChange" to="/about">about us</g-link>
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/solutions">solutions</g-link>
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/services">services</g-link>
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/industries">industries</g-link>
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/use-cases">use cases</g-link>
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/about">about us</g-link>
         </div>
         <a class="navbar__hamburger">
           <img
-            class="ng-trigger ng-trigger-imagePulse"
+            class
             alt="menu hamburger"
             src="../assets/hamburger.svg"
             style="color: rgb(0, 0, 0); opacity: 1;"
@@ -47,8 +43,15 @@ export default {
   data() {
     return {
       logo: require("../assets/logo.svg"),
-      settings: require("../../data/theme.json")
+      settings: require("../../data/theme.json"),
+      color: "#000000"
     };
+  },
+  created() {
+    this.$root.$on("sliderIndex", index => {
+      this.color = index === 2 || index === 5 ? "#ffffff" : "#000000";
+      console.log(index);
+    });
   }
 };
 </script>
