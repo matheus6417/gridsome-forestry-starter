@@ -81,16 +81,4 @@ export default {};
 .journal-excerpt {
   color: var(--color-contrast-1);
 }
-
-@media (min-width: 560px) {
-  .journal-post {
-    padding: 3rem 0;
-  }
-}
-
-@media (min-width: 860px) {
-  .journal-post {
-    padding: 5rem 0;
-  }
-}
 </style>

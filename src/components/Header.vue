@@ -26,12 +26,17 @@
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/about">about us</g-link>
         </div>
         <a class="navbar__hamburger">
-          <img
-            class
-            alt="menu hamburger"
-            src="../assets/hamburger.svg"
-            style="color: rgb(0, 0, 0); opacity: 1;"
-          />
+          <svg
+            v-bind:style="{'fill': color,'color': color}"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="19"
+            viewBox="0 0 24 19"
+          >
+            <g fill-rule="evenodd">
+              <path d="M0 0h24v3H0zM8 8h16v3H8zM0 16h24v3H0z" />
+            </g>
+          </svg>
         </a>
       </div>
     </nav>
@@ -70,6 +75,9 @@ export default {
   position: absolute;
   z-index: 9999;
 }
+.navbar * {
+  transition: 0;
+}
 .navbar .navbar__container {
   display: flex;
   align-items: center;
@@ -94,7 +102,6 @@ export default {
   background: #000;
   width: 0%;
   display: block;
-  transition: 333ms;
 }
 .navbar .navbar__link:hover:after {
   width: 100%;
@@ -107,28 +114,13 @@ header {
   top: 0;
   z-index: 99;
 }
-@media screen and (max-width: 640px) {
-  .navbar {
-    padding: 16px 0;
-  }
-  .navbar .navbar__list {
-    display: none;
-  }
-  .navbar .navbar__hamburger {
-    display: block;
-  }
-}
 .navbar__brand {
   height: 36px;
   display: flex;
   align-items: center;
 }
-/* .navbar__brand:hover .navbar__logo-icon {
-  transform: rotate(180deg);
-} */
 .navbar__logo-icon {
   width: 100px;
-  transition: 0.5s;
 }
 .navbar__logo-text {
   margin: 0 8px;
