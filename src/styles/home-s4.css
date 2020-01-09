@@ -69,3 +69,54 @@
 .slide4 .inner {
   height: inherit;
 }
+
+
+
+@media screen and (max-width: 640px) {
+
+
+.slide4 .inner {
+  padding: 0 2rem;
+}
+
+.slide4 .container {
+  padding: 0;
+}
+
+.slide4 .slide4__flex {
+  flex-direction: column;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.slide4__left {
+  max-width: 100%;
+}
+
+.slide4__left-text {
+  font-size: 2.4rem;
+}
+
+.slide4 .slide4__paragraph {
+  padding: 0;
+  max-width: 100%;
+  padding-bottom: 1rem!important;
+  font-size: 1.5rem;
+}
+
+.slide4__left-img {
+  position: absolute;
+  opacity: 0.3;
+  width: 200%;
+  margin-top: 5rem;
+  height: auto;
+}
+
+.slide4 .slide4__right {
+  padding-top: 0;
+  margin: 0;
+}
+}

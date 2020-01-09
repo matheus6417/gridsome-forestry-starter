@@ -55,7 +55,6 @@ export default {
   created() {
     this.$root.$on("sliderIndex", index => {
       this.color = index === 2 || index === 5 ? "#ffffff" : "#000000";
-      console.log(index);
     });
   }
 };
@@ -130,5 +129,28 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   word-wrap: break-word;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    padding: 16px 0;
+  }
+  .navbar .navbar__list {
+    display: none;
+  }
+  .navbar .navbar__hamburger {
+    display: block;
+  }
+  .container.navbar__container {
+    padding: 0 2rem;
+}
+svg.navbar__logo-icon {
+    width: 72px!important;
+}
 }
 </style>

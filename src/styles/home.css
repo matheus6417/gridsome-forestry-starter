@@ -68,3 +68,10 @@
     background: transparent;
     border-color:#ffffff
 }
+
+
+@media screen and (max-width: 640px) {
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {display:none}
+   }
+   
+   
