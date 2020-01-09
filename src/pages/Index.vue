@@ -241,8 +241,18 @@
 import { log } from "util";
 export default {
   components: {
-    swiper: () => import("vue-awesome-swiper").then(m => m.swiper),
-    swiperSlide: () => import("vue-awesome-swiper").then(m => m.swiperSlide)
+    swiper: () =>
+      import("vue-awesome-swiper")
+        .then(m => m.swiper)
+        .catch(error => {
+          console.log(error);
+        }),
+    swiperSlide: () =>
+      import("vue-awesome-swiper")
+        .then(m => m.swiperSlide)
+        .catch(error => {
+          console.log(error);
+        })
   },
   data() {
     return {
@@ -271,7 +281,6 @@ export default {
   methods: {
     slideChange() {
       let slideIndexNumber = this.$refs.swiper.swiper.activeIndex;
-      console.log(slideIndexNumber);
 
       this.$root.$emit("sliderIndex", slideIndexNumber);
       this.isDarkBg =
