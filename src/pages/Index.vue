@@ -2,6 +2,7 @@
   <Layout>
     <ClientOnly>
       <span v-bind:class="{'isDarkBg': isDarkBg}">
+        <!-- eslint-disable -->
         <swiper ref="swiper" :options="swiperOption" @slideChange="slideChange">
           <swiper-slide>
             <section class="slide1">
@@ -232,6 +233,7 @@
 
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
+        <!-- eslint-enable -->
       </span>
     </ClientOnly>
   </Layout>
@@ -240,20 +242,6 @@
 <script>
 import { log } from "util";
 export default {
-  components: {
-    swiper: () =>
-      import("vue-awesome-swiper")
-        .then(m => m.swiper)
-        .catch(error => {
-          console.log(error);
-        }),
-    swiperSlide: () =>
-      import("vue-awesome-swiper")
-        .then(m => m.swiperSlide)
-        .catch(error => {
-          console.log(error);
-        })
-  },
   data() {
     return {
       swiperOption: {
@@ -288,6 +276,10 @@ export default {
     }
   },
   mounted() {
+    if (process.browser) {
+      const VueAwesomeSwiper = require("vue-awesome-swiper/dist/ssr");
+      Vue.use(VueAwesomeSwiper);
+    }
     let vm = this;
     this.$page.projects.edges.forEach(function(arrayItem) {
       arrayItem.node.order == 1 ? (vm.slides.s1 = arrayItem.node) : false;
