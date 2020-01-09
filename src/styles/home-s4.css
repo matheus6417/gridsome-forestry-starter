@@ -6,8 +6,23 @@
   display: flex;
   align-items: center;
   position: relative;
+  color: #254379;
 }
-.slide4 .slide4__flex {
+
+.slide4-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.slide4-bg img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}.slide4 .slide4__flex {
   display: grid;
   -webkit-box-pack: justify;
   justify-content: space-between;

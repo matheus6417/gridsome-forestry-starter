@@ -7,7 +7,7 @@
             <svg
               class="navbar__logo-icon"
               xmlns="http://www.w3.org/2000/svg"
-              v-bind:style="{'fill': color}"
+              v-bind:style="{'fill': logoColor}"
               viewBox="0 0 90.47 48.35"
             >
               <defs />
@@ -49,12 +49,37 @@ export default {
     return {
       logo: require("../assets/logo.svg"),
       settings: require("../../data/theme.json"),
-      color: "#000000"
+      color: "#000000",
+      logoColor: "#254379"
     };
   },
   created() {
     this.$root.$on("sliderIndex", index => {
-      this.color = index === 2 || index === 5 ? "#ffffff" : "#000000";
+      switch (index) {
+        case 0:
+          this.color = "#000000";
+          this.logoColor = "#254379";
+          break;
+        case 1:
+          this.color = "#ffffff";
+          this.logoColor = "#ffffff";
+          break;
+        case 2:
+          this.color = "#000000";
+          this.logoColor = "#000000";
+          break;
+        case 3:
+          this.color = "#254379";
+          this.logoColor = "#254379";
+          break;
+        case 4:
+          this.color = "#ffffff";
+          this.logoColor = "#ffffff";
+          break;
+
+        default:
+          break;
+      }
     });
   }
 };
@@ -74,9 +99,7 @@ export default {
   position: absolute;
   z-index: 9999;
 }
-.navbar * {
-  transition: 0;
-}
+
 .navbar .navbar__container {
   display: flex;
   align-items: center;
@@ -91,6 +114,7 @@ export default {
   font-size: 18px;
   line-height: 1.33;
   margin-left: 64px;
+  transition: 300ms;
 }
 .navbar .navbar__link:after {
   content: "";
@@ -101,6 +125,7 @@ export default {
   background: #000;
   width: 0%;
   display: block;
+  transition: 300ms;
 }
 .navbar .navbar__link:hover:after {
   width: 100%;
@@ -131,11 +156,6 @@ header {
   word-wrap: break-word;
 }
 
-
-
-
-
-
 @media screen and (max-width: 640px) {
   .navbar {
     padding: 16px 0;
@@ -148,9 +168,9 @@ header {
   }
   .container.navbar__container {
     padding: 0 2rem;
-}
-svg.navbar__logo-icon {
-    width: 72px!important;
-}
+  }
+  svg.navbar__logo-icon {
+    width: 72px !important;
+  }
 }
 </style>
