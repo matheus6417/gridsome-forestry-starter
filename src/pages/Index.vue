@@ -240,6 +240,14 @@
 <script>
 import { log } from "util";
 export default {
+  components: {
+    swiper: () =>
+      import("vue-awesome-swiper")
+        .then(m => m.swiper)
+    swiperSlide: () =>
+      import("vue-awesome-swiper")
+        .then(m => m.swiperSlide)
+  },
   data() {
     return {
       swiperOption: {
