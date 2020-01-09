@@ -269,13 +269,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-
-@import "../styles/home-s1.css";
-@import "../styles/home-s2.css";
-@import "../styles/home-s3.css";
-@import "../styles/home-s4.css";
-@import "../styles/home-s5.css";
-@import "../styles/home-s6.css";
-</style>

@@ -368,6 +368,8 @@ textarea {
 }
 :root{
     font-size: calc(0.4464285714285714vw + 10.571428571428571px);
+    font-family:  Helvetica, -apple-system, " .SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif ;
+  font-size: 16px;
 
   }
   
@@ -399,8 +401,7 @@ img {
   }
   * {
     box-sizing: border-box;
-    font-family:  Helvetica, -apple-system, " .SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif ;
-  }
+   }
   :focus {
     outline: 0;
   }
@@ -434,7 +435,26 @@ img {
     text-decoration: none;
     cursor: pointer;
   }
-
+  @media (min-width: 640px) {
+    .container {
+      max-width: 375px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1100px) {
+    .container {
+      max-width: 1170px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1170px;
+    }
+  }
 
 html{line-height:1.15;-webkit-text-size-adjust:100%;}
 body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-shadow:1px 1px 1px rgba(0,0,0,.004);-ms-overflow-style:none;}
