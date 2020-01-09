@@ -18,4 +18,6 @@ export default {
 
 <style lang="scss">
 @import "../styles/layout.css";
+
 </style>
+  

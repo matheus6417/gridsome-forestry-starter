@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <span>{{settings}}</span>
+    <span>solutions</span>
   </Layout>
 </template>
 
