@@ -1,4 +1,4 @@
-.solutions-index__footer-title.main-title, .solutions-card__title.main-title{font-size:2.2rem;font-weight:700;line-height:.86}
+.solutions-index__footer-title.main-title, .solutions-card__title.main-title{font-size:2.2rem;font-weight:700;line-height:.86;width: 100%;}
 .solutions-index{padding-bottom:80px;overflow:visible}
 .solutions-index .solutions-index__header-image-wrapper{position:relative;width:100%}
 .solutions-index .solutions-index__header-image{width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;height:539px}
@@ -68,8 +68,7 @@
 .solutions-card{display:flex;height:100%;position:relative;justify-content:flex-end;align-items:center}
 .solutions-card .solutions-card__left{z-index:9999;position:absolute;left:0}
 .solutions-card .solutions-card__image-layer{position:absolute;top:0;bottom:0;right:0;left:0}
-
-.solutions-card .solutions-card__title{color:#000}
+.solutions-card .solutions-card__title{color:#000;margin-bottom: 2rem;line-height: 2.5rem;}
 .solutions-card .solutions-card__white-title{color:#fff}
 .solutions-card .solutions-card__description{font-size:1.8rem;line-height:1.22;color:#000;margin-bottom:5rem;font-weight:400;font-size:22px;font-weight:300;line-height:1.45}
 .solutions-card .solutions-card__description-white{color:#fff}

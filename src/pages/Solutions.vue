@@ -3,10 +3,7 @@
     <span>
       <div class="solutions-index">
         <div class="solutions-index__header-image-wrapper">
-          <img
-            class="solutions-index__header-image"
-            src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114240/featured_illustration_all3D01_1920x539.png"
-          />
+          <img class="solutions-index__header-image" src="../assets/solutions-bg.png" />
           <div class="about__title-flex row">
             <h2 class="main-title">AI-Powered Solutions to Your Business</h2>
             <h3>We create digital solutions to make your business fit for the future</h3>
