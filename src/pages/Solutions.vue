@@ -9,7 +9,7 @@
           />
           <div class="about__title-flex row">
             <h2 class="main-title">AI-Powered Solutions to Your Business</h2>
-            <h3>We create digital solutions to make your fit for the future</h3>
+            <h3>We create digital solutions to make your business fit for the future</h3>
           </div>
         </div>
         <div class="container">
@@ -184,7 +184,15 @@
             <div class="col-lg-6 offset-lg-1">
               <h2 class="solutions-index__footer-title main-title">Firebox AI Features</h2>
             </div>
-          </div>Files Management
+          </div>
+          <!-- <vue-tabs>
+            <v-tab title="First tab">First tab content</v-tab>
+
+            <v-tab title="Second tab">Second tab content</v-tab>
+
+            <v-tab title="Third tab">Third tab content</v-tab>
+          </vue-tabs>-->
+          Files Management
           • Allows users to upload and store all types of documents, images and videos
           Automagically categorization
           • Files document into the appropriate folder in the Repository intelligently.
@@ -220,6 +228,6 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/solutions.css";
 </style>

@@ -1,18 +1,18 @@
 <template>
   <Layout>
-          <ClientOnly>
-           <VueCarousel :swiperOption="swiperOption" :slides="slides"/>
-       </ClientOnly>
+    <ClientOnly>
+      <VueCarousel :swiperOption="swiperOption" :slides="slides" />
+    </ClientOnly>
   </Layout>
 </template>
 
 <script>
 import { log } from "util";
 import Vue from "vue";
-import VueCarousel from '@/components/VueCarousel'
+import VueCarousel from "@/components/VueCarousel";
 
 export default {
-   components: { VueCarousel },
+  components: { VueCarousel },
   data() {
     return {
       swiperOption: {
@@ -36,9 +36,8 @@ export default {
       }
     };
   },
-  
+
   mounted() {
-     
     // if (process.browser) {
     //   const VueAwesomeSwiper = require("vue-awesome-swiper/dist/ssr");
     //   Vue.use(VueAwesomeSwiper);
@@ -54,7 +53,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/home.css";
 @import "../styles/home-s1.css";
 @import "../styles/home-s2.css";
