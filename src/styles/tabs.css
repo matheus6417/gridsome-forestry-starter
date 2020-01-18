@@ -2,6 +2,7 @@
 .tabs__link {
     font-size: 1.5rem;
     color: #7e7e7e;
+    width: 100%;
 }
 .nav .tab {
     height: auto;
@@ -13,7 +14,6 @@
 }
 a.active_tab.tabs__link {color: black;display: flex;align-content: flex-start;transition: all 0.3s;}
 a.active_tab.tabs__link .tab-title:before {content: '';background: #3F51B5;height: 8px;width: 8px;/* position: absolute; */border-radius: 100%;left: 16px;margin-top: 0.5rem;margin-left: 0;margin-right: 0.5rem;}
-.nav .tab:not(.active):after {content: '▶';height: 24px;width: 24px;background: #f5f5f5;/* position: absolute; */display: flex;justify-content: center;align-items: center;color: #8a8a8a;font-size: 0.7rem;}
 ul.nav.nav-pills.nav-stacked {
     width: 48ch;
 }
@@ -27,15 +27,22 @@ ul.nav.nav-pills.nav-stacked {
     position: absolute;
     right: 0;
     top: 0;
-    width: calc(100% - 48ch);
+    width: calc(100% - 46ch);
     bottom: 0;
     display: flex;
+    left: 48ch;
     align-items: center;
     justify-content: center;
-}.active_tab .tab-title {
+}
+.tabs__link .tab-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.active_tab .tab-title {
     padding-bottom: 0.8rem;
     overflow: visible;
-    display: flex;
+    justify-content: flex-start;
 }
 .active_tab .tab-subtitle {
     display: block;
@@ -47,6 +54,7 @@ ul.nav.nav-pills.nav-stacked {
     display: none;
 }.left-vertical-tabs {
     width: 48ch;
+    padding-right: 10px;
 }
 @media screen and (max-width:640px){
 .tab-content.right-text-tabs {
@@ -60,4 +68,30 @@ ul.nav.nav-pills.nav-stacked {
     justify-content: center;
 }
 ul.nav.nav-pills.nav-stacked, .left-vertical-tabs {width: auto;}
+}
+.nav .tab:not(.active) .tab-title .icon {
+    background: red;
+    height: 24px;
+    width: 24px;
+    background: #f5f5f5;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8a8a8a;
+    font-size: 0.7rem;
+}
+.nav .tab.active .tab-title .icon {
+    display: none;
+
+    height: 24px;
+    width: 24px;
+    background: #f5f5f5;
+
+    justify-content: center;
+    align-items: center;
+    color: #8a8a8a;
+    font-size: 0.7rem;
+}.vue-tabs.stacked {
+    width: 100%;
 }

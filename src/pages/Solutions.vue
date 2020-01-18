@@ -56,6 +56,16 @@
                       <div class="filter-button__text">AI Chatbot for HR Claims</div>
                     </button>
                   </div>
+                  <div class="blog-tag solutions-index">
+                    <button
+                      @click="solutionpage = 'custom'"
+                      class="filter-button blog-tag solutions-index"
+                      :class="{'selected':solutionpage === 'claims'}"
+                    >
+                      <span class="placeholder-text">Customized Solutions</span>
+                      <div class="filter-button__text">Customized Solutions</div>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -133,7 +143,10 @@
           <vue-tabs direction="vertical" type="pills">
             <v-tab>
               <span slot="title">
-                <span class="tab-title">Files Management</span>
+                <span class="tab-title">
+                  Files Management
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
                 <span class="tab-subtitle">
                   Allows users to upload and store all types of documents, images and videos
                   The Repository's structure is similar to the windows folder design where users can create folders and many levels of subfolders under it.
@@ -152,7 +165,10 @@
 
             <v-tab>
               <span slot="title">
-                <span class="tab-title">Automagically categorization</span>
+                <span class="tab-title">
+                  Automagically categorization
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
                 <span class="tab-subtitle">
                   Files document into the appropriate folder in the Repository intelligently.
                   Analyses the contents inside your file and automatically organizes and tags them for retrieval purposes
@@ -170,7 +186,10 @@
 
             <v-tab>
               <span slot="title">
-                <span class="tab-title">Documents Content Extration</span>
+                <span class="tab-title">
+                  Documents Content Extration
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
                 <span
                   class="tab-subtitle"
                 >Extracts text from uploaded image and embedded images inside Microsoft Doc and PDF.</span>
@@ -186,7 +205,10 @@
             </v-tab>
             <v-tab>
               <span slot="title">
-                <span class="tab-title">Video Content Extraction</span>
+                <span class="tab-title">
+                  Video Content Extraction
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
                 <span
                   class="tab-subtitle"
                 >Extracts text frame by frame from the uploaded video file. All objects in the video are searchable</span>
@@ -202,7 +224,10 @@
             </v-tab>
             <v-tab>
               <span slot="title">
-                <span class="tab-title">Version Control</span>
+                <span class="tab-title">
+                  Version Control
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
                 <span
                   class="tab-subtitle"
                 >Supports version control. Stores only the differential parts of the changes each time, thereby reduces storage requirements.</span>
@@ -218,7 +243,10 @@
             </v-tab>
             <v-tab>
               <span slot="title">
-                <span class="tab-title">Built-in Reader</span>
+                <span class="tab-title">
+                  Built-in Reader
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
                 <span
                   class="tab-subtitle"
                 >Has a built-in reader to read all kinds of document in its Repository. Can also read all Microsoft document types.</span>
@@ -234,7 +262,11 @@
             </v-tab>
             <v-tab>
               <span slot="title">
-                <span class="tab-title">AI-Powered Security</span>
+                <span class="tab-title">
+                  AI-Powered Security
+                  <v-icon name="chevron-right"></v-icon>
+                </span>
+
                 <span
                   class="tab-subtitle"
                 >Has robust security features to prevent unauthorize access of the document. All users are assigned access rights based on their roles and organization hierarchy.</span>
