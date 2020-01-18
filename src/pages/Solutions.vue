@@ -1,62 +1,64 @@
 <template>
   <Layout>
     <span>
-      <div class="study-index">
-        <div class="study-index__header-image-wrapper">
+      <div class="solutions-index">
+        <div class="solutions-index__header-image-wrapper">
           <img
-            class="study-index__header-image ng-star-inserted"
+            class="solutions-index__header-image ng-star-inserted"
             src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114240/featured_illustration_all3D01_1920x539.png"
           />
           <div class="about__title-flex row">
             <h2 class="main-title">AI-Powered Solutions to Your Business</h2>
             <h3>We create digital solutions to make your fit for the future</h3>
           </div>
-          <div class="study-index__white-box"></div>
+          <div class="solutions-index__white-box"></div>
         </div>
         <div class="container">
           <div class="row">
-            <div class="study-index__header-wrapper">
-              <div class="study-index__header">
-                <div class="study-index__filter-buttons study-index__filter-buttons-smooth-scroll">
-                  <app-filter-button class="blog-tag study-index ng-star-inserted">
+            <div class="solutions-index__header-wrapper">
+              <div class="solutions-index__header">
+                <div
+                  class="solutions-index__filter-buttons solutions-index__filter-buttons-smooth-scroll"
+                >
+                  <div class="blog-tag solutions-index ng-star-inserted">
                     <a
-                      class="filter-button selected blog-tag study-index ng-star-inserted"
+                      class="filter-button selected blog-tag solutions-index ng-star-inserted"
                       href="/work"
                     >
                       <span class="placeholder-text ng-star-inserted">AI Document Management</span>
                       <div class="filter-button__text ng-star-inserted">AI Document Management</div>
                     </a>
-                  </app-filter-button>
-                  <app-filter-button class="blog-tag study-index ng-star-inserted">
+                  </div>
+                  <div class="blog-tag solutions-index ng-star-inserted">
                     <a
-                      class="filter-button blog-tag study-index ng-star-inserted"
+                      class="filter-button blog-tag solutions-index ng-star-inserted"
                       href="/work/financial-services"
                     >
                       <span class="placeholder-text ng-star-inserted">AI Technical Support Chatbot</span>
                       <div class="filter-button__text ng-star-inserted">AI Technical Support Chatbot</div>
                     </a>
-                  </app-filter-button>
-                  <app-filter-button class="blog-tag study-index ng-star-inserted">
+                  </div>
+                  <div class="blog-tag solutions-index ng-star-inserted">
                     <a
-                      class="filter-button blog-tag study-index ng-star-inserted"
+                      class="filter-button blog-tag solutions-index ng-star-inserted"
                       href="/work/healthcare"
                     >
                       <span class="placeholder-text ng-star-inserted">Facial Recognition</span>
                       <div class="filter-button__text ng-star-inserted">Facial Recognition</div>
                     </a>
-                  </app-filter-button>
-                  <app-filter-button class="blog-tag study-index ng-star-inserted">
+                  </div>
+                  <div class="blog-tag solutions-index ng-star-inserted">
                     <a
-                      class="filter-button blog-tag study-index ng-star-inserted"
+                      class="filter-button blog-tag solutions-index ng-star-inserted"
                       href="/work/e-commerce"
                     >
                       <span class="placeholder-text ng-star-inserted">AI Chatbot for HR Claims</span>
                       <div class="filter-button__text ng-star-inserted">AI Chatbot for HR Claims</div>
                     </a>
-                  </app-filter-button>
+                  </div>
                 </div>
-                <h1 class="study-index__title">Firebox AI Document Management</h1>
-                <span class="study-index__description">
+                <h1 class="solutions-index__title">Firebox AI Document Management</h1>
+                <span class="solutions-index__description">
                   The Firebox is a Smart Content Repository that is essentially
                   a Document Management system powered by AI.
                   Firebox uses AI to understand your photos and documents to
@@ -68,23 +70,23 @@
         </div>
 
         <div
-          class="study-index__study-card-wrapper ng-star-inserted"
+          class="solutions-index__solutions-card-wrapper ng-star-inserted"
           style="background-color: rgb(238, 238, 238);"
         >
           <div class="container">
             <div class="row">
-              <app-work-card class="study-index ng-tns-c6-31" _nghost-serverapp-c6>
-                <article class="ng-tns-c6-31 study-card study-index">
-                  <div class="ng-tns-c6-31 study-card__left col-lg-4 offset-lg-1 col-md-6">
+              <app-work-card class="solutions-index ng-tns-c6-31" _nghost-serverapp-c6>
+                <article class="ng-tns-c6-31 solutions-card solutions-index">
+                  <div class="ng-tns-c6-31 solutions-card__left col-lg-4 offset-lg-1 col-md-6">
                     <h2
-                      class="study-card__title main-title ng-trigger ng-trigger-titleAppear"
+                      class="solutions-card__title main-title ng-trigger ng-trigger-titleAppear"
                       style="opacity: 1; transform: translateY(0px);"
                     >
                       The Document Management
                       System (DMS)
                     </h2>
                     <p
-                      class="study-card__description ng-trigger ng-trigger-paragraphAppear"
+                      class="solutions-card__description ng-trigger ng-trigger-paragraphAppear"
                       style="opacity: 1; transform: translateY(0px);"
                     >
                       DMS is often perceived as being expensive and
@@ -162,29 +164,29 @@
                       </app-read-more>
                     </div>
                   </div>
-                  <div class="study-card__right">
+                  <div class="solutions-card__right">
                     <img
-                      class="study-card__mockup-mobile ng-trigger ng-trigger-mainImageFadeOut"
+                      class="solutions-card__mockup-mobile ng-trigger ng-trigger-mainImageFadeOut"
                       src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
                       alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
                       style="transform: translateX(0px); opacity: 1;"
                     />
-                    <div class="study-card__mockup ng-trigger ng-trigger-listAnimation">
+                    <div class="solutions-card__mockup ng-trigger ng-trigger-listAnimation">
                       <img
-                        class="study-card__img-main ng-trigger ng-trigger-mainImageAppear ng-trigger-mainImageFadeOut"
+                        class="solutions-card__img-main ng-trigger ng-trigger-mainImageAppear ng-trigger-mainImageFadeOut"
                         src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/04085532/kodak.png"
                         alt="Kodak Moments Supercharge"
                         style="transform: translateX(0px); opacity: 1;"
                       />
 
                       <img
-                        class="study-card__image-layer ng-trigger ng-trigger-triangle ng-tns-c6-31 ng-star-inserted ng-animating"
+                        class="solutions-card__image-layer ng-trigger ng-trigger-triangle ng-tns-c6-31 ng-star-inserted ng-animating"
                         src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114255/KodakFilmSmall02.png"
                         alt
                         style
                       />
                       <img
-                        class="study-card__image-layer ng-trigger ng-trigger-triangle ng-tns-c6-31 ng-star-inserted ng-animating"
+                        class="solutions-card__image-layer ng-trigger ng-trigger-triangle ng-tns-c6-31 ng-star-inserted ng-animating"
                         src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114255/KodakFilmSmall01.png"
                         alt
                         style
@@ -192,7 +194,7 @@
                     </div>
                   </div>
                   <img
-                    class="study-card__arrow ng-trigger ng-trigger-arrowAppear"
+                    class="solutions-card__arrow ng-trigger ng-trigger-arrowAppear"
                     src="assets/images/icon-header-arrow.svg"
                     style="opacity: 0; transform: translateY(-2rem);"
                   />
@@ -205,7 +207,7 @@
         <div class="container other-projects">
           <div class="row">
             <div class="col-lg-6 offset-lg-1">
-              <h2 class="study-index__footer-title main-title">Firebox AI Features</h2>
+              <h2 class="solutions-index__footer-title main-title">Firebox AI Features</h2>
             </div>
           </div>Files Management
           • Allows users to upload and store all types of documents, images and videos
