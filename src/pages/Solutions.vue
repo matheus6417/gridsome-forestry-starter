@@ -4,14 +4,13 @@
       <div class="solutions-index">
         <div class="solutions-index__header-image-wrapper">
           <img
-            class="solutions-index__header-image ng-star-inserted"
+            class="solutions-index__header-image"
             src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114240/featured_illustration_all3D01_1920x539.png"
           />
           <div class="about__title-flex row">
             <h2 class="main-title">AI-Powered Solutions to Your Business</h2>
             <h3>We create digital solutions to make your fit for the future</h3>
           </div>
-          <div class="solutions-index__white-box"></div>
         </div>
         <div class="container">
           <div class="row">
@@ -20,41 +19,29 @@
                 <div
                   class="solutions-index__filter-buttons solutions-index__filter-buttons-smooth-scroll"
                 >
-                  <div class="blog-tag solutions-index ng-star-inserted">
-                    <a
-                      class="filter-button selected blog-tag solutions-index ng-star-inserted"
-                      href="/work"
-                    >
-                      <span class="placeholder-text ng-star-inserted">AI Document Management</span>
-                      <div class="filter-button__text ng-star-inserted">AI Document Management</div>
-                    </a>
+                  <div class="blog-tag solutions-index">
+                    <button class="filter-button selected blog-tag solutions-index">
+                      <span class="placeholder-text">AI Document Management</span>
+                      <div class="filter-button__text">AI Document Management</div>
+                    </button>
                   </div>
-                  <div class="blog-tag solutions-index ng-star-inserted">
-                    <a
-                      class="filter-button blog-tag solutions-index ng-star-inserted"
-                      href="/work/financial-services"
-                    >
-                      <span class="placeholder-text ng-star-inserted">AI Technical Support Chatbot</span>
-                      <div class="filter-button__text ng-star-inserted">AI Technical Support Chatbot</div>
-                    </a>
+                  <div class="blog-tag solutions-index">
+                    <button class="filter-button blog-tag solutions-index">
+                      <span class="placeholder-text">AI Technical Support Chatbot</span>
+                      <div class="filter-button__text">AI Technical Support Chatbot</div>
+                    </button>
                   </div>
-                  <div class="blog-tag solutions-index ng-star-inserted">
-                    <a
-                      class="filter-button blog-tag solutions-index ng-star-inserted"
-                      href="/work/healthcare"
-                    >
-                      <span class="placeholder-text ng-star-inserted">Facial Recognition</span>
-                      <div class="filter-button__text ng-star-inserted">Facial Recognition</div>
-                    </a>
+                  <div class="blog-tag solutions-index">
+                    <button class="filter-button blog-tag solutions-index">
+                      <span class="placeholder-text">Facial Recognition</span>
+                      <div class="filter-button__text">Facial Recognition</div>
+                    </button>
                   </div>
-                  <div class="blog-tag solutions-index ng-star-inserted">
-                    <a
-                      class="filter-button blog-tag solutions-index ng-star-inserted"
-                      href="/work/e-commerce"
-                    >
-                      <span class="placeholder-text ng-star-inserted">AI Chatbot for HR Claims</span>
-                      <div class="filter-button__text ng-star-inserted">AI Chatbot for HR Claims</div>
-                    </a>
+                  <div class="blog-tag solutions-index">
+                    <button class="filter-button blog-tag solutions-index">
+                      <span class="placeholder-text">AI Chatbot for HR Claims</span>
+                      <div class="filter-button__text">AI Chatbot for HR Claims</div>
+                    </button>
                   </div>
                 </div>
                 <h1 class="solutions-index__title">Firebox AI Document Management</h1>
@@ -70,23 +57,23 @@
         </div>
 
         <div
-          class="solutions-index__solutions-card-wrapper ng-star-inserted"
+          class="solutions-index__solutions-card-wrapper"
           style="background-color: rgb(238, 238, 238);"
         >
           <div class="container">
             <div class="row">
-              <app-work-card class="solutions-index ng-tns-c6-31" _nghost-serverapp-c6>
-                <article class="ng-tns-c6-31 solutions-card solutions-index">
-                  <div class="ng-tns-c6-31 solutions-card__left col-lg-4 offset-lg-1 col-md-6">
+              <app-work-card class="solutions-index" _nghost-serverapp-c6>
+                <article class="solutions-card solutions-index">
+                  <div class="solutions-card__left col-lg-6 offset-lg-1 col-md-6">
                     <h2
-                      class="solutions-card__title main-title ng-trigger ng-trigger-titleAppear"
+                      class="solutions-card__title main-title"
                       style="opacity: 1; transform: translateY(0px);"
                     >
                       The Document Management
                       System (DMS)
                     </h2>
                     <p
-                      class="solutions-card__description ng-trigger ng-trigger-paragraphAppear"
+                      class="solutions-card__description"
                       style="opacity: 1; transform: translateY(0px);"
                     >
                       DMS is often perceived as being expensive and
@@ -102,29 +89,23 @@
                       model. It could be a hosting model that helps
                       eliminates the upfront investment cost.
                     </p>
-                    <div class="ng-tns-c6-31">
-                      <app-read-more
-                        _nghost-serverapp-c9
-                        class="ng-tns-c9-34 ng-tns-c6-31 ng-star-inserted"
-                      >
-                        <a
-                          class="ng-tns-c9-34 read-more undefined ng-star-inserted"
-                          href="/work/details/kodak-moments"
-                        >
-                          <div class="read-more__image ng-tns-c9-34 ng-star-inserted">
+                    <div class>
+                      <app-read-more _nghost-serverapp-c9 class>
+                        <a class="read-more undefined" href="/work/details/kodak-moments">
+                          <div class="read-more__image">
                             <img
-                              class="read-more__arrow ng-trigger ng-trigger-enlarge"
+                              class="read-more__arrow"
                               alt="arrow"
                               src="assets/images/icon-arrow-transparent-right.svg"
                               style
                             />
                             <div
-                              class="read-more__border ng-trigger ng-trigger-drawBorder"
+                              class="read-more__border"
                               style="background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;"
                             ></div>
                           </div>
                           <div
-                            class="read-more__text ng-trigger ng-trigger-textAnimation ng-star-inserted"
+                            class="read-more__text"
                             style="transform: translateX(0px); opacity: 1;"
                           >
                             <p class="read-more__line">read the</p>
@@ -133,28 +114,22 @@
                         </a>
                       </app-read-more>
 
-                      <app-read-more
-                        _nghost-serverapp-c9
-                        class="ng-tns-c9-35 ng-tns-c6-31 ng-star-inserted"
-                      >
-                        <a
-                          class="ng-tns-c9-35 read-more undefined ng-star-inserted"
-                          href="/work/details/kodak-moments"
-                        >
-                          <div class="read-more__image ng-tns-c9-35 ng-star-inserted">
+                      <app-read-more _nghost-serverapp-c9 class>
+                        <a class="read-more undefined" href="/work/details/kodak-moments">
+                          <div class="read-more__image">
                             <img
-                              class="read-more__arrow ng-trigger ng-trigger-enlarge"
+                              class="read-more__arrow"
                               alt="arrow"
                               src="assets/images/icon-arrow-transparent-right.svg"
                               style
                             />
                             <div
-                              class="read-more__border ng-trigger ng-trigger-drawBorder"
+                              class="read-more__border"
                               style="background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;"
                             ></div>
                           </div>
                           <div
-                            class="read-more__text ng-trigger ng-trigger-textAnimation ng-star-inserted"
+                            class="read-more__text"
                             style="transform: translateX(0px); opacity: 1;"
                           >
                             <p class="read-more__line">read</p>
@@ -166,27 +141,27 @@
                   </div>
                   <div class="solutions-card__right">
                     <img
-                      class="solutions-card__mockup-mobile ng-trigger ng-trigger-mainImageFadeOut"
+                      class="solutions-card__mockup-mobile"
                       src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
                       alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
                       style="transform: translateX(0px); opacity: 1;"
                     />
-                    <div class="solutions-card__mockup ng-trigger ng-trigger-listAnimation">
+                    <div class="solutions-card__mockup">
                       <img
-                        class="solutions-card__img-main ng-trigger ng-trigger-mainImageAppear ng-trigger-mainImageFadeOut"
+                        class="solutions-card__img-main"
                         src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/04085532/kodak.png"
                         alt="Kodak Moments Supercharge"
                         style="transform: translateX(0px); opacity: 1;"
                       />
 
                       <img
-                        class="solutions-card__image-layer ng-trigger ng-trigger-triangle ng-tns-c6-31 ng-star-inserted ng-animating"
+                        class="solutions-card__image-layer"
                         src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114255/KodakFilmSmall02.png"
                         alt
                         style
                       />
                       <img
-                        class="solutions-card__image-layer ng-trigger ng-trigger-triangle ng-tns-c6-31 ng-star-inserted ng-animating"
+                        class="solutions-card__image-layer"
                         src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114255/KodakFilmSmall01.png"
                         alt
                         style
@@ -194,7 +169,7 @@
                     </div>
                   </div>
                   <img
-                    class="solutions-card__arrow ng-trigger ng-trigger-arrowAppear"
+                    class="solutions-card__arrow"
                     src="assets/images/icon-header-arrow.svg"
                     style="opacity: 0; transform: translateY(-2rem);"
                   />

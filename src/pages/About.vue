@@ -20,8 +20,8 @@
       </div>
       <div class="about__body">
         <div class="container">
-          <app-composer _nghost-serverapp-c13 class="ng-star-inserted">
-            <app-block-type-seven _ngcontent-serverapp-c13 class="ng-star-inserted">
+          <app-composer _nghost-serverapp-c13 class>
+            <app-block-type-seven _ngcontent-serverapp-c13 class>
               <div class="container block-type-seven">
                 <div class="row">
                   <h3 class="col-lg-7 offset-lg-2 col-md-7 offset-md-2 block-type-seven__title"></h3>
@@ -39,8 +39,8 @@
               </div>
             </app-block-type-seven>
           </app-composer>
-          <app-composer _nghost-serverapp-c13 class="ng-star-inserted">
-            <app-block-type-zero _ngcontent-serverapp-c13 class="ng-star-inserted">
+          <app-composer _nghost-serverapp-c13 class>
+            <app-block-type-zero _ngcontent-serverapp-c13 class>
               <div class="container block-type-zero">
                 <div class="row">
                   <div class="col-lg-7 offset-lg-3 col-md-8 offset-md-2">
@@ -52,12 +52,8 @@
               </div>
             </app-block-type-zero>
           </app-composer>
-          <app-composer _nghost-serverapp-c13 class="ng-star-inserted">
-            <app-block-type-one
-              _ngcontent-serverapp-c13
-              _nghost-serverapp-c15
-              class="ng-star-inserted"
-            >
+          <app-composer _nghost-serverapp-c13 class>
+            <app-block-type-one _ngcontent-serverapp-c13 _nghost-serverapp-c15 class>
               <div _ngcontent-serverapp-c15 class="container block-type-one__wrapper caption-right">
                 <div _ngcontent-serverapp-c15 class="row">
                   <div
@@ -86,17 +82,13 @@
         </div>
       </div>
     </div>
-    <main _ngcontent-serverapp-c10 class="ng-star-inserted">
+    <main _ngcontent-serverapp-c10 class>
       <div _ngcontent-serverapp-c10 class="contact container">
         <div _ngcontent-serverapp-c10 class="row">
           <div _ngcontent-serverapp-c10 class="col-lg-10 offset-lg-1 col-md-12">
             <h1 _ngcontent-serverapp-c10 class="contact__title main-title">Contact Us</h1>
 
-            <form
-              _ngcontent-serverapp-c10
-              class="contact__form ng-untouched ng-pristine ng-invalid"
-              novalidate
-            >
+            <form _ngcontent-serverapp-c10 class="contact__form" novalidate>
               <div _ngcontent-serverapp-c10 class="contact__form-title-wrapper">
                 <h4
                   _ngcontent-serverapp-c10
@@ -117,7 +109,7 @@
                     formcontrolname="name"
                     placeholder="Name"
                     type="text"
-                    class="input-field ng-untouched ng-pristine ng-invalid"
+                    class="input-field"
                     style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"
                   />
                 </div>
@@ -128,7 +120,7 @@
                     formcontrolname="email"
                     placeholder="Email"
                     type="text"
-                    class="input-field ng-untouched ng-pristine ng-invalid"
+                    class="input-field"
                   />
                 </div>
               </div>
@@ -137,7 +129,7 @@
                   <div _ngcontent-serverapp-c10 class="input-label"></div>
                   <input
                     _ngcontent-serverapp-c10
-                    class="input-field ng-untouched ng-pristine ng-valid"
+                    class="input-field"
                     formcontrolname="company"
                     placeholder="Company (optional)"
                     type="text"
@@ -147,7 +139,7 @@
                   <div _ngcontent-serverapp-c10 class="input-label"></div>
                   <input
                     _ngcontent-serverapp-c10
-                    class="input-field ng-untouched ng-pristine ng-valid"
+                    class="input-field"
                     formcontrolname="phone"
                     placeholder="Phone (optional)"
                     type="text"
@@ -159,7 +151,7 @@
                   <div _ngcontent-serverapp-c10 class="input-label"></div>
                   <select
                     _ngcontent-serverapp-c10
-                    class="input-field select-field ng-untouched ng-pristine ng-valid"
+                    class="input-field select-field"
                     formcontrolname="heardFrom"
                   >
                     <option
@@ -173,20 +165,12 @@
                     <option
                       _ngcontent-serverapp-c10
                       value="Personal Recommendation"
-                      class="ng-star-inserted"
+                      class
                     >Personal Recommendation</option>
-                    <option
-                      _ngcontent-serverapp-c10
-                      value="Search Engine"
-                      class="ng-star-inserted"
-                    >Search Engine</option>
-                    <option
-                      _ngcontent-serverapp-c10
-                      value="Social Media"
-                      class="ng-star-inserted"
-                    >Social Media</option>
-                    <option _ngcontent-serverapp-c10 value="Event" class="ng-star-inserted">Event</option>
-                    <option _ngcontent-serverapp-c10 value="Other" class="ng-star-inserted">Other</option>
+                    <option _ngcontent-serverapp-c10 value="Search Engine" class>Search Engine</option>
+                    <option _ngcontent-serverapp-c10 value="Social Media" class>Social Media</option>
+                    <option _ngcontent-serverapp-c10 value="Event" class>Event</option>
+                    <option _ngcontent-serverapp-c10 value="Other" class>Other</option>
                   </select>
                 </div>
               </div>
@@ -197,30 +181,26 @@
                   formcontrolname="message"
                   placeholder="How can we be at your service?"
                   type="text"
-                  class="input-field ng-untouched ng-pristine ng-invalid"
+                  class="input-field"
                 />
               </div>
               <div _ngcontent-serverapp-c10 class="contact__button-wrapper">
                 <button _ngcontent-serverapp-c10 class="contact__button" type="submit" disabled>
-                  <app-read-more
-                    _ngcontent-serverapp-c10
-                    class="medium ng-tns-c9-13"
-                    _nghost-serverapp-c9
-                  >
-                    <div class="ng-tns-c9-13 read-more medium ng-star-inserted">
-                      <div class="read-more__image ng-tns-c9-13 ng-star-inserted">
+                  <app-read-more _ngcontent-serverapp-c10 class="medium" _nghost-serverapp-c9>
+                    <div class="read-more medium">
+                      <div class="read-more__image">
                         <img
-                          class="read-more__arrow ng-trigger ng-trigger-enlarge"
+                          class="read-more__arrow -enlarge"
                           alt="arrow"
                           src="assets/images/icon-arrow-transparent-right.svg"
                         />
                         <div
-                          class="read-more__border ng-trigger ng-trigger-drawBorder"
+                          class="read-more__border -drawBorder"
                           style="background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;"
                         ></div>
                       </div>
                       <div
-                        class="read-more__text ng-trigger ng-trigger-textAnimation ng-star-inserted"
+                        class="read-more__text -textAnimation"
                         style="transform: translateX(0px); opacity: 1;"
                       >
                         <p class="read-more__line">Send</p>
@@ -230,12 +210,7 @@
                   </app-read-more>
                 </button>
                 <label _ngcontent-serverapp-c10 class="contact__inquiry">
-                  <input
-                    _ngcontent-serverapp-c10
-                    formcontrolname="sendCopy"
-                    type="checkbox"
-                    class="ng-untouched ng-pristine ng-valid"
-                  />
+                  <input _ngcontent-serverapp-c10 formcontrolname="sendCopy" type="checkbox" class />
                   <div _ngcontent-serverapp-c10 class="checkbox-image"></div>Send me a copy of my inquiry
                 </label>
               </div>
@@ -264,7 +239,7 @@
               <h2 _ngcontent-serverapp-c10 class="contact-bottom__title">You can find us here</h2>
               <div _ngcontent-serverapp-c10 class="contact-bottom__cities-flex row">
                 <div _ngcontent-serverapp-c10 class="contact-bottom__city-wrapper">
-                  <app-lottie _ngcontent-serverapp-c10 class="yes ng-star-inserted">
+                  <app-lottie _ngcontent-serverapp-c10 class="yes">
                     <div class style="overflow: hidden; margin: 0px auto;">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -371,7 +346,7 @@
                   </div>
                 </div>
                 <div _ngcontent-serverapp-c10 class="contact-bottom__city-wrapper">
-                  <app-lottie _ngcontent-serverapp-c10 class="ng-star-inserted">
+                  <app-lottie _ngcontent-serverapp-c10 class>
                     <div class style="overflow: hidden; margin: 0px auto;">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

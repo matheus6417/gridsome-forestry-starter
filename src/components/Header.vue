@@ -37,11 +37,7 @@
         </a>
       </div>
     </nav>
-    <div
-      v-if="showMobileMenu"
-      _ngcontent-serverapp-c2
-      class="navigation-mobile ng-tns-c2-1 ng-star-inserted"
-    >
+    <div v-if="showMobileMenu" _ngcontent-serverapp-c2 class="navigation-mobile">
       <div _ngcontent-serverapp-c2 class="navigation-mobile__header">
         <a
           _ngcontent-serverapp-c2
@@ -79,7 +75,7 @@
       <div _ngcontent-serverapp-c2 class="navigation-mobile__list">
         <a
           _ngcontent-serverapp-c2
-          class="ng-tns-c2-1 navigation-mobile__link"
+          class="navigation-mobile__link"
           ngclass="navigation-mobile__link"
           routerlink="/about"
           routerlinkactive="current"
@@ -87,7 +83,7 @@
         >about</a>
         <a
           _ngcontent-serverapp-c2
-          class="ng-tns-c2-1 navigation-mobile__link"
+          class="navigation-mobile__link"
           ngclass="navigation-mobile__link"
           routerlink="/work"
           routerlinkactive="current"
@@ -95,7 +91,7 @@
         >work</a>
         <a
           _ngcontent-serverapp-c2
-          class="ng-tns-c2-1 navigation-mobile__link"
+          class="navigation-mobile__link"
           ngclass="navigation-mobile__link"
           routerlink="/jobs"
           routerlinkactive="current"
@@ -103,7 +99,7 @@
         >jobs</a>
         <a
           _ngcontent-serverapp-c2
-          class="ng-tns-c2-1 navigation-mobile__link"
+          class="navigation-mobile__link"
           ngclass="navigation-mobile__link"
           routerlink="/blog"
           routerlinkactive="current"
@@ -111,7 +107,7 @@
         >blog</a>
         <a
           _ngcontent-serverapp-c2
-          class="ng-tns-c2-1 navigation-mobile__link current"
+          class="navigation-mobile__link current"
           ngclass="navigation-mobile__link"
           routerlink="/contact"
           routerlinkactive="current"

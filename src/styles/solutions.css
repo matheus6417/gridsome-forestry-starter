@@ -42,11 +42,11 @@ p{font-size:18px;line-height:1.44}
 .solutions-index .solutions-index__header-image-wrapper{position:relative;width:100%}
 .solutions-index .solutions-index__header-image{width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;height:539px}
 .solutions-index .solutions-index__white-box{position:absolute;bottom:0;left:0;width:calc((100vw - 1170px)/ 2);background-color:#fff;height:151px}
-.solutions-index .solutions-index__header-wrapper{background-color:#fff;margin-top:-151px}
-.solutions-index .solutions-index__header{padding:40px 82px}
-.solutions-index .solutions-index__title{font-size:48px;font-weight:600;line-height:1.04;margin:0 0 16px}
+.solutions-index .solutions-index__header-wrapper{background-color:#fff;/* margin-top:-151px */}
+.solutions-index .solutions-index__header{padding: 40px 0;}
+.solutions-index .solutions-index__title{font-size: 2rem;font-weight: 800;line-height:1.04;margin:0 0 16px;}
 .solutions-index .solutions-index__description{font-size:22px;font-weight:300;line-height:1.45}
-.solutions-index .solutions-index__filter-buttons{display:flex;margin:8px 0 40px}
+.solutions-index .solutions-index__filter-buttons{display:flex;/* margin:8px 0 40px */}
 .solutions-index .solutions-index__solutions-card-wrapper{height:800px;display:flex;align-items:center}
 .solutions-index app-work-card{width:100%;margin-right:97.5px}
 .solutions-index .solutions-index__footer-title{margin:80px 0 64px}
@@ -84,7 +84,7 @@ p{font-size:18px;line-height:1.44}
 .solutions-index .solutions-small-card-wrapper:last-child{border-bottom:none}
 .solutions-index .other-projects__card-wrapper{padding:0}
 }
-.filter-button{display:block;width:175px;height: 0;border:1px solid #000;position:relative;}
+.filter-button{display:block;width:175px;height: 0;border:1px solid #000;position:relative;background: none;}
 .filter-button.blog-tag{width: 220px;}
 .filter-button .placeholder-text{font-size:20px;opacity:0;padding:8px 15px;line-height: 1rem;}
 .filter-button .filter-button__text{position:absolute;top:0;bottom:0;right:0;left:0;font-size:20px;font-weight:600;letter-spacing:.02px;line-height: 2rem;text-align:center;display: flex;justify-content: center;align-items: center;}
