@@ -185,14 +185,13 @@
               <h2 class="solutions-index__footer-title main-title">Firebox AI Features</h2>
             </div>
           </div>
-          <!-- <vue-tabs>
+          <vue-tabs>
             <v-tab title="First tab">First tab content</v-tab>
 
             <v-tab title="Second tab">Second tab content</v-tab>
 
             <v-tab title="Third tab">Third tab content</v-tab>
-          </vue-tabs>-->
-          Files Management
+          </vue-tabs>Files Management
           • Allows users to upload and store all types of documents, images and videos
           Automagically categorization
           • Files document into the appropriate folder in the Repository intelligently.
