@@ -1,5 +1,5 @@
 .solutions-index__footer-title.main-title, .solutions-card__title.main-title{font-size:2.2rem;font-weight:700;line-height:.86;width: 100%;}
-.solutions-index{padding-bottom:80px;overflow:visible}
+.solutions-index{padding-bottom:80px;overflow:visible;}
 .solutions-index .solutions-index__header-image-wrapper{position:relative;width:100%}
 .solutions-index .solutions-index__header-image{width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;height:539px}
 .solutions-index .solutions-index__white-box{position:absolute;bottom:0;left:0;width:calc((100vw - 1170px)/ 2);background-color:#fff;height:151px}
@@ -9,7 +9,7 @@
 .solutions-index .solutions-index__description{font-size:22px;font-weight:300;line-height:1.45}
 .solutions-index .solutions-index__filter-buttons{display:flex}
 .solutions-index .solutions-index__solutions-card-wrapper{height:800px;display:flex;align-items:center}
-.solutions-index .app-work-card{width:100%;margin-right:97.5px;}
+.solutions-index .app-work-card{width:100%;/* margin-right:97.5px; */}
 .solutions-index .solutions-index__footer-title{margin:80px 0 64px;text-align: center;}
 .solutions-index .solutions-small-card-wrapper{border-right:1px solid #000;border-bottom:1px solid #000;padding:94px 17.5px}
 .solutions-index .solutions-small-card-wrapper:nth-child(3n){border-right:none}
@@ -18,11 +18,11 @@
 .solutions-index .solutions-index__solutions-card-wrapper{height:640px}
 .solutions-index .solutions-index__header-image{height:376px}
 .solutions-index .solutions-index__white-box{height:116px}
-.solutions-index .solutions-index__header-wrapper{margin-top:-116px}
+.solutions-index .solutions-index__header-wrapper{/* margin-top:-116px */}
 .solutions-index .solutions-index__footer-title{padding-left:38px}
 .solutions-index .solutions-index__title{font-size:34px;margin-bottom:12px}
-.solutions-index .solutions-index__header{padding-top:32px;padding-left:38px}
-.solutions-index .solutions-index__filter-buttons{display:flex}
+.solutions-index .solutions-index__header{/* padding-top:32px; *//* padding-left:38px; */}
+.solutions-index .solutions-index__filter-buttons{display:flex;}
 .solutions-index .other-projects__card-wrapper{margin:0;padding:15px}
 .solutions-index .solutions-small-card-wrapper:nth-child(3n){border-right:1px solid #000}
 .solutions-index .solutions-small-card-wrapper:nth-child(2n){border-right:none}
@@ -30,7 +30,7 @@
 .solutions-index .solutions-small-card-wrapper:nth-child(5){border-bottom:none}
 }
 @media screen and (max-width:640px){
-.solutions-index{padding-bottom:0}
+.solutions-index{padding-bottom:0;/* overflow: auto; */}
 .solutions-index .solutions-index__header-image{height:203px}
 .solutions-index .solutions-index__header-wrapper{margin-top:0}
 .solutions-index .solutions-index__header{padding:15px 0 36px}
@@ -53,10 +53,10 @@
 .filter-button:hover{cursor:pointer}
 .filter-button:hover .filter-button__text{background-color:#000;color:#fff;top:-8px;left:-8px;right:8px;bottom:8px;line-height:2rem;display:flex;justify-content:center;align-items:center}
 @media screen and (max-width:640px){
-.filter-button.solutions-index{border:none;width:auto;white-space:nowrap;margin:0 22px}
+.filter-button.solutions-index{border:none;width:auto;white-space:nowrap;margin:0 22px;}
 .filter-button.solutions-index .placeholder-text{display:none;font-size:20px}
 .filter-button.solutions-index .filter-button__text{position:initial;font-size:20px}
-.filter-button.solutions-index.selected .filter-button__text{background-color:transparent;color:#000;border-bottom:2px solid #000}
+.filter-button.solutions-index.selected .filter-button__text{/* background-color:transparent; *//* color:#000; */border-bottom:2px solid #000;padding: 4px;}
 .filter-button.solutions-index:hover{cursor:pointer}
 .filter-button.solutions-index:hover .filter-button__text{background-color:transparent;color:#000;border-bottom:2px solid #000}
 .filter-button .placeholder-text{font-size:15px;padding:11px 12px}
@@ -116,3 +116,4 @@
     display: flex;
     margin: 3rem auto 8rem;
 }
+

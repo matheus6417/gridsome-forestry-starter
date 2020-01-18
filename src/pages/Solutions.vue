@@ -57,23 +57,29 @@
                     </button>
                   </div>
                 </div>
-                <span v-if="solutionpage === 'docs'">
-                  <h1 class="solutions-index__title">Firebox AI Document Management</h1>
-                  <span class="solutions-index__description">
-                    The Firebox is a Smart Content Repository that is essentially
-                    a Document Management system powered by AI.
-                    Firebox uses AI to understand your photos and documents to
-                    help you better categorize, search and protect your files.
-                  </span>
-                </span>
               </div>
+            </div>
+          </div>
+        </div>
+        <div first-description v-if="solutionpage === 'docs'">
+          <div class="container mb-5 mt-n5">
+            <div class="row">
+              <span class="container">
+                <h1 class="solutions-index__title">Firebox AI Document Management</h1>
+                <span class="solutions-index__description">
+                  The Firebox is a Smart Content Repository that is essentially
+                  a Document Management system powered by AI.
+                  Firebox uses AI to understand your photos and documents to
+                  help you better categorize, search and protect your files.
+                </span>
+              </span>
             </div>
           </div>
         </div>
 
         <div
           v-if="solutionpage === 'docs'"
-          first-content
+          first-session
           class="solutions-index__solutions-card-wrapper"
           style="background-color: rgb(238, 238, 238);"
         >
