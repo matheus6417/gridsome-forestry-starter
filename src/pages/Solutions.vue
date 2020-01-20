@@ -66,6 +66,26 @@
                       <div class="filter-button__text">Customized Solutions</div>
                     </button>
                   </div>
+                  <div class="blog-tag solutions-index">
+                    <button
+                      @click="solutionpage = 'rapid'"
+                      class="filter-button blog-tag solutions-index"
+                      :class="{'selected':solutionpage === 'rapid'}"
+                    >
+                      <span class="placeholder-text">Rapid Application Development</span>
+                      <div class="filter-button__text">Rapid Application Development</div>
+                    </button>
+                  </div>
+                  <div class="blog-tag solutions-index">
+                    <button
+                      @click="solutionpage = 'modern'"
+                      class="filter-button blog-tag solutions-index"
+                      :class="{'selected':solutionpage === 'modern'}"
+                    >
+                      <span class="placeholder-text">Application Modernization</span>
+                      <div class="filter-button__text">Application Modernization</div>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -76,14 +96,26 @@
           <div first-description>
             <div class="container mb-5 mt-n5">
               <div class="row">
-                <span class="container">
-                  <h1 class="solutions-index__title">Firebox AI Document Management</h1>
-                  <span class="solutions-index__description">
-                    The Firebox is a Smart Content Repository that is essentially
-                    a Document Management system powered by AI.
-                    Firebox uses AI to understand your photos and documents to
-                    help you better categorize, search and protect your files.
-                  </span>
+                <span class="container row">
+                  <div class="col-lg-9 col-md-12">
+                    <h1 class="solutions-index__title">Firebox AI Document Management</h1>
+                    <span class="solutions-index__description">
+                      The Firebox is a Smart Content Repository that is essentially
+                      a Document Management system powered by AI.
+                      Firebox uses AI to understand your photos and documents to
+                      help you better categorize, search and protect your files.
+                    </span>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6">
+                    <div class="flex-centered">
+                      <img
+                        class="solutions-card__mockup"
+                        src="../assets/solutions/docs/fireboxlogo.svg"
+                        style="transform: translateX(0px); opacity: 1;"
+                      />
+                    </div>
+                  </div>
                 </span>
               </div>
             </div>
@@ -91,18 +123,17 @@
 
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper"
+            class="solutions-index__solutions-card-wrapper docsbg1"
             style="background-color: rgb(238, 238, 238);"
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
-                    <div class="solutions-card__left col-lg-6 col-md-6">
+                <div class="app-work-card">
+                  <article class="solutions-card">
+                    <div class="solutions-card__left col-lg-5 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/docs/banner-img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -123,7 +154,8 @@
                         understand the necessity and importance of such
                         a system, it is the price and total-cost-of-ownership
                         (TCO) that is difficult for them to justify.
-                        That was in the past. Today, thanks to the
+                        <br />
+                        <br />That was in the past. Today, thanks to the
                         advancement in AI technology, DMS has
                         become more powerful and yet affordable.
                         Most importantly, AI-powered DMS may not
@@ -156,9 +188,8 @@
 
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-files.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -177,9 +208,8 @@
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-f1.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -197,9 +227,8 @@
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-videoex.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -216,9 +245,8 @@
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-f2.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -235,9 +263,8 @@
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-version.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -254,9 +281,8 @@
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-reader.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -274,9 +300,8 @@
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    class="solutions-card__features-img shadow"
+                    src="../assets/solutions/docs/docs-security.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -305,13 +330,12 @@
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
+                <div class="app-work-card">
+                  <article class="solutions-card">
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/support/ai-chatbot.svg"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -323,7 +347,11 @@
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Repetitive manual tasks that could be automated can now be performed by Chatbots. AI-powered Chatbots are also changing the mindset of all business owners in which they can perform a deeper analysis of problems through the interaction with human beings. Most importantly, Chatbots never sleep. They can perform 24 by 7, whole year-round, and produce a consistent result. There is always a tendency for a tired human being to make mistakes once a while, but AI Chatbots don’t. They can answer customers’ inquiries cheaply, quickly, in real-time.</p>
+                      >
+                        Repetitive manual tasks that could be automated can now be performed by Chatbots. AI-powered Chatbots are also changing the mindset of all business owners in which they can perform a deeper analysis of problems through the interaction with human beings.
+                        <br />
+                        <br />Most importantly, Chatbots never sleep. They can perform 24 by 7, whole year-round, and produce a consistent result. There is always a tendency for a tired human being to make mistakes once a while, but AI Chatbots don’t. They can answer customers’ inquiries cheaply, quickly, in real-time.
+                      </p>
                     </div>
                   </article>
                 </div>
@@ -337,8 +365,8 @@
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
+                <div class="app-work-card">
+                  <article class="solutions-card">
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <h2
                         class="solutions-card__title main-title"
@@ -348,15 +376,16 @@
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Our AI chatbot can integrate into any commercial Helpdesk systems like FreshService, ZenDesk, ServiceDesk, etc., We can also integrate with any CRM applications or SAP to utilize the Customer information.
+                        Our AI chatbot can integrate into any commercial Helpdesk systems like FreshService, ZenDesk, ServiceDesk, etc.,
+                        <br />
+                        <br />We can also integrate with any CRM applications or SAP to utilize the Customer information.
                         For clients who do not have a HelpDesk system, we have our AI Technical Support Solution that can integrate with Avaya and Cisco Contact.
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/support/chatbot-integration.svg"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -371,17 +400,6 @@
           <div features-content class="container other-projects">
             <vue-tabs direction="vertical" type="pills">
               <v-tab>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-
-              <v-tab>
                 <span slot="title">
                   <span class="tab-title">
                     Embedable Chatbot
@@ -394,8 +412,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f1.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -414,8 +431,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f2.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -433,8 +449,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f3.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -452,8 +467,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f4.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -471,8 +485,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f5.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -491,8 +504,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f6.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -511,8 +523,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/support/f7.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -541,8 +552,8 @@
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
+                <div class="app-work-card">
+                  <article class="solutions-card">
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
@@ -573,8 +584,8 @@
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
+                <div class="app-work-card">
+                  <article class="solutions-card">
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <h2
                         class="solutions-card__title main-title"
@@ -704,8 +715,8 @@
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
+                <div class="app-work-card">
+                  <article class="solutions-card">
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
@@ -820,8 +831,8 @@
           >
             <div class="container">
               <div class="row">
-                <div class="solutions-index app-work-card">
-                  <article class="solutions-card solutions-index">
+                <div class="app-work-card">
+                  <article class="solutions-card">
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
@@ -850,19 +861,15 @@
             </div>
           </div>
           <div features-title class="row">
-            <h2 class="solutions-index__footer-title main-title">Firebox AI Features</h2>
+            <h2 class="solutions-index__footer-title main-title">Other Applications</h2>
           </div>
           <div features-content class="container other-projects">
             <vue-tabs direction="vertical" type="pills">
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Files Management
+                    Doctor’s Medicine Prescription Buddy Chatbot
                     <v-icon name="chevron-right"></v-icon>
-                  </span>
-                  <span class="tab-subtitle">
-                    Allows users to upload and store all types of documents, images and videos
-                    The Repository's structure is similar to the windows folder design where users can create folders and many levels of subfolders under it.
                   </span>
                 </span>
 
@@ -879,110 +886,9 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Automagically categorization
+                    Legal advice Chatbot, etc.
                     <v-icon name="chevron-right"></v-icon>
                   </span>
-                  <span class="tab-subtitle">
-                    Files document into the appropriate folder in the Repository intelligently.
-                    Analyses the contents inside your file and automatically organizes and tags them for retrieval purposes
-                  </span>
-                </span>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-
-              <v-tab>
-                <span slot="title">
-                  <span class="tab-title">
-                    Documents Content Extration
-                    <v-icon name="chevron-right"></v-icon>
-                  </span>
-                  <span
-                    class="tab-subtitle"
-                  >Extracts text from uploaded image and embedded images inside Microsoft Doc and PDF.</span>
-                </span>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-              <v-tab>
-                <span slot="title">
-                  <span class="tab-title">
-                    Video Content Extraction
-                    <v-icon name="chevron-right"></v-icon>
-                  </span>
-                  <span
-                    class="tab-subtitle"
-                  >Extracts text frame by frame from the uploaded video file. All objects in the video are searchable</span>
-                </span>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-              <v-tab>
-                <span slot="title">
-                  <span class="tab-title">
-                    Version Control
-                    <v-icon name="chevron-right"></v-icon>
-                  </span>
-                  <span
-                    class="tab-subtitle"
-                  >Supports version control. Stores only the differential parts of the changes each time, thereby reduces storage requirements.</span>
-                </span>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-              <v-tab>
-                <span slot="title">
-                  <span class="tab-title">
-                    Built-in Reader
-                    <v-icon name="chevron-right"></v-icon>
-                  </span>
-                  <span
-                    class="tab-subtitle"
-                  >Has a built-in reader to read all kinds of document in its Repository. Can also read all Microsoft document types.</span>
-                </span>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-              <v-tab>
-                <span slot="title">
-                  <span class="tab-title">
-                    AI-Powered Security
-                    <v-icon name="chevron-right"></v-icon>
-                  </span>
-
-                  <span
-                    class="tab-subtitle"
-                  >Has robust security features to prevent unauthorize access of the document. All users are assigned access rights based on their roles and organization hierarchy.</span>
                 </span>
                 <div class="tab-content-img-wrapper">
                   <img
@@ -994,6 +900,170 @@
                 </div>
               </v-tab>
             </vue-tabs>
+          </div>
+        </span>
+        <span RAPID v-if="solutionpage === 'rapid'">
+          <div first-description>
+            <div class="container mb-5 mt-n5">
+              <div class="row">
+                <span class="container">
+                  <h1 class="solutions-index__title">Rapid Application Development</h1>
+                  <span
+                    class="solutions-index__description"
+                  >The modern era of software development is moving towards Rapid Application Development (RAD) where tools are used to produce software applications through a drag and drop fashion to create the process flow or workflow required. Imagine that a form comprising of many dialogue boxes, radio buttons, list boxes are instantly created through dragging the features without even dropping a single line of code.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            first-session
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: rgb(238, 238, 238);"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="app-work-card">
+                  <article class="solutions-card">
+                    <div class="solutions-card__left col-lg-6 col-md-6">
+                      <img
+                        class="solutions-card__mockup"
+                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        style="transform: translateX(0px); opacity: 1;"
+                      />
+                    </div>
+                    <div class="solutions-card__right col-lg-6 col-md-6">
+                      <h2
+                        class="solutions-card__title main-title"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >The power of RAD tools</h2>
+                      <p
+                        class="solutions-card__description"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >
+                        RAD tools are getting extremely powerful with the ability to embed SQL calls or C# statements in any controls for special customizations. Also, single sign-on feature, that often requires efforts in coding and testing, is automatically bundled into the code.
+                        What used to take many months to develop the codes, testing and fixing the bugs, now takes much lesser time. The reliability is undoubtedly much better than those applications that are being developed from scratch. Most importantly, the tools enable users without much coding experience to change the user interface easily.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            first-session
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: #ffd452"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="app-work-card">
+                  <article class="solutions-card">
+                    <div class="solutions-card__left col-lg-6 col-md-6">
+                      <h2
+                        class="solutions-card__title main-title"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >Automate your Processes</h2>
+                      <p
+                        class="solutions-card__description"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >
+                        For clients who intend to automate their manual processes or create a new process with workflow, we can demonstrate the powerful features of RAD and how customized applications can be developed easily.
+                        If the need arises, we can also offer to develop a Proof-of-Concept (POC) at a nominal price to let our Clients trial the product before embarking on full-scale production system development.
+                      </p>
+                    </div>
+                    <div class="solutions-card__right col-lg-6 col-md-6">
+                      <img
+                        class="solutions-card__mockup"
+                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        style="transform: translateX(0px); opacity: 1;"
+                      />
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+        <span MODERN v-if="solutionpage === 'modern'">
+          <div first-description>
+            <div class="container mb-5 mt-n5">
+              <div class="row">
+                <span class="container">
+                  <h1 class="solutions-index__title">Application Modernization</h1>
+                  <span
+                    class="solutions-index__description"
+                  >Clients may have some legacy applications that were developed many years back that have powerful and confidential features. Such legacy applications are either out-of-support or feature enhancements are extremely costly due to the dependency on the software companies that are supporting them.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            first-session
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: rgb(238, 238, 238);"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="app-work-card">
+                  <article class="solutions-card">
+                    <div class="solutions-card__left col-lg-6 col-md-6">
+                      <img
+                        class="solutions-card__mockup"
+                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        style="transform: translateX(0px); opacity: 1;"
+                      />
+                    </div>
+                    <div class="solutions-card__right col-lg-6 col-md-6">
+                      <h2
+                        class="solutions-card__title main-title"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >How we can help you</h2>
+                      <p
+                        class="solutions-card__description"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >We have the experience in transforming legacy applications into modern applications, and maintaining all its original functionalities and features. Using our Rapid Application Development Tool, we can replicate applications in a relatively short time. Because of less coding, the application is therefore more reliable and efficient.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            first-session
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: #ffd452"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="app-work-card">
+                  <article class="solutions-card">
+                    <div class="solutions-card__left col-lg-6 col-md-6">
+                      <h2
+                        class="solutions-card__title main-title"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >Only Advantages</h2>
+                      <p
+                        class="solutions-card__description"
+                        style="opacity: 1; transform: translateY(0px);"
+                      >There are several added advantages; one of which is that Clients can take over the enhancement of their new “legacy” applications without having to worry of paying extremely high cost or lack of vendor support. The application can also be easily moved to a cloud hosting model.</p>
+                    </div>
+                    <div class="solutions-card__right col-lg-6 col-md-6">
+                      <img
+                        class="solutions-card__mockup"
+                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        style="transform: translateX(0px); opacity: 1;"
+                      />
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
           </div>
         </span>
       </div>

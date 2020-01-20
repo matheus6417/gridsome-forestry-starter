@@ -12,7 +12,7 @@
     cursor: pointer;
     transition: all 0.3s;
 }
-a.active_tab.tabs__link {color: black;display: flex;align-content: flex-start;transition: all 0.3s;}
+a.active_tab.tabs__link {color: black;display: flex;align-content: flex-start;transition: all 0.3s;outline: none;}
 a.active_tab.tabs__link .tab-title:before {content: '';background: #3F51B5;height: 8px;width: 8px;/* position: absolute; */border-radius: 100%;left: 16px;margin-top: 0.5rem;margin-left: 0;margin-right: 0.5rem;}
 ul.nav.nav-pills.nav-stacked {
     width: 48ch;
@@ -21,7 +21,7 @@ ul.nav.nav-pills.nav-stacked {
     position: relative;
     max-height: 30rem;
     margin: auto;
-    width: 45ch;
+    padding: 0 0 0 50px;
 }
 .tab-content.right-text-tabs {
     position: absolute;
@@ -68,6 +68,9 @@ ul.nav.nav-pills.nav-stacked {
     justify-content: center;
     width: 100%;
 }
+.tab-content-img-wrapper{
+    padding:0
+}
 ul.nav.nav-pills.nav-stacked, .left-vertical-tabs {
 }
 }
@@ -99,3 +102,7 @@ ul.nav.nav-pills.nav-stacked, .left-vertical-tabs {
 }.blog-tag.solutions-index {
     width: 20ch;
 }
+.tab-content-img-wrapper .solutions-card__features-img {
+    border-radius: 10px;
+}
+

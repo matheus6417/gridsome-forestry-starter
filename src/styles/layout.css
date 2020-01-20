@@ -3275,3 +3275,16 @@ html{box-sizing:border-box;-ms-overflow-style:scrollbar;font-size:10px;-ms-overf
 :focus {
   outline: 0
 }
+.flex-centered {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.shadow{
+      box-shadow: 2px 3px 16px 0px #0000002e;
+  
+  }
