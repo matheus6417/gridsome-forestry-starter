@@ -2,7 +2,7 @@
 featured_image: ''
 background_image: ''
 bg_color: "#FFFFFF"
-text_1: "<p>leading your digital transformation journey</p>"
+text_1: "<p>Leading your digital transformation journey</p>"
 text_2: "<p>We are your digital innovation partner to turn disruption into process
   improvement</p>"
 text_3: ''
