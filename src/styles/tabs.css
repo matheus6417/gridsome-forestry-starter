@@ -56,24 +56,6 @@ ul.nav.nav-pills.nav-stacked {
     width: 48ch;
     padding-right: 10px;
 }
-@media screen and (max-width:640px){
-.tab-content.right-text-tabs {
-    position: relative;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.tab-content-img-wrapper{
-    padding:0
-}
-ul.nav.nav-pills.nav-stacked, .left-vertical-tabs {
-}
-}
 .nav .tab:not(.active) .tab-title .icon {
     background: red;
     height: 24px;
@@ -107,4 +89,41 @@ ul.nav.nav-pills.nav-stacked, .left-vertical-tabs {
     width: auto;
     height: 100%;
     /* max-width: 80%; */
+}
+@media screen and (max-width:640px){
+.tab-content.right-text-tabs {
+    position: relative;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tab-content-img-wrapper{
+    padding:0;
+    height: auto;
+}
+ul.nav.nav-pills.nav-stacked, .left-vertical-tabs {width: 100%;}
+
+.tab-content-img-wrapper .solutions-card__features-img{
+    height:auto}
+
+    span.tab-title {
+        font-size: 1.3rem;
+    }
+
+    a.active_tab.tabs__link .tab-title:before {
+        margin : 4px
+    }
+
+    .active_tab .tab-subtitle {
+        font-size: 1rem
+    }
+
+    .nav .tab {
+        margin-bottom: 1rem;
+    }
 }

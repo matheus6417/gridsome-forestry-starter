@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <span>
-      <div class="solutions-index">
+      <div class="solutions-index solutions-body">
         <div class="solutions-index__header-image-wrapper">
           <img class="solutions-index__header-image" src="../assets/solutions-bg.png" />
           <div class="about__title-flex row">
@@ -97,7 +97,7 @@
             <div class="container mb-5 mt-n5">
               <div class="row">
                 <span class="container row">
-                  <div class="col-lg-9 col-md-12">
+                  <div class="col-lg-9 col-md-12 mb-5">
                     <h1 class="solutions-index__title">Firebox AI Document Management</h1>
                     <span class="solutions-index__description">
                       The Firebox is a Smart Content Repository that is essentially
@@ -132,14 +132,14 @@
               <div class="row">
                 <div class="app-work-card">
                   <article class="solutions-card">
-                    <div class="solutions-card__left col-lg-5 col-md-6">
+                    <div class="solutions-card__left col-lg-5 col-md-12">
                       <img
                         class="solutions-card__mockup"
                         src="../assets/solutions/docs/banner-img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
-                    <div class="solutions-card__right col-lg-6 col-md-6">
+                    <div class="solutions-card__right col-lg-6 col-md-12">
                       <h2
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
