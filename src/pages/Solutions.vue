@@ -4,8 +4,8 @@
       <div class="solutions-index solutions-body">
         <div class="solutions-index__header-image-wrapper">
           <img class="solutions-index__header-image" src="../assets/solutions-bg.png" />
-          <div class="about__title-flex row">
-            <h2 class="main-title">AI-Powered Solutions to Your Business</h2>
+          <div class="solutions__title-flex row">
+            <h2>AI-Powered Solutions to Your Business</h2>
             <h3>We create digital solutions to make your business fit for the future</h3>
           </div>
         </div>
