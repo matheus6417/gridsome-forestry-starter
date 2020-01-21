@@ -121,12 +121,14 @@
             </div>
           </div>
 
-          <div
-            first-session
-            class="solutions-index__solutions-card-wrapper docsbg1"
-            style="background-color: rgb(238, 238, 238);"
-          >
-            <div class="container">
+          <div first-session class="solutions-index__solutions-card-wrapper">
+            <img
+              class="sessionbg"
+              src="../assets/solutions/docs/balls-bg.svg"
+              style="transform: translateX(0px); opacity: 1;"
+            />
+
+            <div class="container text-white">
               <div class="row">
                 <div class="app-work-card">
                   <article class="solutions-card">
@@ -328,6 +330,7 @@
             class="solutions-index__solutions-card-wrapper"
             style="background-color: rgb(238, 238, 238);"
           >
+            <img class="sessionbg op4" src="../assets/solutions/sbg3.svg" />
             <div class="container">
               <div class="row">
                 <div class="app-work-card">
@@ -360,8 +363,8 @@
           </div>
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper"
-            style="background-color: #ffd452"
+            class="solutions-index__solutions-card-wrapper text-white"
+            style="background-color: rgb(0, 115, 104)"
           >
             <div class="container">
               <div class="row">
@@ -550,6 +553,8 @@
             class="solutions-index__solutions-card-wrapper"
             style="background-color: rgb(238, 238, 238);"
           >
+            <img class="sessionbg op4" src="../assets/solutions/docs/balls-bg.svg" />
+
             <div class="container">
               <div class="row">
                 <div class="app-work-card">
@@ -557,8 +562,7 @@
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/facial/img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -570,7 +574,11 @@
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
-                      >A facial recognition system is a technology capable of identifying or verifying a person from a digital image or a frame from a video source. The system works by comparing selected facial features from a given image with faces data within a database. The AI-based application can effectively identify a person by analysing the patterns based on the person's facial textures (distance between eyes, nose, etc) and shape.</p>
+                      >
+                        A facial recognition system is a technology capable of identifying or verifying a person from a digital image or a frame from a video source. The system works by comparing selected facial features from a given image with faces data within a database.
+                        <br />
+                        <br />The AI-based application can effectively identify a person by analysing the patterns based on the person's facial textures (distance between eyes, nose, etc) and shape.
+                      </p>
                     </div>
                   </article>
                 </div>
@@ -579,8 +587,8 @@
           </div>
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper"
-            style="background-color: #ffd452"
+            class="solutions-index__solutions-card-wrapper text-white"
+            style="background-color: rgb(87, 84, 127)"
           >
             <div class="container">
               <div class="row">
@@ -599,8 +607,7 @@
                     <div class="solutions-card__right col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/facial/img2.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -615,17 +622,6 @@
           <div features-content class="container other-projects">
             <vue-tabs direction="vertical" type="pills">
               <v-tab>
-                <div class="tab-content-img-wrapper">
-                  <img
-                    class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    style="transform: translateX(0px); opacity: 1;"
-                  />
-                </div>
-              </v-tab>
-
-              <v-tab>
                 <span slot="title">
                   <span class="tab-title">
                     Recognition System in Attendance Taking
@@ -638,8 +634,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/facial/facial-f1.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -658,8 +653,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/facial/facial-f2.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -679,8 +673,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/facial/facial-f3.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -698,8 +691,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/facial/facial-f4.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -720,8 +712,7 @@
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/hr/hr-img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -733,7 +724,11 @@
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
-                      >When mentioning Chatbots, most businesses’ reactions are they are hypes, “toys”, that do not generate any business value. Such negative impressions are referring to those conventional chatbots that search the FAQ table to produce answers to the users. AI technology is much more advanced than most people perceive. AI Chatbots today can learn the questions through machine learning and able to provide far more accurate answers relevant to the topics/context. For instance, if a user first asked about an insurance policy, the Chatbot is intelligent enough to understand that the questions that follow are related to such a question</p>
+                      >
+                        When mentioning Chatbots, most businesses’ reactions are they are hypes, “toys”, that do not generate any business value. Such negative impressions are referring to those conventional chatbots that search the FAQ table to produce answers to the users. AI technology is much more advanced than most people perceive.
+                        <br />
+                        <br />AI Chatbots today can learn the questions through machine learning and able to provide far more accurate answers relevant to the topics/context. For instance, if a user first asked about an insurance policy, the Chatbot is intelligent enough to understand that the questions that follow are related to such a question
+                      </p>
                     </div>
                   </article>
                 </div>
@@ -759,8 +754,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/hr/hr-f1.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -779,8 +773,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/hr/hr-f2.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -799,8 +792,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/hr/hr-f3.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -826,8 +818,8 @@
 
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper"
-            style="background-color: rgb(238, 238, 238);"
+            class="solutions-index__solutions-card-wrapper text-white"
+            style="background-color: #254379;"
           >
             <div class="container">
               <div class="row">
@@ -836,8 +828,7 @@
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/custom/custom-img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -876,8 +867,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/custom/custom-f1.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -893,8 +883,7 @@
                 <div class="tab-content-img-wrapper">
                   <img
                     class="solutions-card__features-img"
-                    src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                    alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                    src="../assets/solutions/custom/custom-f2.png"
                     style="transform: translateX(0px); opacity: 1;"
                   />
                 </div>
@@ -928,8 +917,7 @@
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/rad/rad-img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -943,7 +931,9 @@
                         style="opacity: 1; transform: translateY(0px);"
                       >
                         RAD tools are getting extremely powerful with the ability to embed SQL calls or C# statements in any controls for special customizations. Also, single sign-on feature, that often requires efforts in coding and testing, is automatically bundled into the code.
-                        What used to take many months to develop the codes, testing and fixing the bugs, now takes much lesser time. The reliability is undoubtedly much better than those applications that are being developed from scratch. Most importantly, the tools enable users without much coding experience to change the user interface easily.
+                        What used to take many months to develop the codes, testing and fixing the bugs, now takes much lesser time.
+                        <br />
+                        <br />The reliability is undoubtedly much better than those applications that are being developed from scratch. Most importantly, the tools enable users without much coding experience to change the user interface easily.
                       </p>
                     </div>
                   </article>
@@ -953,8 +943,8 @@
           </div>
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper"
-            style="background-color: #ffd452"
+            class="solutions-index__solutions-card-wrapper text-white"
+            style="background-color: rgb(35, 23, 49)"
           >
             <div class="container">
               <div class="row">
@@ -970,14 +960,14 @@
                         style="opacity: 1; transform: translateY(0px);"
                       >
                         For clients who intend to automate their manual processes or create a new process with workflow, we can demonstrate the powerful features of RAD and how customized applications can be developed easily.
-                        If the need arises, we can also offer to develop a Proof-of-Concept (POC) at a nominal price to let our Clients trial the product before embarking on full-scale production system development.
+                        <br />
+                        <br />If the need arises, we can also offer to develop a Proof-of-Concept (POC) at a nominal price to let our Clients trial the product before embarking on full-scale production system development.
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/rad/rad-img2.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -1013,8 +1003,7 @@
                     <div class="solutions-card__left col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/modern/modern-img1.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -1026,7 +1015,11 @@
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
-                      >We have the experience in transforming legacy applications into modern applications, and maintaining all its original functionalities and features. Using our Rapid Application Development Tool, we can replicate applications in a relatively short time. Because of less coding, the application is therefore more reliable and efficient.</p>
+                      >
+                        We have the experience in transforming legacy applications into modern applications, and maintaining all its original functionalities and features.
+                        <br />
+                        <br />Using our Rapid Application Development Tool, we can replicate applications in a relatively short time. Because of less coding, the application is therefore more reliable and efficient.
+                      </p>
                     </div>
                   </article>
                 </div>
@@ -1055,8 +1048,7 @@
                     <div class="solutions-card__right col-lg-6 col-md-6">
                       <img
                         class="solutions-card__mockup"
-                        src="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
-                        alt="https://s3-eu-central-1.amazonaws.com/sc-website-2019-uploads-current/wp-content/uploads/2019/09/09114303/KodakMainImage-e1567607230746.png"
+                        src="../assets/solutions/modern/modern-img2.png"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>

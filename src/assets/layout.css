@@ -1227,6 +1227,9 @@ visibility: visible !important;
 .invisible {
 visibility: hidden !important;
 }
+.text-white * {
+    color:white !important;
+}
 .container {
     width: 100%;
     padding-right: 15px;

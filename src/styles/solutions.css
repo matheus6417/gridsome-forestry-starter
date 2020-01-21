@@ -8,7 +8,7 @@
 .solutions-index .solutions-index__title{font-size:2rem;font-weight:800;line-height:1.04;margin:0 0 16px}
 .solutions-index .solutions-index__description{font-size:22px;font-weight:300;line-height:1.45}
 .solutions-index .solutions-index__filter-buttons{display:flex}
-.solutions-index .solutions-index__solutions-card-wrapper{height:800px;display:flex;align-items:center}
+.solutions-index .solutions-index__solutions-card-wrapper{height:800px;display:flex;position: relative;align-items:center;}
 .solutions-index .app-work-card{width:100%;/* margin-right:97.5px; */}
 .solutions-index .solutions-index__footer-title{margin:80px 0 64px;text-align: center;}
 .solutions-index .solutions-small-card-wrapper{border-right:1px solid #000;border-bottom:1px solid #000;padding:94px 17.5px}
@@ -116,11 +116,18 @@
     display: flex;
     margin: 3rem auto 8rem;
 }
-.docsbg1{
-    background-image:url("../assets/solutions/docs/balls-bg.svg");
+.sessionbg{
     background-position: center;
     background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
 }
-.docsbg1 *{
+.docsbg1 *,.text-white *{
     color:#fff
+}
+.op4{
+    opacity: 0.34;
 }
