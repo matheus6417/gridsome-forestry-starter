@@ -38,10 +38,6 @@ export default {
   },
 
   mounted() {
-    // if (process.browser) {
-    //   const VueAwesomeSwiper = require("vue-awesome-swiper/dist/ssr");
-    //   Vue.use(VueAwesomeSwiper);
-    // }
     let vm = this;
     this.$page.projects.edges.forEach(function(arrayItem) {
       arrayItem.node.order == 1 ? (vm.slides.s1 = arrayItem.node) : false;

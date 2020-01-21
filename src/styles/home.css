@@ -3,7 +3,7 @@
     top: 50%;
     -webkit-transform: translate3d(0px, -50%, 0);
     transform: translate3d(0px, -50%, 0);
-    left: 2rem;
+    left: 1rem;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -60,7 +60,6 @@
 .swiper-slide {
     overflow: hidden;
 }
-
 .isDarkBg .swiper-pagination-bullet:after {
     background: #ffffff;
 }
@@ -68,10 +67,7 @@
     background: transparent;
     border-color:#ffffff
 }
-
-
 @media screen and (max-width: 640px) {
-    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {display:none}
-   }
-   
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {display:none}
+}
    

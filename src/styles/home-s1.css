@@ -20,7 +20,7 @@
 }
 .slide1__right {
   align-self: flex-end;
-  width: 40.1rem;
+  width: 35rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -58,11 +58,12 @@
   transition: ease 101ms;
 }
 .inner p {
+  position: relative;
   margin: inherit !important;
 }
 .slide1__left-text {
-  width: 14ch;
-  font-size: 3.5rem;
+  width: 15ch;
+  font-size: 3rem;
   line-height: 3.5rem;
   z-index: 9;
 }
