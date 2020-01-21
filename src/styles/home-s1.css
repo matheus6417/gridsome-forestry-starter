@@ -63,12 +63,12 @@
 }
 .slide1__left-text {
   width: 15ch;
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   z-index: 9;
 }
 .slide1__paragraph {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin: 6rem 0 0;
   font-weight: 600;
   font-style: normal;
@@ -171,8 +171,8 @@
 .slide1 .container {
     padding: 0;
 }
-.slide1 .inner {
-    padding: 0 2rem;
+.swiper-slide .slide1 .inner {
+    padding: 0 1rem;
 }
 .slide1__flex {
     flex-direction: column;

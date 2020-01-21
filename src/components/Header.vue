@@ -49,7 +49,9 @@
           <svg
             class="navbar__logo-icon"
             xmlns="http://www.w3.org/2000/svg"
-            style="'fill': #fff"
+            style="
+    fill: white;
+"
             viewBox="0 0 90.47 48.35"
           >
             <defs />
@@ -77,42 +79,19 @@
           _ngcontent-serverapp-c2
           class="navigation-mobile__link"
           ngclass="navigation-mobile__link"
-          routerlink="/about"
-          routerlinkactive="current"
-          href="/about"
-        >about</a>
-        <a
-          _ngcontent-serverapp-c2
-          class="navigation-mobile__link"
-          ngclass="navigation-mobile__link"
           routerlink="/work"
           routerlinkactive="current"
-          href="/work"
-        >work</a>
-        <a
-          _ngcontent-serverapp-c2
-          class="navigation-mobile__link"
-          ngclass="navigation-mobile__link"
-          routerlink="/jobs"
-          routerlinkactive="current"
-          href="/jobs"
-        >jobs</a>
-        <a
-          _ngcontent-serverapp-c2
-          class="navigation-mobile__link"
-          ngclass="navigation-mobile__link"
-          routerlink="/blog"
-          routerlinkactive="current"
-          href="/blog"
-        >blog</a>
+          href="/solutions"
+        >solutions</a>
+
         <a
           _ngcontent-serverapp-c2
           class="navigation-mobile__link current"
           ngclass="navigation-mobile__link"
           routerlink="/contact"
           routerlinkactive="current"
-          href="/contact"
-        >contact</a>
+          href="/about"
+        >about</a>
       </div>
     </div>
   </header>
@@ -167,7 +146,6 @@ export default {
   color: #000;
   text-decoration: none;
 }
-
 .navbar {
   width: 100%;
   padding: 1.2rem 0;
@@ -175,14 +153,16 @@ export default {
   position: absolute;
   z-index: 9999;
 }
-
 .navbar .navbar__container {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
-
 .navbar .navbar__list {
+  display: -webkit-box;
   display: flex;
 }
 .navbar .navbar__link {
@@ -190,6 +170,7 @@ export default {
   font-size: 18px;
   line-height: 1.33;
   margin-left: 64px;
+  -webkit-transition: 300ms;
   transition: 300ms;
 }
 .navbar .navbar__link:after {
@@ -201,6 +182,7 @@ export default {
   background: #000;
   width: 0%;
   display: block;
+  -webkit-transition: 300ms;
   transition: 300ms;
 }
 .navbar .navbar__link:hover:after {
@@ -210,13 +192,16 @@ export default {
   display: none;
 }
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 99;
 }
 .navbar__brand {
   height: 36px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
 .navbar__logo-icon {
@@ -231,7 +216,6 @@ header {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-
 @media screen and (max-width: 640px) {
   .navbar {
     padding: 16px 0;
@@ -243,26 +227,29 @@ header {
     display: block;
   }
   .container.navbar__container {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   svg.navbar__logo-icon {
     width: 72px !important;
   }
 }
-.navbar__brand[_ngcontent-serverApp-c2] {
+.navbar__brand {
   height: 36px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
 }
-.navbar__brand[_ngcontent-serverApp-c2]:hover
-  .navbar__logo-icon[_ngcontent-serverApp-c2] {
+.navbar__brand:hover .navbar__logo-icon {
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.navbar__logo-icon[_ngcontent-serverApp-c2] {
+.navbar__logo-icon {
   width: 36px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.navbar__logo-text[_ngcontent-serverApp-c2] {
+.navbar__logo-text {
   margin: 0 8px;
   width: 75px;
   line-height: 17px;
@@ -271,7 +258,7 @@ header {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-.navigation-mobile[_ngcontent-serverApp-c2] {
+.navigation-mobile {
   background-color: #000;
   position: fixed;
   top: 0;
@@ -279,37 +266,41 @@ header {
   left: 0;
   right: 0;
   z-index: 9999999;
-  padding: 16px 24px;
+  padding: 1rem;
 }
-.navigation-mobile[_ngcontent-serverApp-c2]
-  .navbar__logo-text[_ngcontent-serverApp-c2] {
+.navigation-mobile .navbar__logo-text {
   color: #fff;
 }
-.navigation-mobile[_ngcontent-serverApp-c2]
-  .navigation-mobile__header[_ngcontent-serverApp-c2] {
+.navigation-mobile .navigation-mobile__header {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.navigation-mobile[_ngcontent-serverApp-c2]
-  .naviation-mobile__close[_ngcontent-serverApp-c2] {
+.navigation-mobile .naviation-mobile__close {
   cursor: pointer;
 }
-.navigation-mobile[_ngcontent-serverApp-c2]
-  .navigation-mobile__list[_ngcontent-serverApp-c2] {
+.navigation-mobile .navigation-mobile__list {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   padding-top: 48px;
 }
-.navigation-mobile[_ngcontent-serverApp-c2]
-  .navigation-mobile__link[_ngcontent-serverApp-c2] {
+.navigation-mobile .navigation-mobile__link {
   font-size: 34px;
   font-weight: 600;
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   padding: 8px 12px 16px;
 }
-.navigation-mobile[_ngcontent-serverApp-c2]
-  .navigation-mobile__link.current[_ngcontent-serverApp-c2] {
+.navigation-mobile .navigation-mobile__link.current {
   border-bottom: 1px solid #fff;
+}
+
+svg.naviation-mobile__close {
+  display: block;
+  height: 2rem;
 }
 </style>

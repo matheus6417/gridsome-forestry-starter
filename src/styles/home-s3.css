@@ -101,8 +101,8 @@
     height: auto;
 }
 .slide3__text3 {
-    font-size: 2rem;
-    line-height: 2.3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 .slide3__right-square:after {
     left: 0;
@@ -114,16 +114,23 @@
 }
 .slide3__left-square {
     width: auto;
-    padding: 0 2rem 108px;
+    padding: 5rem 1rem 10rem;
     max-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .slide3__text1 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   max-width: 100%;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
 }
 .slide3__text2 {
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   max-width: 100%;
 }
 }
