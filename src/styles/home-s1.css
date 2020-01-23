@@ -179,9 +179,11 @@
     flex-direction: column;
 }
 .slide1__left-text {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 .slide1__flex {
     align-items: flex-start;

@@ -133,7 +133,8 @@
 }
 @media screen and (max-width: 640px) {
 .solutions__title-flex.row h2{font-size:1.6rem;
-margin-bottom:1rem}
+margin-bottom:1rem;
+text-align: center;}
 .solutions__title-flex.row h3{
     font-size:1.4rem;
     text-align: center;
