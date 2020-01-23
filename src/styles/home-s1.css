@@ -63,9 +63,10 @@
 }
 .slide1__left-text {
   width: 15ch;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
   z-index: 9;
+
 }
 .slide1__paragraph {
   font-size: 1.3rem;

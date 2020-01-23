@@ -87,8 +87,9 @@
     max-height: 130px;
 }
 .slide5 pre {
-    line-height: 0.7rem;
+    line-height: 1.2rem;
     font-size: 0.7rem;
+    margin: 10px;
 }
 @media screen and (max-width: 640px) {
 .slide5 .inner {

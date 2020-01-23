@@ -109,7 +109,7 @@
 .solutions-small-card .solutions-small-card__text{display:block;margin-top:40px;font-size:20px;text-align:center;font-style:normal;font-stretch:normal;line-height:1.44;letter-spacing:normal}
 .solutions-small-card .solutions-small-card__image{max-height:48px;-o-object-fit:contain;object-fit:contain;-o-object-position:center;object-position:center}
 .solutions__title-flex.row{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;flex-direction:column;padding-right: 15px;padding-left: 15px;}
-.solutions__title-flex.row h2.main-title{margin-bottom:2rem;font-size:3.2rem;font-weight:700;line-height:.86}
+.solutions__title-flex.row h2{margin-bottom:2rem;font-size:3.2rem;font-weight:700;line-height:.86}
 .solutions__title-flex.row h3{font-size:1.7rem;color:#474747}
 .container.other-projects {
     position: relative;

@@ -240,12 +240,8 @@ header {
   -webkit-box-align: center;
   align-items: center;
 }
-.navbar__brand:hover .navbar__logo-icon {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+
 .navbar__logo-icon {
-  width: 36px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
