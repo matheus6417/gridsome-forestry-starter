@@ -1,6 +1,6 @@
 .solutions-index__footer-title.main-title, .solutions-card__title.main-title{font-size:2.2rem;font-weight:700;line-height:.86;width: 100%;}
 .solutions-index{padding-bottom: 89px;overflow:visible;}
-.solutions-index .solutions-index__header-image-wrapper{position:relative;width:100%}
+.solutions-index .solutions-index__header-image-wrapper{background-color: #e3e3e3;position:relative;width:100%}
 .solutions-index .solutions-index__header-image{width:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;height:539px}
 .solutions-index .solutions-index__white-box{position:absolute;bottom:0;left:0;width:calc((100vw - 1170px)/ 2);background-color:#fff;height:151px}
 .solutions-index .solutions-index__header-wrapper{background-color:#fff}
