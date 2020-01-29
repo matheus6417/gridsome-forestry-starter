@@ -116,8 +116,8 @@ export default {
           this.logoColor = "#254379";
           break;
         case 1:
-          this.color = "#ffffff";
-          this.logoColor = "#ffffff";
+          this.color = "#000000";
+          this.logoColor = "#254379";
           break;
         case 2:
           this.color = "#000000";
@@ -128,8 +128,8 @@ export default {
           this.logoColor = "#254379";
           break;
         case 4:
-          this.color = "#ffffff";
-          this.logoColor = "#ffffff";
+          this.color = "#000000";
+          this.logoColor = "#254379";
           break;
 
         default:

@@ -56,7 +56,6 @@ export default {
 @import "../styles/home-s3.css";
 @import "../styles/home-s4.css";
 @import "../styles/home-s5.css";
-@import "../styles/home-s6.css";
 </style>
 
 <page-query>

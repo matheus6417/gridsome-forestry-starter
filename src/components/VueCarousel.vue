@@ -43,13 +43,21 @@
       </swiper-slide>
       <swiper-slide>
         <section class="slide2">
-          <div class="slide2-bg"></div>
+          <div class="slide4-bg">
+            <img src="../assets/s4-bg.png" />
+          </div>
           <div class="slide2-patterns"></div>
           <div class="container">
             <div class="inner">
               <div class="slide2__flex">
                 <div class="slide2__left-text" style>
-                  <span class="slide2-pattern1" v-html="slides.s2.text_1"></span>
+                  <span class="slide2-pattern1">
+                    <p>
+                      Artificial Intelligence is rapidly shaping the future of how organizations would operate to remain
+                      <span>competitive</span> and
+                      <span>agile.</span>
+                    </p>
+                  </span>
                 </div>
                 <div class="slide2__right-text" style>
                   <span class="slide2-pattern2" v-html="slides.s2.text_2"></span>
@@ -67,7 +75,9 @@
             <div class="inner">
               <div class="slide3__flex">
                 <div class="slide3__left-square">
-                  <span class="slide3__text1" v-html="slides.s3.text_1"></span>
+                  <span class="slide3__text1">
+                    <p>Cognitive technology is a necessity, not an option.</p>
+                  </span>
                   <span class="slide3__text2" v-html="slides.s3.text_2"></span>
                 </div>
                 <div class="slide3__right-square">
@@ -112,7 +122,14 @@
       </swiper-slide>
       <swiper-slide>
         <section class="slide5">
-          <div class="slide5-bg"></div>
+          <div class="stripes">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="slide1-patternlayer"></div>
           <div class="container">
             <div class="inner">
               <div class="slide5__flex">
