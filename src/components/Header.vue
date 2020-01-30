@@ -18,8 +18,8 @@
         <div class="navbar__list">
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/solutions">solutions</g-link>
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/services">services</g-link>
-          <!-- <g-link class="navbar__link" v-bind:style="{'color': color}" to="/services">services</g-link> -->
-          <!-- <g-link class="navbar__link" v-bind:style="{'color': color}" to="/industries">industries</g-link> -->
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/industries">industries</g-link>
+
           <!-- <g-link class="navbar__link" v-bind:style="{'color': color}" to="/use-cases">use cases</g-link> -->
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/about">about us</g-link>
         </div>
