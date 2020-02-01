@@ -20,7 +20,7 @@
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/services">services</g-link>
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/industries">industries</g-link>
 
-          <!-- <g-link class="navbar__link" v-bind:style="{'color': color}" to="/use-cases">use cases</g-link> -->
+          <g-link class="navbar__link" v-bind:style="{'color': color}" to="/use-cases">use cases</g-link>
           <g-link class="navbar__link" v-bind:style="{'color': color}" to="/about">about us</g-link>
         </div>
         <a class="navbar__hamburger" @click="showMobileMenu = true">
@@ -199,10 +199,8 @@ export default {
   display: none;
 }
 header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 99999;
 }
 .navbar__brand {
   height: 36px;
