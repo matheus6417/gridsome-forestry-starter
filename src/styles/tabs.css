@@ -86,11 +86,9 @@ ul.nav.nav-pills.nav-stacked {
 }
 .nav .tab.active .tab-title .icon {
   display: none;
-
   height: 24px;
   width: 24px;
   background: #f5f5f5;
-
   justify-content: center;
   align-items: center;
   color: #8a8a8a;
@@ -106,7 +104,7 @@ ul.nav.nav-pills.nav-stacked {
   border-radius: 10px;
   width: auto;
   height: auto;
-  /* max-width: 80%; */
+  max-height: 27rem;
 }
 @media screen and (max-width: 640px) {
   .tab-content.right-text-tabs {

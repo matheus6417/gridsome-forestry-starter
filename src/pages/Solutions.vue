@@ -99,12 +99,12 @@
                 <span class="container row">
                   <div class="col-lg-9 col-md-12 mb-5">
                     <h1 class="solutions-index__title">Firebox AI Document Management</h1>
-                    <span class="solutions-index__description">
+                    <p>
                       The Firebox is a Smart Content Repository that is essentially
                       a Document Management system powered by AI.
                       Firebox uses AI to understand your photos and documents to
                       help you better categorize, search and protect your files.
-                    </span>
+                    </p>
                   </div>
 
                   <div class="col-lg-3 col-md-6">
@@ -120,57 +120,56 @@
               </div>
             </div>
           </div>
-
-          <div first-session class="solutions-index__solutions-card-wrapper">
-            <img
-              class="sessionbg"
-              src="../assets/solutions/docs/balls-bg.svg"
-              style="transform: translateX(0px); opacity: 1;"
-            />
-
-            <div class="container text-white">
-              <div class="row">
-                <div class="app-work-card">
-                  <article class="solutions-card">
-                    <div class="solutions-card__left col-lg-5 col-md-12">
-                      <img
-                        class="solutions-card__mockup"
-                        src="../assets/solutions/docs/banner-img1.png"
-                        style="transform: translateX(0px); opacity: 1;"
-                      />
+          <div class="ng-star-inserted">
+            <app-block-type-two class="ng-star-inserted">
+              <div class="container block-type-two">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 full-width">
+                    <div class="wrapper shadow">
+                      <img src="../assets/solutions/docs/fireboxscreen4final.png" alt />
                     </div>
-                    <div class="solutions-card__right col-lg-6 col-md-12">
-                      <h2
-                        class="solutions-card__title main-title"
-                        style="opacity: 1; transform: translateY(0px);"
-                      >
+                  </div>
+                </div>
+              </div>
+            </app-block-type-two>
+          </div>
+          <div class="ng-star-inserted">
+            <app-block-type-zero class="ng-star-inserted">
+              <div class="container block-type-zero">
+                <div class="row">
+                  <div class="col-lg-7 offset-lg-3 col-md-8 offset-md-2">
+                    <h2 class="solutions-index__title">
+                      <b>
                         The Document Management
                         System (DMS)
-                      </h2>
-                      <p
-                        class="solutions-card__description"
-                        style="opacity: 1; transform: translateY(0px);"
-                      >
+                      </b>
+                    </h2>
+                    <p>
+                      <span>
                         DMS is often perceived as being expensive and
                         complicated to use. While most organizations
                         understand the necessity and importance of such
                         a system, it is the price and total-cost-of-ownership
                         (TCO) that is difficult for them to justify.
-                        <br />
-                        <br />That was in the past. Today, thanks to the
+                      </span>
+                    </p>
+                    <p>
+                      <span>
+                        That was in the past. Today, thanks to the
                         advancement in AI technology, DMS has
                         become more powerful and yet affordable.
                         Most importantly, AI-powered DMS may not
                         need to be a one time-off-cost for an on-prem
                         model. It could be a hosting model that helps
                         eliminates the upfront investment cost.
-                      </p>
-                    </div>
-                  </article>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </app-block-type-zero>
           </div>
+
           <div features-title class="row">
             <h2 class="solutions-index__footer-title main-title">Firebox AI Features</h2>
           </div>
@@ -363,8 +362,8 @@
           </div>
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper text-white"
-            style="background-color: rgb(0, 115, 104)"
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: #c8d1c5"
           >
             <div class="container">
               <div class="row">
@@ -553,8 +552,6 @@
             class="solutions-index__solutions-card-wrapper"
             style="background-color: rgb(238, 238, 238);"
           >
-            <img class="sessionbg op4" src="../assets/solutions/docs/balls-bg.svg" />
-
             <div class="container">
               <div class="row">
                 <div class="app-work-card">
@@ -1026,11 +1023,7 @@
               </div>
             </div>
           </div>
-          <div
-            first-session
-            class="solutions-index__solutions-card-wrapper"
-            style="background-color: #ffd452"
-          >
+          <div first-session class="solutions-index__solutions-card-wrapper">
             <div class="container">
               <div class="row">
                 <div class="app-work-card">

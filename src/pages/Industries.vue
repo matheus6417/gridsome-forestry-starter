@@ -80,12 +80,6 @@
 
         <span one v-if="solutionpage === 'one'">
           <div first-session class="solutions-index__solutions-card-wrapper">
-            <img
-              class="sessionbg"
-              src="../assets/solutions/docs/balls-bg.svg"
-              style="transform: translateX(0px); opacity: 1;"
-            />
-
             <div class="container text-white">
               <div class="row">
                 <div class="app-work-card">
@@ -118,8 +112,8 @@
           </div>
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper text-white"
-            style="background-color: rgb(0, 115, 104)"
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: #c8d1c5"
           >
             <div class="container">
               <div class="row">
@@ -183,8 +177,8 @@
           </div>
           <div
             first-session
-            class="solutions-index__solutions-card-wrapper text-white"
-            style="background-color: rgb(0, 115, 104)"
+            class="solutions-index__solutions-card-wrapper"
+            style="background-color: #c8d1c5"
           >
             <div class="container">
               <div class="row">
@@ -219,8 +213,6 @@
             class="solutions-index__solutions-card-wrapper"
             style="background-color: rgb(238, 238, 238);"
           >
-            <img class="sessionbg op4" src="../assets/solutions/docs/balls-bg.svg" />
-
             <div class="container">
               <div class="row">
                 <div class="app-work-card">
