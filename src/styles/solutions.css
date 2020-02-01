@@ -607,11 +607,13 @@ h2 {
     line-height: 1.07;
   }
 }
-p {
+.solutions-body p {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.45;
   letter-spacing: 0.07px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 ul {
   margin: 0;
@@ -626,7 +628,7 @@ ul li {
   padding-left: 20px;
 }
 @media screen and (max-width: 640px) {
-  p {
+  .solutions-body p {
     font-size: 18px;
     line-height: 1.44;
   }
@@ -673,5 +675,36 @@ ul li {
   }
   .block-type-zero ul li {
     margin-bottom: 14px;
+  }
+}
+
+.block-type-four {
+  border-image-slice: 24 20 25 20;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0;
+  border-image-repeat: stretch stretch;
+  border-image-source: url(https://supercharge.io/assets/images/block-type-four-bg.svg);
+  border-style: solid;
+  padding: 41.5px 48.5px 43.5px 47.5px;
+  display: flex;
+  align-items: center;
+  border-width: 20px;
+}
+.block-type-four .text {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.42;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 640px) {
+  .block-type-four {
+    line-height: 1.44;
+    padding: 25px;
+  }
+  .block-type-four .text {
+    font-size: 18px;
   }
 }

@@ -120,8 +120,8 @@
               </div>
             </div>
           </div>
-          <div class="ng-star-inserted">
-            <app-block-type-two class="ng-star-inserted">
+          <div class>
+            <app-block-type-two class>
               <div class="container block-type-two">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 full-width">
@@ -133,8 +133,8 @@
               </div>
             </app-block-type-two>
           </div>
-          <div class="ng-star-inserted">
-            <app-block-type-zero class="ng-star-inserted">
+          <div class>
+            <div class>
               <div class="container block-type-zero">
                 <div class="row">
                   <div class="col-lg-7 offset-lg-3 col-md-8 offset-md-2">
@@ -167,7 +167,7 @@
                   </div>
                 </div>
               </div>
-            </app-block-type-zero>
+            </div>
           </div>
 
           <div features-title class="row">

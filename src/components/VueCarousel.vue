@@ -1,5 +1,5 @@
 <template>
-  <span v-bind:class="{'isDarkBg': isDarkBg}">
+  <span>
     <swiper ref="swiper" :options="swiperOption" @slideChange="slideChange">
       <swiper-slide>
         <section class="slide1">
@@ -54,8 +54,8 @@
                   <span class="slide2-pattern1">
                     <p>
                       Artificial Intelligence is rapidly shaping the future of how organizations would operate to remain
-                      <span>competitive</span> and
-                      <span>agile.</span>
+                      <strong>competitive</strong> and
+                      <strong>agile</strong>.
                     </p>
                   </span>
                 </div>

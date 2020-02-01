@@ -19,7 +19,8 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
-}.slide4 .slide4__flex {
+}
+.slide4 .slide4__flex {
   display: grid;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -54,24 +55,24 @@
   line-height: 1.32;
   letter-spacing: normal;
   text-align: left;
-  margin-left: auto!important;
+  margin-left: auto !important;
   padding-left: 3rem;
-  padding-bottom: 2rem!important;
+  padding-bottom: 2rem !important;
 }
 .slide4__left {
-    width: 57rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  width: 57rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .slide4__left-text {
-    font-size: 2.6rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    line-height: 3rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 3rem;
 }
 .slide4__paragraph {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .slide4 .container {
   height: 100%;
@@ -80,46 +81,46 @@
   height: inherit;
 }
 @media screen and (max-width: 640px) {
-.slide4 .inner {
-  padding: 0 1rem;
-}
-.slide4 .container {
-  padding: 0;
-}
-.slide4 .slide4__flex {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-.slide4__left {
-  max-width: 100%;
-  /* width: 100vw; */
-}
-.slide4__left-text {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-.slide4 .slide4__paragraph {
-  padding: 0;
-  max-width: 100%;
-  padding-bottom: 1rem!important;
-  font-size: 1rem;
-}
-.slide4__left-img {
-  position: absolute;
-  opacity: 0.3;
-  width: 200%;
-  margin-top: 5rem;
-  height: auto;
-}
-.slide4 .slide4__right {
-  padding-top: 0;
-  margin: 0;
-  width: auto;
-  /* font-size: 0.7rem; */
-}
+  .slide4 .inner {
+    padding: 0 1rem;
+  }
+  .slide4 .container {
+    padding: 0;
+  }
+  .slide4 .slide4__flex {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .slide4__left {
+    max-width: 100%;
+    /* width: 100vw; */
+  }
+  .slide4__left-text {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .slide4 .slide4__paragraph {
+    padding: 0;
+    max-width: 100%;
+    padding-bottom: 1rem !important;
+    font-size: 1rem;
+  }
+  .slide4__left-img {
+    position: absolute;
+    opacity: 0.3;
+    width: 200%;
+    margin-top: 5rem;
+    height: auto;
+  }
+  .slide4 .slide4__right {
+    padding-top: 0;
+    margin: 0;
+    width: auto;
+    /* font-size: 0.7rem; */
+  }
 }

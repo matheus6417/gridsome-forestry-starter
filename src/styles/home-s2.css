@@ -101,7 +101,7 @@
   position: relative;
 }
 
-span.slide2-pattern1 span {
+span.slide2-pattern1 strong {
   color: #b73e3e;
 }
 @media screen and (max-width: 640px) {
