@@ -38,15 +38,9 @@
         </a>
       </div>
     </nav>
-    <div v-if="showMobileMenu" _ngcontent-serverapp-c2 class="navigation-mobile">
-      <div _ngcontent-serverapp-c2 class="navigation-mobile__header">
-        <a
-          _ngcontent-serverapp-c2
-          class="navbar__brand"
-          fragment="header"
-          routerlink="/"
-          href="/#header"
-        >
+    <div v-if="showMobileMenu" class="navigation-mobile">
+      <div class="navigation-mobile__header">
+        <a class="navbar__brand" fragment="header" routerlink="/" href="/#header">
           <svg
             class="navbar__logo-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -75,30 +69,13 @@
           </g>
         </svg>
       </div>
-      <div _ngcontent-serverapp-c2 class="navigation-mobile__list">
-        <a
-          _ngcontent-serverapp-c2
-          class="navigation-mobile__link"
-          ngclass="navigation-mobile__link"
-          routerlinkactive="current"
-          href="/solutions"
-        >solutions</a>
-        <a
-          _ngcontent-serverapp-c2
-          class="navigation-mobile__link"
-          ngclass="navigation-mobile__link"
-          routerlinkactive="current"
-          href="/services"
-        >services</a>
+      <div class="navigation-mobile__list">
+        <g-link class="navigation-mobile__link" to="/solutions">solutions</g-link>
+        <g-link class="navigation-mobile__link" to="/services">services</g-link>
+        <g-link class="navigation-mobile__link" to="/industries">industries</g-link>
 
-        <a
-          _ngcontent-serverapp-c2
-          class="navigation-mobile__link current"
-          ngclass="navigation-mobile__link"
-          routerlink="/contact"
-          routerlinkactive="current"
-          href="/about"
-        >about</a>
+        <g-link class="navigation-mobile__link" to="/use-cases">use cases</g-link>
+        <g-link class="navigation-mobile__link" to="/about">about us</g-link>
       </div>
     </div>
   </header>

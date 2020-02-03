@@ -683,7 +683,7 @@ ul li {
   border-image-width: 20px 20px 20px 20px;
   border-image-outset: 0;
   border-image-repeat: stretch stretch;
-  border-image-source: url(https://supercharge.io/assets/images/block-type-four-bg.svg);
+  border-image-source: url(../assets/block-type-four-bg.svg);
   border-style: solid;
   padding: 41.5px 48.5px 43.5px 47.5px;
   display: flex;
@@ -707,4 +707,93 @@ ul li {
   .block-type-four .text {
     font-size: 18px;
   }
+}
+
+.study-small-card-wrapper {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 94px 17.5px;
+}
+.study-small-card-wrapper:nth-child(3n) {
+  border-right: none;
+}
+.study-small-card-wrapper:nth-child(4),
+.study-small-card-wrapper:nth-child(5),
+.study-small-card-wrapper:nth-child(6) {
+  border-bottom: none;
+}
+@media screen and (max-width: 1100px) {
+  .study-index__footer-title {
+    padding-left: 38px;
+  }
+  .other-projects__card-wrapper {
+    margin: 0;
+    padding: 15px;
+  }
+  .study-small-card-wrapper:nth-child(3n) {
+    border-right: 1px solid #000;
+  }
+  .study-small-card-wrapper:nth-child(2n) {
+    border-right: none;
+  }
+  .study-small-card-wrapper:nth-child(4) {
+    border-bottom: 1px solid #000;
+  }
+  .study-small-card-wrapper:nth-child(5),
+  .study-small-card-wrapper:nth-child(6) {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .study-index__footer-title {
+    font-size: 34px;
+    padding: 0;
+    line-height: 0.88;
+    margin: 40px 0;
+  }
+  .study-small-card-wrapper {
+    border-right: none;
+    border-bottom: 1px solid #000;
+    padding: 33px 0;
+  }
+  .study-small-card-wrapper:nth-child(3n) {
+    border-right: none;
+  }
+  .study-small-card-wrapper:nth-child(5) {
+    border-bottom: 1px solid #000;
+  }
+  .study-small-card-wrapper:last-child {
+    border-bottom: none;
+  }
+  .other-projects__card-wrapper {
+    padding: 0;
+  }
+}
+/*! CSS Used from: Embedded */
+.study-small-card {
+  padding: 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.study-small-card:hover {
+  cursor: pointer;
+}
+.study-small-card .study-small-card__text {
+  display: block;
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+}
+.study-small-card .study-small-card__image {
+  max-height: 48px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
 }
