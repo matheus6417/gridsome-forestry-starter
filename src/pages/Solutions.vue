@@ -126,7 +126,7 @@
                 <div class="row">
                   <div class="col-lg-12 col-md-12 full-width">
                     <div class="wrapper shadow">
-                      <img src="../assets/solutions/docs/fireboxscreen4final.png" alt />
+                      <img src="../assets/solutions/docs/fireboxscreen4final.jpg" alt />
                     </div>
                   </div>
                 </div>
@@ -219,7 +219,7 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Documents Content Extration
+                    Documents Content Extraction
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span
