@@ -26,7 +26,7 @@
                 </div>
                 <div class="slide1__right" style>
                   <div class="slide1__right-img">
-                    <img :src="slides.s1.featured_image" />
+                    <img src="../assets/s1.png" />
                   </div>
                   <p class="slide1__paragraph">
                     <span v-html="slides.s1.text_2"></span>
