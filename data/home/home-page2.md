@@ -1,7 +1,7 @@
 ---
 featured_image: ''
 background_image: ''
-bg_color: "#000000"
+bg_color: "#FFFFFF"
 text_1: "<p>Artificial Intelligence is rapidly shaping the future of how organizations
   would operate to remain <strong>competitive</strong> and <strong>agile</strong>.</p>"
 text_2: "<p>Manual, monotonous and repetitive tasks, and heuristic analytics based
