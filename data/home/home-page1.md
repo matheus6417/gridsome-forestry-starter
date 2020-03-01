@@ -1,5 +1,5 @@
 ---
-featured_image: ''
+featured_image: "/uploads/s1.png"
 background_image: ''
 bg_color: "#FFFFFF"
 text_1: "<p>Leading your digital transformation journey</p>"
@@ -13,6 +13,6 @@ text_3_color: ''
 text_4_color: ''
 theme:
 - light-striped-modern
-order: '1'
+order: 1
 
 ---
