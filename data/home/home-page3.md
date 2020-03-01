@@ -2,7 +2,7 @@
 featured_image: ''
 background_image: ''
 bg_color: "#FFFFFF"
-text_1: "<p>Cognitive technologies are a necessity, not an option.</p>"
+text_1: "<p>asdasdas</p>"
 text_2: "<p>Companies using AI to improve their internal business processes have achieved
   prominent benefits and robust returns on the investment.</p>"
 text_3: <p>"Many early adopters are investing in cognitive technologies to improve
@@ -14,6 +14,6 @@ text_3_color: "#FFFFFF"
 text_4_color: ''
 theme:
 - light-squares-quote
-order: '3'
+order: 3
 
 ---
