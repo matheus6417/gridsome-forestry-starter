@@ -26,7 +26,7 @@
                 </div>
                 <div class="slide1__right" style>
                   <div class="slide1__right-img">
-                    <img src="../assets/s1.png" />
+                    <img src="../../uploads/s1.png" />
                   </div>
                   <p class="slide1__paragraph">
                     <span v-html="slides.s1.text_2"></span>
@@ -50,12 +50,7 @@
             <div class="inner">
               <div class="slide2__flex">
                 <div class="slide2__left-text" style>
-                  <span class="slide2-pattern1">
-                    <p>
-                      Artificial Intelligence is rapidly shaping the future of how organizations would operate to remain
-                      <strong>competitive</strong> and
-                      <strong>agile</strong>.
-                    </p>
+                  <span class="slide2-pattern1" v-html="slides.s2.text_1">
                   </span>
                 </div>
                 <div class="slide2__right-text" style>
