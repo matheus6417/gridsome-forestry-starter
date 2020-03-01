@@ -26,8 +26,7 @@
                 </div>
                 <div class="slide1__right" style>
                   <div class="slide1__right-img">
-                    <!-- <span class="">imagem aqui</span> -->
-                    <img src="../assets/s1.png" />
+                    <img :src="slides.s1.featured_image" />
                   </div>
                   <p class="slide1__paragraph">
                     <span v-html="slides.s1.text_2"></span>
@@ -249,7 +248,7 @@
     </swiper>
   </span>
 </template>
-
+ 
 <script>
 export default {
   components: {
