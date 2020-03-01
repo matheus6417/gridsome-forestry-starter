@@ -74,8 +74,7 @@
             <div class="inner">
               <div class="slide3__flex">
                 <div class="slide3__left-square">
-                  <span class="slide3__text1">
-                    <p>Cognitive technology is a necessity, not an option.</p>
+                  <span class="slide3__text1" v-html="slides.s3.text_1">
                   </span>
                   <span class="slide3__text2" v-html="slides.s3.text_2"></span>
                 </div>
@@ -273,7 +272,6 @@ export default {
   methods: {
     slideChange() {
       let slideIndexNumber = this.$refs.swiper.swiper.activeIndex;
-
       this.$root.$emit("sliderIndex", slideIndexNumber);
       this.isDarkBg =
         slideIndexNumber === 1 || slideIndexNumber === 4 ? true : false;
