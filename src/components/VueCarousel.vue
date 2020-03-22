@@ -43,7 +43,7 @@
       <swiper-slide>
         <section class="slide2">
           <div class="slide4-bg">
-            <img src="../assets/s4-bg.png" />
+            <img src="../../uploads/s4-bg.png" />
           </div>
           <div class="slide2-patterns"></div>
           <div class="container">
@@ -84,7 +84,7 @@
       <swiper-slide>
         <section class="slide4">
           <div class="slide4-bg">
-            <img src="../assets/s4-bg.png" />
+            <img src="../../uploads/s4-bg.png" />
           </div>
           <div class="container">
             <div class="inner">

@@ -57,29 +57,3 @@ export default {
 @import "../styles/home-s4.css";
 @import "../styles/home-s5.css";
 </style>
-
-<page-query>
-query Posts {
-	projects: allProjectPost {
-    edges {
-      node {
-        id
-        featured_image
-        background_image
-        bg_color
-        text_1
-        text_2 
-        text_3
-        text_4
-        text_1_color
-        text_2_color
-        text_3_color
-        text_4_color
-        order
-      }
-    }
-  }
-
-}
-
-</page-query>
