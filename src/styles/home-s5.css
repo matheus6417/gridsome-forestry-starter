@@ -81,20 +81,18 @@
   height: 100%;
   position: relative;
 }
-.slide5__left-text pre code {
-  color: #fdfdfd78;
-  font-size: 1.1rem;
+.slide5__left-text code {
+  font-size: 0.9rem;
+  line-height: 0.2rem;
+  margin: 10px;
+  color: #4b4b4b;
 }
 .slide5 svg {
   fill: #000;
   max-width: 5rem;
   max-height: 130px;
 }
-.slide5 pre {
-  line-height: 1.2rem;
-  font-size: 0.7rem;
-  margin: 10px;
-}
+
 @media screen and (max-width: 640px) {
   .slide5 .inner {
     padding: 0 1rem;

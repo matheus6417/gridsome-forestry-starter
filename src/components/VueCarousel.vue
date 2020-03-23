@@ -21,7 +21,11 @@
                 </div>
                 <div class="slide1__left-text" style>
                   <span>
-                    <span v-html="slides.s1.text_1"></span>
+                    <rich-text-renderer
+                      v-editable="content.s1_text_1"
+                      v-if="content.s1_text_1"
+                      :document="content.s1_text_1"
+                    />
                   </span>
                 </div>
                 <div class="slide1__right" style>
@@ -29,7 +33,10 @@
                     <img src="../../uploads/s1.png" />
                   </div>
                   <p class="slide1__paragraph">
-                    <span v-html="slides.s1.text_2"></span>
+                    <rich-text-renderer
+                      v-if="content.s1_text_2"
+                      :document="content.s1_text_2"
+                    />
                   </p>
                 </div>
               </div>
@@ -50,11 +57,19 @@
             <div class="inner">
               <div class="slide2__flex">
                 <div class="slide2__left-text" style>
-                  <span class="slide2-pattern1" v-html="slides.s2.text_1">
+                  <span class="slide2-pattern1">
+                    <rich-text-renderer
+                      v-if="content.s2_text_1"
+                      :document="content.s2_text_1"
+                    />
                   </span>
                 </div>
                 <div class="slide2__right-text" style>
-                  <span class="slide2-pattern2" v-html="slides.s2.text_2"></span>
+                  <span class="slide2-pattern2">
+                    <rich-text-renderer
+                      v-if="content.s2_text_2"
+                      :document="content.s2_text_2"
+                  /></span>
                 </div>
               </div>
             </div>
@@ -69,12 +84,26 @@
             <div class="inner">
               <div class="slide3__flex">
                 <div class="slide3__left-square">
-                  <span class="slide3__text1" v-html="slides.s3.text_1">
+                  <span class="slide3__text1"
+                    ><rich-text-renderer
+                      v-if="content.s3_text_1"
+                      :document="content.s3_text_1"
+                    />
                   </span>
-                  <span class="slide3__text2" v-html="slides.s3.text_2"></span>
+                  <span class="slide3__text2">
+                    <rich-text-renderer
+                      v-if="content.s3_text_2"
+                      :document="content.s3_text_2"
+                    />
+                  </span>
                 </div>
                 <div class="slide3__right-square">
-                  <span class="slide3__text3" v-html="slides.s3.text_3"></span>
+                  <span class="slide3__text3">
+                    <rich-text-renderer
+                      v-if="content.s3_text_3"
+                      :document="content.s3_text_3"
+                    />
+                  </span>
                 </div>
               </div>
             </div>
@@ -91,7 +120,10 @@
               <div class="slide4__flex">
                 <div class="slide4__left">
                   <span class="slide4__left-text">
-                    <span v-html="slides.s4.text_1"></span>
+                    <rich-text-renderer
+                      v-if="content.s4_text_1"
+                      :document="content.s4_text_1"
+                    />
                   </span>
                   <div class="slide4__left-img">
                     <img src="../assets/s4.png" />
@@ -99,13 +131,22 @@
                 </div>
                 <div class="slide4__right">
                   <p class="slide4__paragraph">
-                    <span v-html="slides.s4.text_2"></span>
+                    <rich-text-renderer
+                      v-if="content.s4_text_2"
+                      :document="content.s4_text_2"
+                    />
                   </p>
                   <p class="slide4__paragraph">
-                    <span v-html="slides.s4.text_3"></span>
+                    <rich-text-renderer
+                      v-if="content.s4_text_3"
+                      :document="content.s4_text_3"
+                    />
                   </p>
                   <p class="slide4__paragraph">
-                    <span v-html="slides.s4.text_4"></span>
+                    <rich-text-renderer
+                      v-if="content.s4_text_4"
+                      :document="content.s4_text_4"
+                    />
                   </p>
                 </div>
               </div>
@@ -127,15 +168,24 @@
             <div class="inner">
               <div class="slide5__flex">
                 <div class="slide5__title">
-                  <span v-html="slides.s5.text_1"></span>
+                  <rich-text-renderer
+                    v-if="content.s5_text_1"
+                    :document="content.s5_text_1"
+                  />
                 </div>
                 <div class="slide5__subtitle">
-                  <span v-html="slides.s5.text_2"></span>
+                  <rich-text-renderer
+                    v-if="content.s5_text_2"
+                    :document="content.s5_text_2"
+                  />
                 </div>
                 <div class="slide5__plans-wrapper">
                   <div class="slide5__left">
                     <span class="slide5__left-text">
-                      <span v-html="slides.s5.text_3"></span>
+                      <rich-text-renderer
+                        v-if="content.s5_text_3"
+                        :document="content.s5_text_3"
+                      />
                     </span>
                     <svg
                       id="Layer_1_1_"
@@ -188,7 +238,10 @@
                   </div>
                   <div class="slide5__right">
                     <span class="slide5__right-text">
-                      <span v-html="slides.s5.text_4"></span>
+                      <rich-text-renderer
+                        v-if="content.s5_text_4"
+                        :document="content.s5_text_4"
+                      />
                     </span>
                     <svg
                       height="496pt"
@@ -237,42 +290,41 @@
           </div>
         </section>
       </swiper-slide>
-
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </span>
 </template>
- 
+
 <script>
+import StoryblokClient from 'storyblok-js-client'
 export default {
   components: {
     swiper: () =>
-      import("vue-awesome-swiper")
+      import('vue-awesome-swiper')
         .then(m => m.swiper)
         .catch(error => {
-          console.log(error);
+          console.log(error)
         }),
     swiperSlide: () =>
-      import("vue-awesome-swiper")
+      import('vue-awesome-swiper')
         .then(m => m.swiperSlide)
         .catch(error => {
-          console.log(error);
+          console.log(error)
         })
   },
   data() {
     return {
       isDarkBg: false
-    };
+    }
   },
   methods: {
     slideChange() {
-      let slideIndexNumber = this.$refs.swiper.swiper.activeIndex;
-      this.$root.$emit("sliderIndex", slideIndexNumber);
+      let slideIndexNumber = this.$refs.swiper.swiper.activeIndex
+      this.$root.$emit('sliderIndex', slideIndexNumber)
       this.isDarkBg =
-        slideIndexNumber === 1 || slideIndexNumber === 4 ? true : false;
+        slideIndexNumber === 1 || slideIndexNumber === 4 ? true : false
     }
   },
-  props: ["swiperOption", "slides"]
-};
+  props: ['swiperOption', 'slides', 'content']
+}
 </script>
-

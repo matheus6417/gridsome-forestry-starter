@@ -1299,7 +1299,7 @@ export default {
     return {
       settings: require('../../data/solutions.json'),
       solutionpage: 'docs',
-      content: null
+      content: null,
     }
   },
   created() {
@@ -1307,7 +1307,7 @@ export default {
   },
   methods: {
     async fetchData() {
-      const { data } = await api.get('cdn/stories')
+      const { data } = await api.get('cdn/stories/solutions')
       this.content = data
     }
   }

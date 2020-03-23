@@ -10,6 +10,7 @@
     "@gridsome/remark-prismjs": "0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
+    "@marvinrudolph/vue-storyblok-rich-text-renderer": "^1.1.5",
     "babel": "^6.23.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "gridsome": "^0.7.11",
