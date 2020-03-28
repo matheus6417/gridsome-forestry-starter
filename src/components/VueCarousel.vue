@@ -14,13 +14,8 @@
           <div class="container">
             <div class="inner">
               <div class="slide1__flex">
-                <div class="slide1__mobile-text" style>
-                  <p class="slide1__paragraph">
-                    <span v-html="slides.s1.text_2"></span>
-                  </p>
-                </div>
-                <div class="slide1__left-text" style>
-                  <span>
+                <div class="slide1__left-text"  style>
+                  <span v-editable="content.s1_text_1">
                     <rich-text-renderer
                       v-editable="content.s1_text_1"
                       v-if="content.s1_text_1"
@@ -31,8 +26,8 @@
                 <div class="slide1__right" style>
                   <div class="slide1__right-img">
                     <img src="../../uploads/s1.png" />
-                  </div>
-                  <p class="slide1__paragraph">
+                  </div>  
+                  <p class="slide1__paragraph" v-editable="content.s1_text_2">
                     <rich-text-renderer
                       v-if="content.s1_text_2"
                       :document="content.s1_text_2"

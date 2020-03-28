@@ -1,8 +1,6 @@
 <template>
   <Layout>
     <span>
-      {{ content }}
-
       <div class="solutions-index solutions-body">
         <div class="solutions-index__header-image-wrapper">
           <img
@@ -10,10 +8,19 @@
             src="../assets/solutions-bg.png"
           />
           <div class="solutions__title-flex row">
-            <h2>AI-Powered Solutions to Your Business</h2>
+            <h2>
+              <rich-text-renderer
+                v-editable="content.Title"
+                v-if="content.Title"
+                :document="content.Title"
+              />
+            </h2>
             <h3>
-              We create digital solutions to make your business fit for the
-              future
+              <rich-text-renderer
+                v-editable="content.Title_Description"
+                v-if="content.Title_Description"
+                :document="content.Title_Description"
+              />
             </h3>
           </div>
         </div>
@@ -30,11 +37,13 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'docs' }"
                     >
-                      <span class="placeholder-text"
-                        >AI Document Management</span
-                      >
+                     
                       <div class="filter-button__text">
-                        AI Document Management
+                        <rich-text-renderer
+                          v-editable="content.Tab_title"
+                          v-if="content.Tab_title"
+                          :document="content.Tab_title"
+                        />
                       </div>
                     </button>
                   </div>
@@ -44,9 +53,7 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'support' }"
                     >
-                      <span class="placeholder-text"
-                        >AI Technical Support Chatbot</span
-                      >
+                      
                       <div class="filter-button__text">
                         AI Technical Support Chatbot
                       </div>
@@ -58,7 +65,6 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'facial' }"
                     >
-                      <span class="placeholder-text">Facial Recognition</span>
                       <div class="filter-button__text">Facial Recognition</div>
                     </button>
                   </div>
@@ -68,9 +74,7 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'claims' }"
                     >
-                      <span class="placeholder-text"
-                        >AI Chatbot for HR Claims</span
-                      >
+                    
                       <div class="filter-button__text">
                         AI Chatbot for HR Claims
                       </div>
@@ -82,7 +86,6 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'custom' }"
                     >
-                      <span class="placeholder-text">Customized Solutions</span>
                       <div class="filter-button__text">
                         Customized Solutions
                       </div>
@@ -94,9 +97,7 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'rapid' }"
                     >
-                      <span class="placeholder-text"
-                        >Rapid Application Development</span
-                      >
+                   
                       <div class="filter-button__text">
                         Rapid Application Development
                       </div>
@@ -108,9 +109,7 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'modern' }"
                     >
-                      <span class="placeholder-text"
-                        >Application Modernization</span
-                      >
+                    
                       <div class="filter-button__text">
                         Application Modernization
                       </div>
@@ -1289,6 +1288,7 @@
 </template>
 
 <script>
+import StoryblokClient from 'storyblok-js-client'
 import Bottom from '@/components/Bottom'
 import api from '@/utils/api'
 export default {
@@ -1299,7 +1299,7 @@ export default {
     return {
       settings: require('../../data/solutions.json'),
       solutionpage: 'docs',
-      content: null,
+      content: null
     }
   },
   created() {
@@ -1308,7 +1308,8 @@ export default {
   methods: {
     async fetchData() {
       const { data } = await api.get('cdn/stories/solutions')
-      this.content = data
+      this.content = data.story.content
+      console.log(this.content)
     }
   }
 }

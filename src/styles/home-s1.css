@@ -41,10 +41,6 @@
 .slide1__right-text-3 {
   width: 22.61rem;
 }
-.slide1__mobile-text {
-  display: none;
-  height: 400px;
-}
 .slide1__arrow {
   position: absolute;
   left: 0;

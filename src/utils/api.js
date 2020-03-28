@@ -7,13 +7,9 @@ const api = new StoryblokClient({
     type: 'memory',
   },
 });
-
-// If the Storyblok Bridge is enabled we
-// override the `api.get()` method to always
-// fetch the `draft` version from the API, we
-// need this functionality for the Visual Editor.
 if (process.env.VUE_APP_STORYBLOK_BRIDGE === 'true') {
   api.get = function get(slug, params) {
+    console.log(StoryblokClient.prototype.get.call(this, slug, { ...params, version: 'draft' }));
     return StoryblokClient.prototype.get.call(this, slug, { ...params, version: 'draft' });
   };
 }

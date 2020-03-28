@@ -217,6 +217,7 @@
 
 <script>
 import Bottom from "@/components/Bottom";
+import StoryblokClient from 'storyblok-js-client'
 
 export default {
   components: {

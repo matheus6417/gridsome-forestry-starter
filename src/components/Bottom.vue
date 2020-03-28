@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import StoryblokClient from 'storyblok-js-client'
 export default {
   data() {
     return {
