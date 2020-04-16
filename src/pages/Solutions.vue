@@ -230,13 +230,13 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    <rich-text-renderer :document="solutions.Feature1.Title"/>
+                    <rich-text-renderer :document="solutions.Feature2.Title"/>
 
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle">
                     
-                    <rich-text-renderer :document="solutions.Feature1.Description"/>
+                    <rich-text-renderer :document="solutions.Feature2.Description"/>
                   </span>
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -251,12 +251,13 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Documents Content Extraction
+                    <rich-text-renderer :document="solutions.Feature3.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Extracts text from uploaded image and embedded images
-                    inside Microsoft Doc and PDF.</span
+                    >
+                    <rich-text-renderer :document="solutions.Feature3.Description"/>
+                    </span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -356,16 +357,11 @@
               <div class="row">
                 <span class="container">
                   <h1 class="solutions-index__title">
-                    AI-Powered Technical Support with Chatbots
+                  <rich-text-renderer :document="solutions.S4_Title"/>
                   </h1>
                   <span class="solutions-index__description"
-                    >Companies providing customer Support Service as their
-                    after-sales support are facing manpower crunch and mounting
-                    pressure from customers to improve the response time. Even
-                    with their state-of-art Helpdesk systems, technical support
-                    personnel are regularly overwhelmed by calls to render
-                    similar basic support or request like resetting passwords,
-                    that are simple yet time-consuming to perform.</span
+                    ><rich-text-renderer :document="solutions.S4_Description"/> 
+                    </span
                   >
                 </span>
               </div>
@@ -394,24 +390,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        What can AI Chatbot do?
+                        <rich-text-renderer :document="solutions.S5_Title"/>
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Repetitive manual tasks that could be automated can now
-                        be performed by Chatbots. AI-powered Chatbots are also
-                        changing the mindset of all business owners in which
-                        they can perform a deeper analysis of problems through
-                        the interaction with human beings.
-                        <br />
-                        <br />Most importantly, Chatbots never sleep. They can
-                        perform 24 by 7, whole year-round, and produce a
-                        consistent result. There is always a tendency for a
-                        tired human being to make mistakes once a while, but AI
-                        Chatbots don’t. They can answer customers’ inquiries
-                        cheaply, quickly, in real-time.
+                       <rich-text-renderer :document="solutions.S5_Description"/>
                       </p>
                     </div>
                   </article>
@@ -433,21 +418,12 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Integration with Contact Centres
-                      </h2>
+                       <rich-text-renderer :document="solutions.S6_Title"/>                      </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Our AI chatbot can integrate into any commercial
-                        Helpdesk systems like FreshService, ZenDesk,
-                        ServiceDesk, etc.,
-                        <br />
-                        <br />We can also integrate with any CRM applications or
-                        SAP to utilize the Customer information. For clients who
-                        do not have a HelpDesk system, we have our AI Technical
-                        Support Solution that can integrate with Avaya and Cisco
-                        Contact.
+                        <rich-text-renderer :document="solutions.S6_Description"/>
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
@@ -464,20 +440,18 @@
           </div>
           <div features-title class="row">
             <h2 class="solutions-index__footer-title main-title">
-              Technical Support Chatbots Features
-            </h2>
+             <rich-text-renderer :document="solutions.S7_Title"/>            </h2>
           </div>
           <div features-content class="container other-projects">
             <vue-tabs direction="vertical" type="pills">
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Embedable Chatbot
+                   <rich-text-renderer :document="solutions.Feature1.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >It is easy to embed a Chatbot in your intranet or internet
-                    website</span
+                    ><rich-text-renderer :document="solutions.Feature1.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -492,12 +466,12 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Internationalization
+                    <rich-text-renderer :document="solutions.Feature2.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Our Chatbot has a 400,000-word dictionary and supports 150
-                    languages</span
+                    ><rich-text-renderer :document="solutions.Feature2.Description"/>
+                    </span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -511,13 +485,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Auto Trainable
+                 <rich-text-renderer :document="solutions.Feature3.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >It is very easy to train our Chatbot as we have a method of
-                    converting your FAQ into multiple ways of asking the same
-                    question</span
+                    ><rich-text-renderer :document="solutions.Feature3.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -531,16 +503,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Contextual Answers
+                   <rich-text-renderer :document="solutions.Feature4.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Our Chatbot is context sensitive – this means that it
-                    understands what the user is referring to and always provide
-                    the answers relevant to the context. For instance, if the
-                    user is referring to insurance and ask about motor, our
-                    Chatbot is able to know that the user is referring to motor
-                    insurance</span
+                    ><rich-text-renderer :document="solutions.Feature4.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -554,14 +521,12 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Computer Vision
+                  <rich-text-renderer :document="solutions.Feature5.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >One of the unique features of our Chatbot is that it comes
-                    with the computer vision capability. It is able to recognize
-                    objects and extract text from picture. This greatly enhance
-                    the user experience</span
+                    ><rich-text-renderer :document="solutions.Feature5.Description"/>
+                    </span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -575,14 +540,12 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Agent Supervisor
+                  <rich-text-renderer :document="solutions.Feature6.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
 
                   <span class="tab-subtitle"
-                    >Our Chatbot comes with an Agent/Supervisor Call centre
-                    feature. It can route the chat to a human agent if
-                    required</span
+                    ><rich-text-renderer :document="solutions.Feature6.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -596,13 +559,12 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Sentiment Detection
+                    <rich-text-renderer :document="solutions.Feature7.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
 
                   <span class="tab-subtitle"
-                    >Our Chatbot can detect the sentiments of the users and
-                    alert the human agents accordingly</span
+                    ><rich-text-renderer :document="solutions.Feature7.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -622,17 +584,10 @@
               <div class="row">
                 <span class="container">
                   <h1 class="solutions-index__title">
-                    AI-Powered Facial Recognition
+                    <rich-text-renderer :document="solutions.S8_Title"/>  
                   </h1>
                   <span class="solutions-index__description"
-                    >There is a growing trend in the adoption of facial
-                    recognition for ID verification. Many organizations are
-                    beginning to replace conventional card access and biometrics
-                    systems with AI-powered facial recognition systems. The
-                    facial recognition technology is more matured and the
-                    accuracy has also improved tremendously. One advantage of
-                    this kind of system is that it is contactless and
-                    non-evasive.</span
+                    ><rich-text-renderer :document="solutions.S8_Description"/>  </span
                   >
                 </span>
               </div>
@@ -660,22 +615,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        What is Facial Recognition?
+                       <rich-text-renderer :document="solutions.S9_Title"/>  
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        A facial recognition system is a technology capable of
-                        identifying or verifying a person from a digital image
-                        or a frame from a video source. The system works by
-                        comparing selected facial features from a given image
-                        with faces data within a database.
-                        <br />
-                        <br />The AI-based application can effectively identify
-                        a person by analysing the patterns based on the person's
-                        facial textures (distance between eyes, nose, etc) and
-                        shape.
+                        <rich-text-renderer :document="solutions.S9_Description"/>  
                       </p>
                     </div>
                   </article>
@@ -697,17 +643,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        FaceCard
+                        <rich-text-renderer :document="solutions.S10_Title"/>  
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        We are offering “FaceCard”, a Facial recognition system
-                        to the Retail sector, through a subscription model. It
-                        comes with a bundled hardware and software solution. The
-                        monthly subscription fee is based on the number of
-                        terminals deployed.
+                        <rich-text-renderer :document="solutions.S10_Description"/>  
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
@@ -724,7 +666,7 @@
           </div>
           <div features-title class="row">
             <h2 class="solutions-index__footer-title main-title">
-              Applications For Facial Detection
+              <rich-text-renderer :document="solutions.S11_Title"/>  
             </h2>
           </div>
           <div features-content class="container other-projects">
@@ -732,13 +674,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Recognition System in Attendance Taking
+                    <rich-text-renderer :document="solutions.Feature1.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >It can be used in Schools, Polytechnics or Universities for
-                    attendance taking. It can also be used in seminars or
-                    exhibitions for visitor registrations</span
+                    ><rich-text-renderer :document="solutions.Feature1.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -753,14 +693,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Retail Membership
+                    <rich-text-renderer :document="solutions.Feature2.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Facial recognition is expected to replace plastic
-                    membership cards in the retail sector. Customers no longer
-                    need to carry the membership cards with them when shopping
-                    or dining</span
+                    ><rich-text-renderer :document="solutions.Feature2.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -774,16 +711,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Banking
+                   <rich-text-renderer :document="solutions.Feature3.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle">
-                    The financial services sector is considering facial
-                    recognition as a part of multi-factor authentication for ATM
-                    withdrawals and mobile banking. Such a system is the key to
-                    reducing/preventing fraud that leads to more secure
-                    financial data. The system can also identify VIPs, recognize
-                    known criminals in branches and alerting authorities.
+                    <rich-text-renderer :document="solutions.Feature3.Description"/>
                   </span>
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -797,16 +729,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Healthcare
+                    <rich-text-renderer :document="solutions.Feature4.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Healthcare sector is also adopting facial recognition
-                    systems in various departments, including Operating Theatre
-                    for patient verification purposes, taking doctors and nurses
-                    attendance, and for verifying patients’ immediate families
-                    who are permitted to remain at the restricted waiting
-                    area.</span
+                    ><rich-text-renderer :document="solutions.Feature4.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -842,25 +769,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        The Power of Chatbot for HR
+                        <rich-text-renderer :document="solutions.S12_Title"/> 
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        When mentioning Chatbots, most businesses’ reactions are
-                        they are hypes, “toys”, that do not generate any
-                        business value. Such negative impressions are referring
-                        to those conventional chatbots that search the FAQ table
-                        to produce answers to the users. AI technology is much
-                        more advanced than most people perceive.
-                        <br />
-                        <br />AI Chatbots today can learn the questions through
-                        machine learning and able to provide far more accurate
-                        answers relevant to the topics/context. For instance, if
-                        a user first asked about an insurance policy, the
-                        Chatbot is intelligent enough to understand that the
-                        questions that follow are related to such a question
+                        <rich-text-renderer :document="solutions.S12_Description"/> 
                       </p>
                     </div>
                   </article>
@@ -870,7 +785,7 @@
           </div>
           <div features-title class="row">
             <h2 class="solutions-index__footer-title main-title">
-              Chatbots on Enterprise Functions
+              <rich-text-renderer :document="solutions.S13_Title"/> 
             </h2>
           </div>
           <div features-content class="container other-projects">
@@ -878,14 +793,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Human Resource (HR)
+                    <rich-text-renderer :document="solutions.Feature1.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Chatbots can be used to answer basic HR-related questions,
-                    complete transactional HR services, allowing employees to
-                    check their leave balance, submitting claims in conformance
-                    to the HR policy.</span
+                    ><rich-text-renderer :document="solutions.Feature1.Description"/></span
                   >
                 </span>
 
@@ -901,16 +813,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Claim Fraud Detection and Prevention (HR)
+                    <rich-text-renderer :document="solutions.Feature2.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >AI Chatbots can also provide the first line intelligence to
-                    check the submitted claim – for instance a hotel or
-                    travelling expenses – against the eligible claim limit for
-                    each staff grade. If a Chatbot detects a suspicious claim,
-                    it will flag out such claim or overwrites the claim amount
-                    to the maximum amount permitted.</span
+                    ><rich-text-renderer :document="solutions.Feature2.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -925,14 +832,11 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Employee Onboarding
+                    <rich-text-renderer :document="solutions.Feature3.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle"
-                    >Onboarding is a tedious and time-consuming task. Chatbots
-                    can initiate an electronic interview process by fielding
-                    screening questions and capturing the answers. It also helps
-                    in guiding new hires through company policies.</span
+                    ><rich-text-renderer :document="solutions.Feature3.Description"/></span
                   >
                 </span>
                 <div class="tab-content-img-wrapper">
@@ -952,22 +856,10 @@
               <div class="row">
                 <span class="container">
                   <h1 class="solutions-index__title">
-                    Customized AI Solutions
+                    <rich-text-renderer :document="solutions.S14_Title"/>
                   </h1>
                   <span class="solutions-index__description">
-                    The AI technology has reached a very matured state that
-                    prompted many companies to employ AI to solve their complex
-                    operation issues or pain points. What used to require
-                    complex algorithms to code to process certain issues can now
-                    be done easily through AI. With the integration of computer
-                    vision, machine learning algorithms and deep learning,
-                    AI-powered applications can learn the behaviour of users and
-                    automatically decide on the appropriate cause of actions.
-                    <br />
-                    <br />The followings are some of our experiences in using
-                    our current AI solutions and technology to quickly derived a
-                    customized solution to help our clients resolve their
-                    process issues. The followings are some of the use cases.
+                    <rich-text-renderer :document="solutions.S14_Description"/>
                   </span>
                 </span>
               </div>
@@ -995,27 +887,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Email Filing Use Case
+                       <rich-text-renderer :document="solutions.S15_Title"/>
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Email is a useful and convenient tool for
-                        communications. However, some companies like those in
-                        the shipping, support, manufacturing and logistics
-                        industries, are experiencing a over flooding of mails on
-                        each day. To some extent, some users have to deal with
-                        several hundred mails daily. This is not only
-                        unproductive; it also eats up disk space. Worse, users
-                        are experiencing slower response on their Microsoft
-                        Outlook. The email storage has crossed a few
-                        terra-bytes, and is continuing to grow.
-                        <br />
-                        <br />We came up with an intuitive solution to help the
-                        Client to overcome such problems. Our AI-powered
-                        solution automatically archives the email and at the
-                        same time purges the mail from their exchange server.
+                        <rich-text-renderer :document="solutions.S15_Description"/>
                       </p>
                     </div>
                   </article>
@@ -1025,7 +903,7 @@
           </div>
           <div features-title class="row">
             <h2 class="solutions-index__footer-title main-title">
-              Other Applications
+              <rich-text-renderer :document="solutions.S16_Title"/>
             </h2>
           </div>
           <div features-content class="container other-projects">
@@ -1033,7 +911,7 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Doctor’s Medicine Prescription Buddy Chatbot
+                    <rich-text-renderer :document="solutions.Feature1.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                 </span>
@@ -1050,7 +928,7 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Legal advice Chatbot, etc.
+                    <rich-text-renderer :document="solutions.Feature2.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                 </span>
@@ -1071,17 +949,9 @@
               <div class="row">
                 <span class="container">
                   <h1 class="solutions-index__title">
-                    Rapid Application Development
-                  </h1>
+                  <rich-text-renderer :document="solutions.S17_Title"/>                  </h1>
                   <span class="solutions-index__description"
-                    >The modern era of software development is moving towards
-                    Rapid Application Development (RAD) where tools are used to
-                    produce software applications through a drag and drop
-                    fashion to create the process flow or workflow required.
-                    Imagine that a form comprising of many dialogue boxes, radio
-                    buttons, list boxes are instantly created through dragging
-                    the features without even dropping a single line of
-                    code.</span
+                    ><rich-text-renderer :document="solutions.S17_Description"/></span
                   >
                 </span>
               </div>
@@ -1109,25 +979,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        The power of RAD tools
+                        <rich-text-renderer :document="solutions.S18_Title"/>
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        RAD tools are getting extremely powerful with the
-                        ability to embed SQL calls or C# statements in any
-                        controls for special customizations. Also, single
-                        sign-on feature, that often requires efforts in coding
-                        and testing, is automatically bundled into the code.
-                        What used to take many months to develop the codes,
-                        testing and fixing the bugs, now takes much lesser time.
-                        <br />
-                        <br />The reliability is undoubtedly much better than
-                        those applications that are being developed from
-                        scratch. Most importantly, the tools enable users
-                        without much coding experience to change the user
-                        interface easily.
+                       <rich-text-renderer :document="solutions.S18_Description"/>
                       </p>
                     </div>
                   </article>
@@ -1149,21 +1007,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Automate your Processes
+                        <rich-text-renderer :document="solutions.S19_Title"/>
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        For clients who intend to automate their manual
-                        processes or create a new process with workflow, we can
-                        demonstrate the powerful features of RAD and how
-                        customized applications can be developed easily.
-                        <br />
-                        <br />If the need arises, we can also offer to develop a
-                        Proof-of-Concept (POC) at a nominal price to let our
-                        Clients trial the product before embarking on full-scale
-                        production system development.
+                        <rich-text-renderer :document="solutions.S19_Description"/>
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
@@ -1185,15 +1035,10 @@
               <div class="row">
                 <span class="container">
                   <h1 class="solutions-index__title">
-                    Application Modernization
+                    <rich-text-renderer :document="solutions.S20_Title"/>
                   </h1>
                   <span class="solutions-index__description"
-                    >Clients may have some legacy applications that were
-                    developed many years back that have powerful and
-                    confidential features. Such legacy applications are either
-                    out-of-support or feature enhancements are extremely costly
-                    due to the dependency on the software companies that are
-                    supporting them.</span
+                    ><rich-text-renderer :document="solutions.S20_Description"/></span
                   >
                 </span>
               </div>
@@ -1221,20 +1066,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        How we can help you
+                        <rich-text-renderer :document="solutions.S21_Title"/>
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        We have the experience in transforming legacy
-                        applications into modern applications, and maintaining
-                        all its original functionalities and features.
-                        <br />
-                        <br />Using our Rapid Application Development Tool, we
-                        can replicate applications in a relatively short time.
-                        Because of less coding, the application is therefore
-                        more reliable and efficient.
+                       <rich-text-renderer :document="solutions.S21_Description"/>
                       </p>
                     </div>
                   </article>
@@ -1252,18 +1090,13 @@
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        Only Advantages
+                        <rich-text-renderer :document="solutions.S22_Title"/>
                       </h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        There are several added advantages; one of which is that
-                        Clients can take over the enhancement of their new
-                        “legacy” applications without having to worry of paying
-                        extremely high cost or lack of vendor support. The
-                        application can also be easily moved to a cloud hosting
-                        model.
+                        <rich-text-renderer :document="solutions.S22_Description"/>
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">

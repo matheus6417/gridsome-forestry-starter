@@ -5,8 +5,8 @@
         <div class="solutions-index__header-image-wrapper">
           <img class="solutions-index__header-image" src="../assets/services-bg.jpg" />
           <div class="solutions__title-flex row">
-            <h2>Innovation Services to build a better future</h2>
-            <h3>We understand the power of technology to redefine your tomorrow through innovation.</h3>
+            <h2><rich-text-renderer :document="services.Title"/></h2>
+            <h3><rich-text-renderer :document="services.Title_Description"/></h3>
           </div>
         </div>
         <span>
@@ -27,14 +27,13 @@
                       <h2
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Applications Modernization</h2>
+                      ><rich-text-renderer :document="services.S1_Title"/>
+</h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        We have the experience in transforming legacy applications into modern applications and maintaining all its original functionalities and features.
-                        <br />
-                        <br />Using our Rapid Application Development Tool, we can replicate applications in a relatively short time. Because of less coding involved, the application is, therefore, more reliable and efficient.
+                        <rich-text-renderer :document="services.S1_Description"/>
                       </p>
                     </div>
                   </article>
@@ -55,14 +54,12 @@
                       <h2
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Process Automation</h2>
+                      ><rich-text-renderer :document="services.S2_Title"/></h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
                       >
-                        We can assist you in the digitalization by understanding your existing process and then provide necessary automation through a workflow engine or AI features.
-                        <br />
-                        <br />If you already have an existing ERP solution, and you want to have other automation like scheduling and matching resources based on required tasks, we also have the expertise to provide you with relevant solutions and integration.
+                        <rich-text-renderer :document="services.S2_Description"/>
                       </p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
@@ -93,11 +90,11 @@
                       <h2
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Digital Transformation Consultancy</h2>
+                      ><rich-text-renderer :document="services.S3_Title"/></h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Given our experience in the digital transformation, we can offer valuable recommendations on how you could achieve your digital transformation dream.</p>
+                      ><rich-text-renderer :document="services.S3_Description"/></p>
                     </div>
                   </article>
                 </div>
@@ -117,11 +114,11 @@
                       <h2
                         class="solutions-card__title main-title"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Web Design and Development</h2>
+                      ><rich-text-renderer :document="services.S4_Title"/></h2>
                       <p
                         class="solutions-card__description"
                         style="opacity: 1; transform: translateY(0px);"
-                      >Our team are full of people with the skillset needed for your digital transformation. We create digital experiences, design delightful interfaces and build robust software to create products fit for the future. We believe that innovation is a team effort: strategists, designers, developers and engineers work shoulder to shoulder to enable what yesterday was still impossible.</p>
+                      ><rich-text-renderer :document="services.S4_Description"/></p>
                     </div>
                     <div class="solutions-card__right col-lg-6 col-md-6">
                       <img

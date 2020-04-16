@@ -9,8 +9,8 @@
             style="object-position: top;"
           />
           <div class="solutions__title-flex row">
-            <h2>Use Cases</h2>
-            <h3>We work to ensure our clients success with innovative impact.</h3>
+            <h2><rich-text-renderer :document="usecases.Title"/></h2>
+            <h3><rich-text-renderer :document="usecases.Title_Description"/></h3>
           </div>
         </div>
         <span>
@@ -19,10 +19,10 @@
               <div class="row">
                 <span class="container row">
                   <div class="col-lg-9 col-md-12 mb-5">
-                    <h1 class="solutions-index__title">We build success futures across industries</h1>
+                    <h1 class="solutions-index__title"><rich-text-renderer :document="usecases.S1_Title"/></h1>
                     <span
                       class="solutions-index__description"
-                    >We have been at the forefront of digital disruption deliberately seeking challenges in seemingly distinct areas to keep our perspective fresh. Our innovation methodology and digital craftsmanship is readily applicable in a range of industries currently rebuilding themselves for a digital future. Check out our selected works below.</span>
+                    ><rich-text-renderer :document="usecases.S1_Description"/></span>
                   </div>
                 </span>
               </div>
@@ -43,8 +43,7 @@
                     src="../assets/solutions/docs/fireboxlogo.svg"
                   />
                   <span class="study-small-card__text">
-                    Firebox - AI-Powered Document Management
-                    System
+                    <rich-text-renderer :document="usecases.Case1_Title"/>
                   </span>
                 </a>
               </div>
@@ -53,7 +52,7 @@
               <div>
                 <a class="study-small-card" href="../case/regulusdt-case-ai.pdf" target="_blank">
                   <img class="study-small-card__image" src="../assets/ai-case.png" />
-                  <span class="study-small-card__text">Artificial Intelligence Applications</span>
+                  <span class="study-small-card__text"><rich-text-renderer :document="usecases.Case2_Title"/></span>
                 </a>
               </div>
             </div>
@@ -61,7 +60,7 @@
               <div>
                 <a class="study-small-card" href="#">
                   <img class="study-small-card__image" src="../assets/agreement.svg" />
-                  <span class="study-small-card__text">Your success here!</span>
+                  <span class="study-small-card__text"><rich-text-renderer :document="usecases.Case3_Title"/></span>
                 </a>
               </div>
             </div>
