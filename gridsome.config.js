@@ -8,6 +8,15 @@ module.exports = {
   siteDescription: "Creative technologist",
   plugins: [
     {
+      use: 'gridsome-source-storyblok',
+      options: {
+        client: {
+          accessToken: 'Wc9K60fbzMpYROvxdwZ7lAtt',
+          version: 'draft'
+        }
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "data/home/**/*.md",

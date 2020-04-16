@@ -1,25 +1,26 @@
 <template>
   <Layout>
-    <span>
+    <span v-if="content" 
+                v-editable="content"
+    >
       <div class="solutions-index solutions-body">
         <div class="solutions-index__header-image-wrapper">
           <img
             class="solutions-index__header-image"
             src="../assets/solutions-bg.png"
           />
-          <div class="solutions__title-flex row">
-            <h2>
+          <div class="solutions__title-flex row"
+          >
+            <h2
+            >
               <rich-text-renderer
-                v-editable="content.Title"
-                v-if="content.Title"
-                :document="content.Title"
+                :document="solutions.Title"
               />
             </h2>
-            <h3>
+            <h3
+            >
               <rich-text-renderer
-                v-editable="content.Title_Description"
-                v-if="content.Title_Description"
-                :document="content.Title_Description"
+                :document="solutions.Title_Description"
               />
             </h3>
           </div>
@@ -38,11 +39,10 @@
                       :class="{ selected: solutionpage === 'docs' }"
                     >
                      
-                      <div class="filter-button__text">
+                      <div class="filter-button__text"
+                      >
                         <rich-text-renderer
-                          v-editable="content.Tab_title"
-                          v-if="content.Tab_title"
-                          :document="content.Tab_title"
+                          :document="solutions.Tab_Title1"
                         />
                       </div>
                     </button>
@@ -55,7 +55,9 @@
                     >
                       
                       <div class="filter-button__text">
-                        AI Technical Support Chatbot
+                        <rich-text-renderer
+                          :document="solutions.Tab_Title2"
+                        />
                       </div>
                     </button>
                   </div>
@@ -65,7 +67,9 @@
                       class="filter-button blog-tag solutions-index"
                       :class="{ selected: solutionpage === 'facial' }"
                     >
-                      <div class="filter-button__text">Facial Recognition</div>
+                      <div class="filter-button__text"><rich-text-renderer
+                          :document="solutions.Tab_Title3"
+                        /></div>
                     </button>
                   </div>
                   <div class="blog-tag solutions-index">
@@ -76,7 +80,9 @@
                     >
                     
                       <div class="filter-button__text">
-                        AI Chatbot for HR Claims
+                       <rich-text-renderer
+                          :document="solutions.Tab_Title4"
+                        />
                       </div>
                     </button>
                   </div>
@@ -87,7 +93,9 @@
                       :class="{ selected: solutionpage === 'custom' }"
                     >
                       <div class="filter-button__text">
-                        Customized Solutions
+                      <rich-text-renderer
+                          :document="solutions.Tab_Title5"
+                        />
                       </div>
                     </button>
                   </div>
@@ -99,7 +107,9 @@
                     >
                    
                       <div class="filter-button__text">
-                        Rapid Application Development
+                        <rich-text-renderer
+                          :document="solutions.Tab_Title6"
+                        />
                       </div>
                     </button>
                   </div>
@@ -111,7 +121,9 @@
                     >
                     
                       <div class="filter-button__text">
-                        Application Modernization
+                        <rich-text-renderer
+                          :document="solutions.Tab_Title7"
+                        />
                       </div>
                     </button>
                   </div>
@@ -127,21 +139,21 @@
                 <span class="container row">
                   <div class="col-lg-9 col-md-12 mb-5">
                     <h1 class="solutions-index__title">
-                      Firebox AI Document Management
+                      <rich-text-renderer
+                          :document="solutions.S1_Title"
+                        />
                     </h1>
                     <p>
-                      The Firebox is a Smart Content Repository that is
-                      essentially a Document Management system powered by AI.
-                      Firebox uses AI to understand your photos and documents to
-                      help you better categorize, search and protect your files.
+                    <rich-text-renderer
+                          :document="solutions.S1_Description"
+                        />
                     </p>
                   </div>
-
                   <div class="col-lg-3 col-md-6">
                     <div class="flex-centered">
                       <img
                         class="solutions-card__mockup"
-                        src="../assets/solutions/docs/fireboxlogo.svg"
+                        :src="solutions.S1_Image"
                         style="transform: translateX(0px); opacity: 1;"
                       />
                     </div>
@@ -156,7 +168,7 @@
                 <div class="col-lg-12 col-md-12 full-width">
                   <div class="wrapper shadow">
                     <img
-                      src="../assets/solutions/docs/fireboxscreen4final.jpg"
+                      :src="solutions.S1_Image2"
                       alt
                     />
                   </div>
@@ -171,28 +183,14 @@
                   <div class="col-lg-7 offset-lg-3 col-md-8 offset-md-2">
                     <h2 class="solutions-index__title">
                       <b>
-                        The Document Management System (DMS)
+                         <rich-text-renderer
+                          :document="solutions.S2_Title"
+                        />
                       </b>
                     </h2>
-                    <p>
-                      <span>
-                        DMS is often perceived as being expensive and
-                        complicated to use. While most organizations understand
-                        the necessity and importance of such a system, it is the
-                        price and total-cost-of-ownership (TCO) that is
-                        difficult for them to justify.
-                      </span>
-                    </p>
-                    <p>
-                      <span>
-                        That was in the past. Today, thanks to the advancement
-                        in AI technology, DMS has become more powerful and yet
-                        affordable. Most importantly, AI-powered DMS may not
-                        need to be a one time-off-cost for an on-prem model. It
-                        could be a hosting model that helps eliminates the
-                        upfront investment cost.
-                      </span>
-                    </p>
+                    <rich-text-renderer
+                          :document="solutions.S2_Description"
+                        />
                   </div>
                 </div>
               </div>
@@ -201,7 +199,9 @@
 
           <div features-title class="row">
             <h2 class="solutions-index__footer-title main-title">
-              Firebox AI Features
+              <rich-text-renderer
+                          :document="solutions.S3_Title"
+                        />
             </h2>
           </div>
           <div features-content class="container other-projects">
@@ -1291,6 +1291,20 @@
 import StoryblokClient from 'storyblok-js-client'
 import Bottom from '@/components/Bottom'
 import api from '@/utils/api'
+import config from '../../gridsome.config'
+
+const loadStoryblokBridge = function(cb) {
+  let sbConfigs = config.plugins.filter((item) => {
+    return item.use === 'gridsome-source-storyblok'
+  })
+  let sbConfig = sbConfigs.length > 0 ? sbConfigs[0] : {}
+  let script = document.createElement('script')
+  script.type = 'text/javascript'
+  script.src = `//app.storyblok.com/f/storyblok-latest.js?t=${sbConfig.options.client.accessToken}`
+  script.onload = cb
+  document.getElementsByTagName('head')[0].appendChild(script)
+}
+
 export default {
   components: {
     Bottom
@@ -1299,17 +1313,47 @@ export default {
     return {
       settings: require('../../data/solutions.json'),
       solutionpage: 'docs',
-      content: null
+      solutions: null,
+      slug: 'solutions'
     }
   },
   created() {
-    this.fetchData()
+    loadStoryblokBridge(() => { this.initStoryblokEvents() })
   },
   methods: {
-    async fetchData() {
-      const { data } = await api.get('cdn/stories/solutions')
-      this.content = data.story.content
-      console.log(this.content)
+    // async fetchData() {
+    //   const { data } = await api.get('cdn/stories/solutions')
+    //   this.solutions = data.story.content
+    // },
+    loadStory() {
+      console.log('load');
+      
+      window.storyblok.get({
+        slug: this.slug,
+        version: 'draft'
+      }, (data) => {
+        this.solutions = data.story.content
+        console.log(this.content)
+      })
+    },
+    initStoryblokEvents() {
+      this.loadStory()
+      let sb = window.storyblok
+      sb.on(['change', 'published'], (payload) => {
+        this.loadStory()
+      })
+
+      sb.on('input', (payload) => {
+        if (this.solutions && payload.story.id === this.solutions.id) {
+          this.solutions = payload.story
+        }
+      })
+
+      sb.pingEditor(() => {
+        if (sb.inEditor) {
+          sb.enterEditmode()
+        }
+      })
     }
   }
 }
