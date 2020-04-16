@@ -210,13 +210,11 @@
                 <span slot="title">
                   <span class="tab-title">
                     Files Management
+                     <rich-text-renderer :document="solutions.Feature1.Title"/>
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle">
-                    Allows users to upload and store all types of documents,
-                    images and videos The Repository's structure is similar to
-                    the windows folder design where users can create folders and
-                    many levels of subfolders under it.
+                     <rich-text-renderer :document="solutions.Feature1.Description"/>
                   </span>
                 </span>
 
@@ -232,13 +230,13 @@
               <v-tab>
                 <span slot="title">
                   <span class="tab-title">
-                    Automagically categorization
+                    <rich-text-renderer :document="solutions.Feature1.Title"/>
+
                     <v-icon name="chevron-right"></v-icon>
                   </span>
                   <span class="tab-subtitle">
-                    Files document into the appropriate folder in the Repository
-                    intelligently. Analyses the contents inside your file and
-                    automatically organizes and tags them for retrieval purposes
+                    
+                    <rich-text-renderer :document="solutions.Feature1.Description"/>
                   </span>
                 </span>
                 <div class="tab-content-img-wrapper">
